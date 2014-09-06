@@ -4,10 +4,11 @@
  
 <p>FLINT 2.x series:</p>
 <ul> 
-<li>2012-11-09 <b><a href="flint-2.3.tar.gz">flint-2.3.tar.gz</a></b>, documentation: <b><a href="flint-2.3.pdf">flint-2.3.pdf</a></b> (FLINT 2.3.0)</li> 
-<li>2011-06-04 <a href="flint-2.2.tar.gz">flint-2.2.tar.gz</a>, documentation: <a href="flint-2.2.pdf">flint-2.2.pdf</a></li> 
-<li>2011-03-09 <a href="flint-2.1.tgz">flint-2.1.tgz</a>, documentation: <a href="flint-2.1.pdf">flint-2.1.pdf</a></li> 
-<li>2011-01-16 <a href="flint-2.0.tgz">flint-2.0.tgz</a>, documentation: <a href="flint-2.0.pdf">flint-2.0.pdf</a></li> 
+<li>2014-06-19 <b><a href="flint-2.4.4.tar.gz">flint-2.4.4.tar.gz</a></b>, documentation: <b><a href="flint-2.4.4.pdf">flint-2.4.4.pdf</a></b> (FLINT 2.4.4)</li>
+<li>2012-11-09 <b><a href="flint-2.3.tar.gz">flint-2.3.tar.gz</a></b>, documentation: <b><a href="flint-2.3.pdf">flint-2.3.pdf</a></b> </li>
+<li>2011-06-04 <a href="flint-2.2.tar.gz">flint-2.2.tar.gz</a>, documentation: <a href="flint-2.2.pdf">flint-2.2.pdf</a></li>
+<li>2011-03-09 <a href="flint-2.1.tgz">flint-2.1.tgz</a>, documentation: <a href="flint-2.1.pdf">flint-2.1.pdf</a></li>
+<li>2011-01-16 <a href="flint-2.0.tgz">flint-2.0.tgz</a>, documentation: <a href="flint-2.0.pdf">flint-2.0.pdf</a></li>
 </ul> 
 
 <p>FLINT 1.x series:</p>
