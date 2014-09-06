@@ -1,8 +1,10 @@
 <h2>News</h2>
 
-<h3>Future news and events</h3>
+<p>2014-06-19: FLINT 2.4.4 is released. This fixed a <u>severe</u> bug in
+flint's primality code (n_is_prime() affecting n_factor()). We strongly
+recommend updating as all versions of flint since 1.1 are affected.</p>
 
-<p>2013-12-XX: FLINT 2.4 is released</p>
+<p>2014-01-02: FLINT 2.4.1 is released</p>
 
 <h3>Past news and events</h3>
 
