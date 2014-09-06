@@ -1,0 +1,24 @@
+<h2>Overview</h2>
+
+<p>FLINT is a C library for doing number theory, maintained by <a href="mailto:hart_wb {at_thingy} yahoo dot com">William Hart</a>.
+FLINT is licensed <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GPL v2+</a>.</p>
+
+<p>FLINT supports arithmetic with numbers, polynomials, power series and matrices over many base rings, including:</p>
+<ul>
+<li>Multiprecision integers and rationals</li>
+<li>Integers modulo <i>n</i></li>
+<li>p-adic numbers</li>
+<li>Finite fields (prime and non-prime order)</li>
+<li>Real and complex numbers (via the <a href="http://fredrikj.net/arb/">Arb</a> extension library)</li>
+</ul>
+
+<p>Support is also currently being developed for algebraic number fields (via the <a href="https://github.com/wbhart/antic/">Antic</a> extension library).</p>
+
+<p>Operations that can be performed include conversions, arithmetic, computing GCDs, factoring, solving linear systems, and evaluating special functions. In addition, FLINT provides various low-level routines for fast arithmetic. FLINT is extensively documented and tested.</p>
+
+<div align="center"><img src="bench_padic_log.png"/><br/><i><b>Benchmark</b>: Time to compute a p-adic logarithm to precision 17<sup>n</sup> with FLINT, versus <a href="http://magma.maths.usyd.edu.au/magma/">Magma</a>.</i></div>
+
+<p>FLINT is written in ANSI C and runs on many platforms (including Linux, Mac OS X and Windows on common hardware configurations), but is currently mostly optimised for x86 and x86-64 CPUs. It is designed to be threadsafe. FLINT depends on the <a href="http://mpir.org">MPIR</a>/<a href="http://gmplib.org/">GMP</a> and <a href="http://mpfr.org">MPFR</a> libraries.</p>
+
+<p>FLINT has been used for large scale computations in number theory research (for example: <a href="http://www.aimath.org/news/congruentnumbers/">A Trillion Triangles</a>), and is also suited as a general-purpose backend for computer algebra systems. <a href="http://sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/<i>n</i>Z for small <i>n</i>, and work is currently underway to use FLINT in <a href="http://www.singular.uni-kl.de/">Singular</a> and <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>.</p>
+

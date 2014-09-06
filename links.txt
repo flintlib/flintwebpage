@@ -1,0 +1,157 @@
+<h2>Links and references</h2>
+
+
+
+<h3>Software using FLINT</h3>
+
+<ul>
+<li><a href="http://sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
+<li>Work is currently in progress to use FLINT in <a href="http://www.singular.uni-kl.de">Singular</a> and <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>.</li>
+<li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT</a>.</li>
+</ul>
+
+<h3>References to FLINT in the literature and online</h3>
+
+<ul>
+<li><a href="http://andy.novocin.com/pro/polycomp_CASC2011.pdf">
+Practical divide-and-conquer algorithms for polynomial arithmetic
+</a> - W. Hart (Univ. Warwick) and A. Novocin (Univ. Waterloo)
+</li>
+
+<li><a href="http://arxiv.org/abs/1205.5991">
+Efficient implementation of the Hardy-Ramanujan-Rademacher formula</a> - F. Johansson (RISC, Linz)
+</li>
+
+<li><a href="http://arxiv.org/abs/1108.4772">
+A fast algorithm for reversion of power series</a> - F. Johansson (RISC, Linz)
+</li>
+
+<li><a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-15581-9">
+An introduction to FLINT (pp. 88-91)</a> - W. Hart (Univ. Warwick)
+</li>
+
+<li><a href="http://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
+FLINT 2 benchmarking</a> - F. Johansson (RISC, Linz)
+</li>
+
+<li><a href="http://eprint.iacr.org/2009/203.pdf">
+Practical Cryptanalysis of ISO/IEC 9796-2 and EMV Signatures</a> - J-S Coron, D. Naccache, M. Tibouchi, R-P Weinmann (Univ. Luxembourg, Ecole Normale Superior)
+</li>
+
+<li><a href="http://dx.doi.org/10.1016/j.tcs.2009.03.014">
+A cache-friendly truncated FFT</a> - David Harvey (Univ. New York).
+</li>
+
+<li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
+Poster about parallel factorisation</a> - Ammon Bartram (Univ. Potsdam).
+</li>
+
+<li><a href="http://www.informatik.uni-bremen.de/~malb/talks/20071110%20-%20Sage%20-%20Bristol.pdf">
+Talk : Sage for Mathematical and Cryptographic Research</a> - Martin Albrecht (Univ. Bremen) and William Stein (Univ. Washington).
+</li>
+ 
+<li><a href="http://math.uci.edu/~ncalexan/research/stein-number-theory-sagetalk.pdf"> 
+Talk : Sage for Number Theorists</a> - William Stein (Univ. Washington).
+</li> 
+ 
+<li><a href="http://orms.mfo.de/extended_search?license=1">
+Oberwolfach References on Mathematical Software.</a>
+</li> 
+ 
+<li><a href="http://wstein.org/talks/200906-horizon/June_11__What_is_on_the_Horizon.pdf">
+Talk: Sage : What is on the Horizon - William Stein (Univ. Washington).
+</a></li>
+
+<li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects200708/richard_howell-peak_poster.pdf">
+Poster about Factoring Algorithms over Finite Fields</a> - Richard Howell-Peak (Univ. Warwick).
+</li> 
+ 
+<li><a href="http://modular.math.washington.edu/grants/sage-06/project_description.pdf">
+Grant Proposal</a> - William Stein (Univ. Washington).
+</li>
+
+<li><a href="http://www.numbertheory.org/ntw/N1.html">
+Number Theory Web - Number theory ftp sites/calculator programs/archives</a> - Keith Matthews (Emer. Univ. Queensland).
+</li>
+ 
+<li><a href="http://algo.inria.fr/seminars/sem08-09/kruppa-slides.pdf">
+Talk : Fast Integer Multiplication with Schoenhage-Strassen's Algorithm</a> - Alexander Kruppa (LORIA).
+</li>
+ 
+<li><a href="http://en.wikipedia.org/wiki/Fast_Library_for_Number_Theory">
+Wikipedia Article : Fast Library for Number Theory.</a>
+</li>
+ 
+<li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects_06/david_howden.pdf">
+Poster about Efficiently computing Bernoulli numbers using FLINT</a> - David Howden (Univ. Warwick)
+</li>
+ 
+<li><a href="http://www.williamstein.org/grants/frg07.pdf">
+Grant Proposal</a> - William Stein (Univ. Washington)</li> 
+ 
+<li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects_06/daniel_scott_poster.pdf">
+Poster about Implementing Middle Product in FLINT</a> - Daniel Scott (Univ. Warwick)</li> 
+
+<li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects200708/daniel_ellam_poster.ppt">
+Poster about p-adic Arithmetic</a> - Daniel Ellam (Univ. Warwick)</li> 
+ 
+<li><a href="http://mate.dm.uba.ar/~pdenapo/mathsoft.html"> 
+Programas utiles para Mathematica</a> - Pablo De Napoli (Univ. Buenos Aires)</li> 
+ 
+<li><a href="http://prunel.ccsd.cnrs.fr/ensl-00546114/en/">
+Implementation of new polynomial factoring algorithm</a> - van Hoeij, Novocin, Hart.</li>
+
+<li><a href="http://math.boisestate.edu/~liljanab/BOISECRYPTFall09/Jacobsen.pdf">
+Methods and implementations for integer factorization (slides)</a> - D. Jacobsen.</li> 
+
+<li><a href="http://stringpedia.bsmithers.co.uk/index.php?title=Exact_Pattern_Matching_With_Don't_Cares#List_Of_Graphs">
+Using the FLINT FFT for (string) pattern matching</a> - B. Smithers (?).</li>
+ 
+<li><a href="http://cims.nyu.edu/~harvey/talks/znpoly-talk.pdf">
+The zn_poly library</a> - D. Harvey (CIMS, New York)</li> 
+
+</ul>
+
+<h3>Mathematics, algorithms and implementation</h3>
+
+<p>The following list is incomplete. More references can be found in the FLINT documentation.</p>
+
+<ul>
+<li><a href="http://citeseer.ist.psu.edu/bernstein98composing.html">Bernstein - Composing power series, especially over ring with small characteristic</a></li>
+<li><a href="http://cr.yp.to/bib/1998/kaltofen.pdf">Kaltofen and Shoup - Probabilistic algorithm for factoring univariate polynomials over a finite field</a></li> 
+<li><a href="http://citeseer.ist.psu.edu/41327.html">Victor Shoup - A discussion of various factoring algorithms over finite fields</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.57.6285">Joris van der Hoeven - Relaxed Multiplication Using the Middle Product</a></li> 
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.5.4472">Joris van der Hoeven - New algorithms for relaxed multiplication</a></li> 
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.8906">Joris van der Hoeven - Relax but don't be too lazy</a></li> 
+<li><a href="http://perso.ens-lyon.fr/damien.stehle/downloads/LLL25.pdf">Damien Stehle - A very detailed paper describing the many tricks for speeding up LLL in floating point</a></li>
+<li><a href="http://scholar.lib.vt.edu/theses/available/etd-32298-93111/unrestricted/etd.pdf">A thesis on the general number field sieve</a></li>
+<li><a href="http://cr.yp.to/papers.html#m3">Dan Bernstein - A detailed paper describing the algebra of every known multiprecision multiplication algorithm including many FFT tricks</a></li> 
+<li><a href="http://cr.yp.to/papers.html#multapps">Dan Bernstein - A detailed paper describing a very many algorithms for real, padic and multiprecision arithmetic</a></li> 
+<li><a href="http://primes.utm.edu/prove/prove2_3.html">A very useful page on primality proving</a></li>
+<li><a href="http://algo.inria.fr/seminars/sem00-01/schoenhage.html">Arnold Schonhage - A paper describing some clever tricks for polynomial division</a></li> 
+<li><a href="http://www.ams.org/mcom/0000-000-00/S0025-5718-07-02010-8/S0025-5718-07-02010-8.pdf">Sam Wagstaff, Jason Gower - Very useful paper on SQUFOF and various heuristics associated with it</a></li>
+<li><a href="http://www.math.uiuc.edu/~landquis/quadsieve.pdf">Eric Landquist - Excellent paper by an acquaintance of mine, on the quadratic sieve</a></li>
+<li><a href="https://computing.llnl.gov/tutorials/openMP/">Tutorial on using OpenMP</a></li> 
+<li><a href="http://www.springerlink.com/content/g151433l21m47622/">Old article on doing exact rational arithmetic with "finite segment" p-adic arithmetic. Better for division than multimodular arithmetic.</a></li> 
+<li><a href="http://islab.oregonstate.edu/papers/r09padic.pdf">Another paper on Hensel codes and finite segment p-adic arithmetic, but not much different to the above.</a></li> 
+<li><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6634">A further paper on Hensel codes and finite segment p-adic arithmetic, correcting numerous errors in previous work on the subject.</a></li> 
+<li><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1674895">Yet another very old paper on Hensel codes, this time with applications to matrix algebra over Q.</a></li> 
+<li><a href="http://www.azillionmonkeys.com/qed/sqroot.html">Paul Hsieh - Excellent description of various algorithms for computing floating point and integer square roots efficiently.</a></li> 
+<li><a href="http://www.infsec.cs.uni-sb.de/~backes/papers/Masterthesis-math.pdf">Michael Backes - Masters thesis on univariate polynomial factorisation.</a></li> 
+<li><a href="http://www.springerlink.com/content/tv56418752641456/">Harald Niederreiter - Algorithm for factoring polynomials over finite fields.</a></li> 
+<li><a href="http://www.jstor.org/sici?sici=0025-5718(199501)64%3A209%3C347%3AOANFAF%3E2.0.CO%3B2-P">Harald Niederreiter, Rainer Gottfert - Algorithm for factoring polynomials over finite fields.</a></li> 
+<li><a href="http://www.ams.org/leavingmsn?url=http://dx.doi.org/10.1016/j.jsc.2006.02.007">Julio Genovese - Improvement of the Berlekamp/Niederriter algorithms for factoring polynomials over finite fields.</a></li>
+<li><a href="http://www.shoup.net/papers/frobenius.pdf">Victor Shoup, Joachim von zur Gathen - Frobenius and trace map algorithm for factoring polynomials over finite fields.</a></li> 
+<li><a href="http://www.jstor.org/stable/2005583?seq=1">Brillhart, Lehmer, Selfridge - Numerous primality proving algorithms.</a></li> 
+<li><a href="http://citeseer.ist.psu.edu/old/gao97tests.html">Gao, Panario - Numerous algorithms for testing irreducibility of polynomials.</a></li> 
+<li><a href="http://citeseer.ist.psu.edu/old/panario00analysis.html">Panario, Pittel, Richmond, Viola - Analysis of Rabin's irreducibility test for polynomials.</a></li> 
+<li><a href="http://www.ingvet.kau.se/~igor/Statji/statja(2005)1.pdf">Gashkov, Gashkov - Improvements for Rabin's polynomial irreducibility test.</a></li> 
+<li><a href="http://www.cs.caltech.edu/~umans/papers/U07.pdf">Umans - Fast modular composition (f(g(x)) modulo h(x)) over Z/pZ and asymptotically fast polynomial factorisation.</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.46.1941">Yap, Thul - Half GCD algorithm for both integers and polynomials.</a></li> 
+<li><a href="http://arxiv.org/abs/0712.4046">David Harvey - A paper detailing two new algorithms for Kronecker Segmentation, called KS2 and KS4.</a></li> 
+<li><a href="http://arxiv.org/PS_cache/cs/pdf/0206/0206032v1.pdf">Bernard Parisse - Details a proven bound for the heuristic gcd algorithm for polynomials (univariate and multivariate).</a></li> 
+<li><a href="http://prunel.ccsd.cnrs.fr/ensl-00452881/en/">van Hoeij, Novocin - Improvements in factoring polynomials over Z.</a></li> 
+<li><a href="http://prunel.ccsd.cnrs.fr/ensl-00546114/en/">van Hoeij, Novocin, Hart - Implementation of new polynomial factoring algorithm.</a></li> 
+<li><a href="http://prunel.ccsd.cnrs.fr/ensl-00534899/en/">Novocin, Stehle, Villard - Quasi-linear LLL.</a></li> 
+</ul> 
+

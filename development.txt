@@ -1,0 +1,50 @@
+<h2>Development</h2>
+
+<h3>Source (git repository)</h3>
+
+<p>You can get a clone of the git development repo with:</p> 
+
+<pre>git clone git://github.com/wbhart/flint2.git flint2</pre> 
+ 
+<p>If you want to browse the repository online, or fork it on GitHub, it can be accessed here:</p> 
+<a href="https://github.com/wbhart/flint2">https://github.com/wbhart/flint2</a> 
+ 
+<p>The current development branch within the repository is "trunk".</p> 
+
+<h3>Mailing list</h3>
+
+<p>...and come and join the growing community of volunteers at our Google development group:</p> 
+<a href="http://groups.google.com/group/flint-devel">flint-devel Google Group</a>
+
+<h3>Development ideas</h3>
+
+<p>Our GitHub issue tracker: <a href="https://github.com/wbhart/flint2/issues">https://github.com/wbhart/flint2/issues</a></p>
+
+<p>Here is a list of ideas for development projects
+that would be highly valuable to a large number of users.
+Some of these could
+make good student projects (or in some cases, research projects).
+</p>
+
+<ul>
+<li>Implement the LLL algorithm, and improve factorisation in Z[x]. Code is available in FLINT 1.x, but needs porting (along with some cleanup) to FLINT 2.x. </li>
+<li>Factorisation of large integers using the quadratic sieve. Code is available in FLINT 1.x, but needs porting to FLINT 2.x.</li>
+<li>Implement the ECM algorithm to factor large integers.</li>
+<li>Implement APR-CL primality proving.</li>
+<li>Improve FLINT's linear algebra performance by wrapping BLAS for matrix multiplication.</li>
+<li>Implement (and carefully profile) multithreaded versions of some core algorithms such as matrix multiplication and FFT polynomial multiplication.</li>
+<li>Implement subquadratic algorithms for rational number reconstruction, rational function reconstruction, and continued fraction expansion.</li>
+<li>Develop the linear algebra over Z, Q and Z[x], for example by implementing fast nullspace computation using p-adic/x-adic lifting, and implementing fast Smith/Hermite normal form computation.</li>
+<li>Write a tuning framework to automatically select algorithm thresholds on different architectures.</li>
+<li>Work on assembly optimisations for specific architectures.</li>
+<li>Multivariate polynomials</li>
+<li>Sparse linear algebra</li>
+</ul>
+
+<p>
+A longer list of (mostly minor) issues to work on can be found in the
+<a href="https://github.com/wbhart/flint2/blob/trunk/todo.txt">todo.txt</a> file.
+If you are interested in contributing to FLINT in any way,
+or even just want to request a feature,
+don't hesitate to leave a message on the mailing list!</p>
+

@@ -1,0 +1,18 @@
+<h2>News</h2>
+
+<h3>Future news and events</h3>
+
+<p>2013-12-XX: FLINT 2.4 is released</p>
+
+<h3>Past news and events</h3>
+
+<p>September 2013: <a href="http://nessflint.blogspot.com">Tom Bachmann</a> completes his Google Summer of Code project developing a C++ wrapper for FLINT</p>
+
+<p>4-12 May 2013: <a href="http://www2.warwick.ac.uk/fac/sci/maths/research/events/2012-2013/nonsymp/flint/">FLINT developers' workshop</a>, Warwick University</p>
+
+<p>2012-11-09: FLINT 2.3 is released</p>
+
+<p>September 2012: <a href="http://lina-kulakova.blogspot.com">Lina Kulakova</a> completes her Google Summer of Code project on polynomial factorisation in FLINT</p>
+
+<p>17-22 December 2011: <a href="http://wiki.sagemath.org/SageFlintDays">Sage Days (Algorithms in Number Theory and FLINT)</a>, Warwick University</p>
+
