@@ -78,7 +78,7 @@ B. Erocal, A. Storjohann (ISSAC poster)
 </li>
 
 <li><a href="http://arxiv.org/pdf/1207.3480v2.pdf">
-Experimental evidence for Maeda’s conjecture on modular
+Experimental evidence for Maeda's conjecture on modular
 forms</a> - A. Ghitza, A. McAndrew
 </li>
 
