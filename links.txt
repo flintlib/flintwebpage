@@ -34,6 +34,18 @@ An introduction to FLINT (pp. 88-91)</a> - W. Hart (Univ. Warwick)
 FLINT 2 benchmarking</a> - F. Johansson (RISC, Linz)
 </li>
 
+<li><a href="http://www.risc.jku.at/conferences/RISCDESY12/files/Johansson.pdf">
+Fast special function computations with FLINT</a> - F. Johansson (Talk)
+</li>
+
+<li><a href="http://www.math.fsu.edu/~hoeij/papers/issac10/A.pdf">
+Practical polynomial factoring in polynomial time</a> - W. Hart, M. van Hoeij, A. Novocin
+</li>
+
+<li><a href="http://www.saga-network.eu/phocadownload/auron/Lecerf.pdf">
+Fast arithmetic for matrices and polynomials in Mathemagix</a> - G. Lecerf
+</li>
+
 <li><a href="http://www.cs.berkeley.edu/~fateman/papers/polysbyGMP.pdf">
 Can you save time in multiplying polynomials by encoding them as
 integers?</a> - R. Fateman
@@ -56,6 +68,10 @@ Techniques for Performance Improvement of Integer Multiplication in Cryptographi
 Applications</a> - R. Brumnik, V. Kovtun, A. Okhrimenko, S. Kavun
 </li>
 
+<li><a href="https://eudml.org/doc/219803">
+Relaxed algorithms for p-adic numbers</a> - Jeremy Berthomieu, Joris van der Hoeven, Gregoire Lecerf
+</li>
+
 <li><a href="http://erocal.org/burcin/papers/ISSAC_2010-poster_abstract-Nullspace_computation_over_rational_function_fields_for_symbolic_summation.pdf">
 Nullspace computation over rational function fields for symbolic summation</a> - 
 B. Erocal, A. Storjohann (ISSAC poster)
@@ -64,6 +80,10 @@ B. Erocal, A. Storjohann (ISSAC poster)
 <li><a href="http://arxiv.org/pdf/1207.3480v2.pdf">
 Experimental evidence for Maeda’s conjecture on modular
 forms</a> - A. Ghitza, A. McAndrew
+</li>
+
+<li><a href="http://arxiv.org/pdf/1307.5655.pdf">
+Fast polynomial evaluation and composition</a> - Guillaume Moroz
 </li>
 
 <li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
@@ -77,7 +97,11 @@ Talk : Sage for Mathematical and Cryptographic Research</a> - Martin Albrecht (U
 <li><a href="http://math.uci.edu/~ncalexan/research/stein-number-theory-sagetalk.pdf"> 
 Talk : Sage for Number Theorists</a> - William Stein (Univ. Washington).
 </li> 
- 
+
+<li><a href="http://www.bpaslib.org/slide.pdf">
+Basic Polynomial Algebra Subprograms</a> - C. Chen, S. Covanov, F. Mansouri, M. Maza, N. Xie, Y. Xie
+</li>
+
 <li><a href="http://orms.mfo.de/extended_search?license=1">
 Oberwolfach References on Mathematical Software.</a>
 </li> 
@@ -133,6 +157,10 @@ Using the FLINT FFT for (string) pattern matching</a> - B. Smithers (?).</li>
  
 <li><a href="http://cims.nyu.edu/~harvey/talks/znpoly-talk.pdf">
 The zn_poly library</a> - D. Harvey (CIMS, New York)</li> 
+
+<li><a href="http://www.mathematik.uni-kl.de/~motsak/dox/html/factory_page.html">
+Factory library</a> - M. Lee, O. Motsak
+</li>
 
 </ul>
 
