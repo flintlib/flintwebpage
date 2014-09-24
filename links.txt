@@ -15,23 +15,23 @@
 <ul>
 <li><a href="http://andy.novocin.com/pro/polycomp_CASC2011.pdf">
 Practical divide-and-conquer algorithms for polynomial arithmetic
-</a> - W. Hart (Univ. Warwick) and A. Novocin (Univ. Waterloo)
+</a> - W. Hart (Univ. Warwick) and A. Novocin
 </li>
 
 <li><a href="http://arxiv.org/abs/1205.5991">
-Efficient implementation of the Hardy-Ramanujan-Rademacher formula</a> - F. Johansson (RISC, Linz)
+Efficient implementation of the Hardy-Ramanujan-Rademacher formula</a> - F. Johansson
 </li>
 
 <li><a href="http://arxiv.org/abs/1108.4772">
-A fast algorithm for reversion of power series</a> - F. Johansson (RISC, Linz)
+A fast algorithm for reversion of power series</a> - F. Johansson
 </li>
 
 <li><a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-15581-9">
-An introduction to FLINT (pp. 88-91)</a> - W. Hart (Univ. Warwick)
+An introduction to FLINT (pp. 88-91)</a> - W. Hart
 </li>
 
 <li><a href="http://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
-FLINT 2 benchmarking</a> - F. Johansson (RISC, Linz)
+FLINT 2 benchmarking</a> - F. Johansson
 </li>
 
 <li><a href="http://www.risc.jku.at/conferences/RISCDESY12/files/Johansson.pdf">
@@ -56,11 +56,11 @@ Algorithm implementations in a software library</a> - D. Roche (Chapter PhD. The
 </li>
 
 <li><a href="http://eprint.iacr.org/2009/203.pdf">
-Practical Cryptanalysis of ISO/IEC 9796-2 and EMV Signatures</a> - J-S Coron, D. Naccache, M. Tibouchi, R-P Weinmann (Univ. Luxembourg, Ecole Normale Superior)
+Practical Cryptanalysis of ISO/IEC 9796-2 and EMV Signatures</a> - J-S Coron, D. Naccache, M. Tibouchi, R-P Weinmann
 </li>
 
 <li><a href="http://dx.doi.org/10.1016/j.tcs.2009.03.014">
-A cache-friendly truncated FFT</a> - David Harvey (Univ. New York).
+A cache-friendly truncated FFT</a> - David Harvey
 </li>
 
 <li><a href="http://www.hindawi.com/journals/mpe/2014/863617/">
@@ -87,15 +87,15 @@ Fast polynomial evaluation and composition</a> - Guillaume Moroz
 </li>
 
 <li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
-Poster about parallel factorisation</a> - Ammon Bartram (Univ. Potsdam).
+Poster about parallel factorisation</a> - Ammon Bartram 
 </li>
 
 <li><a href="http://www.informatik.uni-bremen.de/~malb/talks/20071110%20-%20Sage%20-%20Bristol.pdf">
-Talk : Sage for Mathematical and Cryptographic Research</a> - Martin Albrecht (Univ. Bremen) and William Stein (Univ. Washington).
+Talk : Sage for Mathematical and Cryptographic Research</a> - Martin Albrecht and William Stein
 </li>
  
 <li><a href="http://math.uci.edu/~ncalexan/research/stein-number-theory-sagetalk.pdf"> 
-Talk : Sage for Number Theorists</a> - William Stein (Univ. Washington).
+Talk : Sage for Number Theorists</a> - William Stein
 </li> 
 
 <li><a href="http://www.bpaslib.org/slide.pdf">
@@ -107,23 +107,23 @@ Oberwolfach References on Mathematical Software.</a>
 </li> 
  
 <li><a href="http://wstein.org/talks/200906-horizon/June_11__What_is_on_the_Horizon.pdf">
-Talk: Sage : What is on the Horizon - William Stein (Univ. Washington).
+Talk: Sage : What is on the Horizon - William Stein
 </a></li>
 
 <li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects200708/richard_howell-peak_poster.pdf">
-Poster about Factoring Algorithms over Finite Fields</a> - Richard Howell-Peak (Univ. Warwick).
+Poster about Factoring Algorithms over Finite Fields</a> - Richard Howell-Peak
 </li> 
  
 <li><a href="http://modular.math.washington.edu/grants/sage-06/project_description.pdf">
-Grant Proposal</a> - William Stein (Univ. Washington).
+Grant Proposal</a> - William Stein
 </li>
 
 <li><a href="http://www.numbertheory.org/ntw/N1.html">
-Number Theory Web - Number theory ftp sites/calculator programs/archives</a> - Keith Matthews (Emer. Univ. Queensland).
+Number Theory Web - Number theory ftp sites/calculator programs/archives</a> - Keith Matthews
 </li>
  
 <li><a href="http://algo.inria.fr/seminars/sem08-09/kruppa-slides.pdf">
-Talk : Fast Integer Multiplication with Schoenhage-Strassen's Algorithm</a> - Alexander Kruppa (LORIA).
+Talk : Fast Integer Multiplication with Schoenhage-Strassen's Algorithm</a> - Alexander Kruppa
 </li>
  
 <li><a href="http://en.wikipedia.org/wiki/Fast_Library_for_Number_Theory">
@@ -131,32 +131,40 @@ Wikipedia Article : Fast Library for Number Theory.</a>
 </li>
  
 <li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects_06/david_howden.pdf">
-Poster about Efficiently computing Bernoulli numbers using FLINT</a> - David Howden (Univ. Warwick)
+Poster about Efficiently computing Bernoulli numbers using FLINT</a> - David Howden
 </li>
  
 <li><a href="http://www.williamstein.org/grants/frg07.pdf">
-Grant Proposal</a> - William Stein (Univ. Washington)</li> 
+Grant Proposal</a> - William Stein
+</li> 
  
 <li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects_06/daniel_scott_poster.pdf">
-Poster about Implementing Middle Product in FLINT</a> - Daniel Scott (Univ. Warwick)</li> 
+Poster about Implementing Middle Product in FLINT</a> - Daniel Scott
+</li> 
 
 <li><a href="http://www2.warwick.ac.uk/study/csde/urss/pastprojects/projects200708/daniel_ellam_poster.ppt">
-Poster about p-adic Arithmetic</a> - Daniel Ellam (Univ. Warwick)</li> 
+Poster about p-adic Arithmetic</a> - Daniel Ellam
+</li> 
  
 <li><a href="http://mate.dm.uba.ar/~pdenapo/mathsoft.html"> 
-Programas utiles para Mathematica</a> - Pablo De Napoli (Univ. Buenos Aires)</li> 
+Programas utiles para Mathematica</a> - Pablo De Napoli
+</li> 
  
 <li><a href="http://prunel.ccsd.cnrs.fr/ensl-00546114/en/">
-Implementation of new polynomial factoring algorithm</a> - van Hoeij, Novocin, Hart.</li>
+Implementation of new polynomial factoring algorithm</a> - van Hoeij, Novocin, Hart.
+</li>
 
 <li><a href="http://math.boisestate.edu/~liljanab/BOISECRYPTFall09/Jacobsen.pdf">
-Methods and implementations for integer factorization (slides)</a> - D. Jacobsen.</li> 
+Methods and implementations for integer factorization (slides)</a> - D. Jacobsen.
+</li> 
 
 <li><a href="http://stringpedia.bsmithers.co.uk/index.php?title=Exact_Pattern_Matching_With_Don't_Cares#List_Of_Graphs">
-Using the FLINT FFT for (string) pattern matching</a> - B. Smithers (?).</li>
+Using the FLINT FFT for (string) pattern matching</a> - B. Smithers
+</li>
  
 <li><a href="http://cims.nyu.edu/~harvey/talks/znpoly-talk.pdf">
-The zn_poly library</a> - D. Harvey (CIMS, New York)</li> 
+The zn_poly library</a> - D. Harvey
+</li> 
 
 <li><a href="http://www.mathematik.uni-kl.de/~motsak/dox/html/factory_page.html">
 Factory library</a> - M. Lee, O. Motsak
