@@ -15,7 +15,7 @@
 <ul>
 <li><a href="http://andy.novocin.com/pro/polycomp_CASC2011.pdf">
 Practical divide-and-conquer algorithms for polynomial arithmetic
-</a> - W. Hart (Univ. Warwick) and A. Novocin
+</a> - W. Hart and A. Novocin
 </li>
 
 <li><a href="http://arxiv.org/abs/1205.5991">
