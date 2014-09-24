@@ -34,12 +34,36 @@ An introduction to FLINT (pp. 88-91)</a> - W. Hart (Univ. Warwick)
 FLINT 2 benchmarking</a> - F. Johansson (RISC, Linz)
 </li>
 
+<li><a href="http://www.cs.berkeley.edu/~fateman/papers/polysbyGMP.pdf">
+Can you save time in multiplying polynomials by encoding them as
+integers?</a> - R. Fateman
+</li>
+
+<li><a href="http://www.usna.edu/Users/cs/roche/research/phd/ch2-impl.pdf">
+Algorithm implementations in a software library</a> - D. Roche (Chapter PhD. Thesis)
+</li>
+
 <li><a href="http://eprint.iacr.org/2009/203.pdf">
 Practical Cryptanalysis of ISO/IEC 9796-2 and EMV Signatures</a> - J-S Coron, D. Naccache, M. Tibouchi, R-P Weinmann (Univ. Luxembourg, Ecole Normale Superior)
 </li>
 
 <li><a href="http://dx.doi.org/10.1016/j.tcs.2009.03.014">
 A cache-friendly truncated FFT</a> - David Harvey (Univ. New York).
+</li>
+
+<li><a href="http://www.hindawi.com/journals/mpe/2014/863617/">
+Techniques for Performance Improvement of Integer Multiplication in Cryptographic 
+Applications</a> - R. Brumnik, V. Kovtun, A. Okhrimenko, S. Kavun
+</li>
+
+<li><a href="http://erocal.org/burcin/papers/ISSAC_2010-poster_abstract-Nullspace_computation_over_rational_function_fields_for_symbolic_summation.pdf">
+Nullspace computation over rational function fields for symbolic summation</a> - 
+B. Erocal, A. Storjohann (ISSAC poster)
+</li>
+
+<li><a href="http://arxiv.org/pdf/1207.3480v2.pdf">
+Experimental evidence for Maeda’s conjecture on modular
+forms</a> - A. Ghitza, A. McAndrew
 </li>
 
 <li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
