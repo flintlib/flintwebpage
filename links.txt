@@ -42,6 +42,11 @@ Fast special function computations with FLINT</a> - F. Johansson (Talk)
 Practical polynomial factoring in polynomial time</a> - W. Hart, M. van Hoeij, A. Novocin
 </li>
 
+<li><a href="http://arxiv.org/abs/1410.1600">
+There are no two non-real conjugates of a Pisot number with the same imaginary part</a> - 
+A. Dubickas, K. Hare, J. Jankauskas
+</li>
+
 <li><a href="http://www.saga-network.eu/phocadownload/auron/Lecerf.pdf">
 Fast arithmetic for matrices and polynomials in Mathemagix</a> - G. Lecerf
 </li>
