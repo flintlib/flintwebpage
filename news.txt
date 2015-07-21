@@ -1,5 +1,11 @@
 <h2>News</h2>
 
+<p>2015-02-17: FLINT 2.4.5 is released. This fixed a severe bug in flint's
+heuristic GCD which would affect polynomial GCD over ZZ and QQ where one of
+the inputs had a very small linear factor. The bug was only triggered in
+extremely rare situations. We strongly recommend updating.
+</p>
+
 <p>2014-09-06: <a href="https://alexanderjbest.wordpress.com/">Alex Best</a> completes his Google Summer of Code project developing fast Hermite and Smith normal 
 form code, including the Pernet-Stein algorithm.</p>
 
