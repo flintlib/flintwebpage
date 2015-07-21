@@ -30,12 +30,6 @@ A fast algorithm for reversion of power series</a> - F. Johansson
 An introduction to FLINT (pp. 88-91)</a> - W. Hart
 </li>
 
-<li><a href="http://www.issac-symposium.org/2015/Slides/Schost.pdf">Algorithms for finite field arithmetic (ISSAC 2015)</a> - E. Schost
-</li>
-
-<li><a href="http://arxiv.org/abs/1506.04215">Parallel sparse interpolation using small primes (PASCO 2015)</a> - M. Khoctali, D. Roche, X, Tian
-</li>
-
 <li><a href="http://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
 FLINT 2 benchmarking</a> - F. Johansson
 </li>
@@ -46,6 +40,15 @@ Fast special function computations with FLINT</a> - F. Johansson (Talk)
 
 <li><a href="http://www.math.fsu.edu/~hoeij/papers/issac10/A.pdf">
 Practical polynomial factoring in polynomial time</a> - W. Hart, M. van Hoeij, A. Novocin
+</li>
+
+<li><a href="http://www.issac-symposium.org/2015/Slides/Schost.pdf">Algorithms for finite field arithmetic (ISSAC 2015)</a> - E. Schost
+</li>
+
+<li><a href="http://arxiv.org/abs/1506.04215">Parallel sparse interpolation using small primes (PASCO 2015)</a> - M. Khoctali, D. Roche, X, Tian
+</li>
+
+<li><a href="http://arxiv.org/ftp/arxiv/papers/1407/1407.3383.pdf">Modular SIMD arithmetic in Mathemagix</a> - J. van der Hoeven, G. Lecerf
 </li>
 
 <li><a href="http://arxiv.org/abs/1410.1600">
