@@ -44,7 +44,7 @@ PAGE_BOTTOM = r"""
 <div style="line-height:1em">
 <p><i>TIMESTAMP</i></p>
 
-<p><i>Contact: <a href="mailto:hart_wb {at_thingy} yahoo dot com">William Hart</a>, <a href="http://groups.google.com/group/flint-devel?hl=en">flint-devel mailing list</a>.</i></p>
+<p><i>Contact: <a href="mailto:goodwillhart {at_thingy} googlemail dot com">William Hart</a>, <a href="http://groups.google.com/group/flint-devel?hl=en">flint-devel mailing list</a>.</i></p>
 
 <p><i>This site is hosted at <a href="http://arithmeticon.sagemath.org/">arithmeticon.sagemath.org</a> thanks to William Stein and the University of Washington.</i></p>
 </div>
