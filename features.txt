@@ -38,6 +38,7 @@ below).</p>
 <li>Probable prime tests (BPSW, Fermat, Fibonacci, Lucas)</li>
 <li>Square roots and modular square roots</li>
 <li>Number-theoretic functions (GCD, Jacobi symbol, Euler phi, etc.)</li>
+<li>Fast cube and nth root computation</li>
 </ul>
 
 <h4>qsieve - small quadratic field</h4>
@@ -65,6 +66,8 @@ below).</p>
 <li>Factorials, Fibonacci numbers, binomial coefficients, rising factorials</li>
 <li>Asymptotically fast multimodular reduction and Chinese remaindering via subproduct trees</li>
 <li>Pseudosquare primality test</li>
+<li>Primality testing (Pocklington, Morrison)</li>
+<li>Probable primality testing (Lucas, Baillie-PSW, strong-psp, Brillhart-Lehmer-Selfridge)</li>
 </ul>
 
 <h4>fmpz_factor - factoring multiprecision integers</h4>
@@ -81,13 +84,20 @@ below).</p>
 <li>Fast determinants (fraction-free, multimodular)</li>
 <li>Reduced row echelon form, nullspace, inverse (fraction-free)</li>
 <li>Characteristic polynomial</li>
+<li>Hermite normal form (naive, xgcd, Domich-Kannan-Trotter, Kannen-Bachem, Pernet-Stein)</li>
+<li>Smith normal form (diagonal, Kannen-Bachem, Iliopoulos)</li>
+</ul>
+
+<h4>fmpz_lll - LLL</h4>
+<ul>
+<li>LLL (rational, Nguyen-Stehle, from Gram matrix, with_removal, Storjohann/ULLL)</li>
 </ul>
 
 <h4>fmpz_mod_poly - dense univariate polynomials over Z/nZ for multiprecision n</h4>
 <ul>
 <li>Fast arithmetic based on the fmpz_poly module</li>
 <li>Divide-and-conquer division and composition</li>
-<li>GCD and XGCD (Euclidean)</li>
+<li>GCD and XGCD (Euclidean, half GCD)</li>
 <li>Fast modular composition (Brent-Kung)</li>
 <li>Fast multipoint evaluation</li>
 </ul>
