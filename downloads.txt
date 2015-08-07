@@ -4,7 +4,7 @@
  
 <p>FLINT 2.x series:</p>
 <ul> 
-<li>2015-08-07 <b><a href="flint-2.5.tar.gz">flint-2.5.tar.gz</a></b> <b><a href="flint-2.5.zip">flint-2.5.zip</a></b>, documentation: <b><a href="flint-2.5.pdf">flint-2.5.pdf</a></b> (FLINT 2.5)</li>
+<li>2015-08-07 <b><a href="flint-2.5.tar.gz">flint-2.5.tar.gz</a></b>, <b><a href="flint-2.5.zip">flint-2.5.zip</a></b>, documentation: <b><a href="flint-2.5.pdf">flint-2.5.pdf</a></b> (FLINT 2.5)</li>
 <li>2015-02-17 <b><a href="flint-2.4.5.tar.gz">flint-2.4.5.tar.gz</a></b>, documentation: <b><a href="flint-2.4.5.pdf">flint-2.4.5.pdf</a></b></li>
 <li>2012-11-09 <b><a href="flint-2.3.tar.gz">flint-2.3.tar.gz</a></b>, documentation: <b><a href="flint-2.3.pdf">flint-2.3.pdf</a></b> </li>
 <li>2011-06-04 <a href="flint-2.2.tar.gz">flint-2.2.tar.gz</a>, documentation: <a href="flint-2.2.pdf">flint-2.2.pdf</a></li>
