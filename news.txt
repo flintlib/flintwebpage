@@ -1,5 +1,9 @@
 <h2>News</h2>
 
+<p>2015-08-12: FLINT 2.5.2 is released!</p>
+
+<p>This fixes a number of build issues for various platforms.</p>
+
 <p>2015-08-12: FLINT 2.5.1 is released!</p>
 
 <p>This fixes a number of build issues for various platforms, including OSX and Windows MSVC.</p>
