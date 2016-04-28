@@ -1,5 +1,7 @@
 <h2>News</h2>
 
+<p>2016-04-28: The license for FLINT (repository and subsequent releases) is changed to LGPL v2.1+ after consultation with our contributors this month. Thanks to everyone involved in the license change.</p>
+
 <p>2015-08-12: FLINT 2.5.2 is released!</p>
 
 <p>This fixes a number of build issues for various platforms.</p>

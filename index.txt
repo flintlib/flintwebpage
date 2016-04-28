@@ -1,7 +1,9 @@
 <h2>Overview</h2>
 
 <p>FLINT is a C library for doing number theory, maintained by <a href="mailto:hart_wb {at_thingy} yahoo dot com">William Hart</a>.
-FLINT is licensed <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GPL v2+</a>.</p>
+</p>
+
+<p>FLINT was licensed <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2+</a> up to and including version 2.5. Our current development version (and subsequent releases) are licensed <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">LGPL v2.1+</a> after the contributors agreed to change the license in April 2016.</p>
 
 <p>FLINT supports arithmetic with numbers, polynomials, power series and matrices over many base rings, including:</p>
 <ul>
