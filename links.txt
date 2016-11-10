@@ -6,8 +6,12 @@
 
 <ul>
 <li><a href="http://sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
-<li>Work is currently in progress to use FLINT in <a href="http://www.singular.uni-kl.de">Singular</a> and <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a>.</li>
-<li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT</a>.</li>
+<li>Work is currently in progress to use FLINT in <a href="http://www.singular.uni-kl.de">Singular</a>, <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a> and <a href="http://www.gap-system.org">GAP</a>.</li>
+<li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
+<li><a href="http://nemocas.org">Nemo</a> - a computer algebra package for the
+Julia programming language</li>
+<li><a href="https://github.com/martinra/hflint">HFlint</a> - a FLINT wrapper
+for Haskell</li>
 </ul>
 
 <h3>References to FLINT in the literature and online</h3>
@@ -28,6 +32,10 @@ A fast algorithm for reversion of power series</a> - F. Johansson
 
 <li><a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-15581-9">
 An introduction to FLINT (pp. 88-91)</a> - W. Hart
+</li>
+
+<li><a href="https://arxiv.org/abs/1611.02831">Arb: Efficient
+Arbitrary-Precision Midpoint-Radius Interval Arithmetic</a> - F. Johansson
 </li>
 
 <li><a href="http://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
@@ -99,6 +107,9 @@ forms</a> - A. Ghitza, A. McAndrew
 <li><a href="http://arxiv.org/pdf/1307.5655.pdf">
 Fast polynomial evaluation and composition</a> - Guillaume Moroz
 </li>
+
+<li><a href="https://arxiv.org/abs/1605.02532">HLinear: Exact Dense Linear
+Algebra in Haskell</a> - Alex Ghitza and Martin Westerholt-Raum</li>
 
 <li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
 Poster about parallel factorisation</a> - Ammon Bartram 
