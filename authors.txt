@@ -12,7 +12,7 @@ of the library was taken over solely by William Hart.</p>
 
 <li>William Hart -- integer and polynomial arithmetic, factorisation and
 primality testing, general infrastructure (supported by EPSRC Grant
-EP/G004870/1 and DFG Priority programme SPP1489)</li>
+EP/G004870/1, DFG Priority programme SPP1489 and TRR 195 FSB)</li>
 
 <li>Sebastian Pancratz -- polynomial arithmetic over Z, Z/nZ and
 Q, p-adic and q-adic arithmetic, including polynomials and matrices
@@ -22,8 +22,8 @@ Q, p-adic and q-adic arithmetic, including polynomials and matrices
 composition</li>
 
 <li>Fredrik Johansson -- matrices, polynomial and power series
-arithmetic, special functions (supported by Austrian Science Fund FWF Grant
-Y464-N18)</li>
+arithmetic, special functions, many speedups (supported by Austrian
+Science Fund FWF Grant Y464-N18)</li>
 
 <li>Tom Bachmann -- C++ expressions template wrapper,
 documentation parser (Google Summer of Code 2013)</li>
@@ -32,6 +32,9 @@ documentation parser (Google Summer of Code 2013)</li>
 polynomials/matrices over F_q, Finite fields with Zech logarithm
 representation, Fast factorisation of polynomials over F_q (supported by
 Macaulay2 developers NSF Grant 1002171)</li>
+
+<li>Daniel Schultz -- Multivariate polynomials, threadpool, many speedups and
+additional functions (supported by OpenDreamKit)</li>
 
 <li>Luca De Feo, Edouard Rousseau -- Finite field embeddings</li>
 
@@ -75,7 +78,11 @@ patches including 32 bit support</li>
 <li>Alex Best -- Hermite Normal Form implementation including the
 Pernet-Stein algorithm and Smith Normal Form implementation including the
 Iliopoulos and Kannen-Bachem algorithms. Numerous improvements to nullspace,
-rref and rank computations (Google Summer of Code 2014) </li>
+rref and rank computations and integer factoring and other improvements (Google
+Summer of Code 2014 and subsequent contributions) </li>
+
+<li>Isuru Fernando -- testing, build system maintenance, other minor
+fixes.</li>
 
 <li>Thomas DuBuisson -- logical ops for fmpz module, patches to the build
 system</li>
@@ -120,51 +127,68 @@ Feitma's tables and sped up and corrected n_is_prime and
 \code{n_is_probabprime}. Improvements to n_nextprime and
 \code{n_isprime}</li>
 
-<li>Anubhav Srivastava contributed horizontal and vertical concatenation
+<li>Anubhav Srivastava -- Contributed horizontal and vertical concatenation
 of matrices over ZZ and an implementation of the Bodrato matrix
 squaring algorithm</li>
 
-<li>Dharak Kharod and Prabhdeep Singh Walia both independently
+<li>Dharak Kharod and Prabhdeep Singh Walia -- independently
 contributed matrix content</li>
 
-<li>Alena Sergeicheva contributed a patch to the build system for
+<li>Alena Sergeicheva -- contributed a patch to the build system for
 individual file testing and also contributed numerous matrix concatenation
 functions</li>
 
-<li>Kushagra Singh contributed fast cube root and nth root code for word
+<li>Kushagra Singh -- contributed fast cube root and nth root code for word
 sized integers, including magic number, Newton iteration, Kahan iteration and
 Chebyshev approximation code, he also contributed ECM and Pollard's Rho
-factoring algorithm implementations as part of a Google Summer of Code.
+and quadratic sieve factoring algorithm implementations as part of a Google
+Summer of Code.
 
-<li>Andreas Enge help with a port to MIPS64.
+<li>Andreas Enge -- help with a port to MIPS64.
 
-<li>Tommy Hofmann implemented Howell and strong echelon form and supplied
-some inline functions.</li>
+<li>Tommy Hofmann -- implemented Howell and strong echelon form and supplied
+some inline functions and other improvements and bug fixes.</li>
 
-<li>Ashish Kedia contributed an implementation of the Paterson-Stockmeyer
+<li>Ashish Kedia -- contributed an implementation of the Paterson-Stockmeyer
 algorithm.</li>
 
-<li>Nitin Kumar contributed under a Google Summer of Code project to the
+<li>Nitin Kumar -- contributed under a Google Summer of Code project to the
 quadratic sieve.</li>
 
-<li>Vladimir Glazachev contributed an implementation of the APRCL
+<li>Vladimir Glazachev -- contributed an implementation of the APRCL
 primality testing algorithm and Shoup multiplication as part of a Google Summer
 of Code.</li>
 
-<li>Dan Roche contributed randprime and nextprime functions for the fmpz
-module.</li>
+<li>Dan Roche -- contributed randprime and nextprime functions for the fmpz
+module and some minpoly code.</li>
 
-<li>Shivin Shrivastava contributed Fibonacci polynomials and some Taylor
+<li>Shivin Shrivastava -- contributed Fibonacci polynomials and some Taylor
 shift improvements.</li>
 
-<li>Alex Griffing contributed integer factor refinement and numerous small
+<li>Alex Griffing -- contributed integer factor refinement and numerous small
 patches.</li>
 
-<li>Vincent Delecroix contributed power sums and some patches.</li>
+<li>Vincent Delecroix -- contributed power sums, various polynomial improvements,
+speedups, root counting and some patches.</li>
 
-<li>Aaditya Thakkar contributed Strassen multiplication over Z.</li>
+<li>Aaditya Thakkar -- contributed Strassen multiplication over Z.</li>
 
-<li>Ralf Stephan contributed Hermite polynomials.</li>
+<li>Ralf Stephan -- contributed Hermite polynomials, Laguerre polynomials,
+shifted Legendre polynomials, Gegenbauer polynomials.</li>
+
+<li>Martin Raum -- contributed Kronecker product.</li>
+
+<li>xoviat -- contributed CMake support</li>
+
+<li>Claus Fieker -- flint_abort, qadics without Conway polynomials, minor
+improvements and bug fixes</li>
+
+<li>Srivin Srivastava -- Fibonacci polynomials, use of Taylor shift in linear
+composition, other minor contributions.</li>
+
+<li>David Einstein -- Documentation proofreading</li>
+
+<li>Jerry James -- Fixed many memory leaks and overruns</li>
 
 <li>Patches and bug reports have been made by Michael Abshoff,
 Didier Deshommes, Craig Citro, Timothy Abbot, Carl Witty, Gonzalo Tornaria,
@@ -175,7 +199,11 @@ Mike Stillman, Jan Englehardt, Jean-Pierre Flori, Jeroen Demeyer, Shi Bai,
 Qingwen Guan, Frithjof Schulze, Robert Baillie, Oleksandr Motsak, Hans
 Schoenemann, Janko Boehm, Ahmed Soliman, Francois Bissey, Anton Mellit, Daniel
 Roche, Denis Kryskov, Daniel Fabian, Julien Ospald, mgkurtz, Max Goldfar, Max
-Horn, lzmths, Claus Fieker, Volker Braun, Pascal Molin and others.</li>
+Horn, lzmths, Volker Braun, Pascal Molin, Ralf Stehpan, Apoorv Mishra, Tobias
+Hansen, sourcekris, yuri@FreeBSD, vinklein, Michele Orru, Frederik Chapoton,
+Peter Frentrep, Eric Bray, Julian Ruth, Edgar Costa, Raphael Fourquet, John
+Palmieri, Pascal Mollin, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
+Pasechnik, Ben Lorenz, Mahrud Sayrafi and others.</li>
 
 <li>In addition Michael Abshoff, William Stein and Robert Bradshaw have
 contributed to the build system of FLINT.</li>
