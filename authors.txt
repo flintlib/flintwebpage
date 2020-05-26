@@ -34,7 +34,7 @@ representation, Fast factorisation of polynomials over F_q (supported by
 Macaulay2 developers NSF Grant 1002171)</li>
 
 <li>Daniel Schultz -- Multivariate polynomials, threadpool, many speedups and
-additional functions (supported by OpenDreamKit)</li>
+additional functions (supported by OpenDreamKit and the DFG TRR 195 FSB)</li>
 
 <li>Luca De Feo, Edouard Rousseau -- Finite field embeddings</li>
 
