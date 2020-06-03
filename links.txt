@@ -12,6 +12,19 @@
 Julia programming language</li>
 <li><a href="https://github.com/martinra/hflint">HFlint</a> - a FLINT wrapper
 for Haskell</li>
+<li><a href="http://arblib.org/">Arb</a> - Real and complex ball arithmetic
+(Fredrik Johansson)</li>
+<li><a href="http://fredrikj.net/calcium/">Calcium</a> - Exact computation
+with real and complex numbers (Fredrik Johansson)</li>
+<li><a href="http://nemocas.github.io/Nemo.jl/latest/">Nemo</a> - Julia
+wrapper for Flint, Arb and Antic (W. Hart, C. Fieker, T. Hofmann, F. Johansson, et
+al.</li>
+<li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
+<li><a href="https://pypi.org/project/flint-py/0.3.4/">Python-flint</a> - Python
+bindings for Flint (Fredrik Johansson)</li>
+<li><a
+href="https://research.coe.drexel.edu/ece/aspitrg/chmlib-readme.txt">chmlib</a>
+- Projection of polyhedral cones</li>
 </ul>
 
 <h3>References to FLINT in the literature and online</h3>
@@ -111,6 +124,90 @@ Fast polynomial evaluation and composition</a> - Guillaume Moroz
 <li><a href="https://arxiv.org/abs/1605.02532">HLinear: Exact Dense Linear
 Algebra in Haskell</a> - Alex Ghitza and Martin Westerholt-Raum</li>
 
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-030-40921-0_16">Complete
+addition law for Montgomery curves</a> - Jaeheon Kim, Je Hong Park, Dong-Chan
+Kim, Woo-Hwan Kim</li>
+
+<li><a href="https://hal.inria.fr/hal-02405524/document">SPASS-SATT A CDCL(LA)
+Solver</a> - Martin Bromberger, Mathias Fleury, Simon Schwarz, Christoph
+Weidenbach</li>
+
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-319-99639-4_3">Sparse
+polynomial arithmetic with the BPAS library</a> - Mohammadali Asadi, Alexander
+Brandt, Robert H. C. Moir, Marc Moreno Maza</li>
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-319-98113-0_29">Function-Hiding
+Inner Product Encryption Is Practical</a> - Sam Kim, Kevin Lewi, Avradip
+Mandal, Hart Montgomery, Arnab Roy, David J. Wu</li>
+
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-319-99725-4_11">An
+Efficient Abstract Domain for Not Necessarily Closed Polyhedra</a> - Anna
+Becchi, Enea Zaffanella</li>
+
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-319-78381-9_8">Short,
+Invertible Elements in Partially Splitting Cyclotomic Rings and Applications
+to Lattice-Based Zero-Knowledge Proofs</a> - Vadim Lyubashevsky, Gregor
+Seiler</li>
+
+<li><a
+href="https://link.springer.com/chapter/10.1007/978-3-662-48800-3_31">Implementing
+Candidate Graded Encoding Schemes from Ideal Lattices</a> - Martin R.
+Albrecht, Catalin Cocis, Fabien Laguillaumie, Adeline Langlois</li>
+
+<li><a href="https://dl.acm.org/doi/book/10.5555/2555843">Handbook of finite
+fields</a> - Gary L. Mullen, Daniel Panario</li>
+
+<li><a href="https://www.emis.de/journals/SIGMA/2018/108/">Hyper-Algebras of
+Vector-Valued Modular Forms</a> - Martin Raum</li>
+
+<li><a href="https://dl.acm.org/doi/10.1134/S0361768816030051">Evaluation of
+expression templates in C++14</a> - P. A. Lebedev</li>
+
+<li><a href="https://inspirehep.net/literature/1641768"> Rings: an efficient
+Java/Scala library for polynomial rings</a> - Stanislav Poslavsky</li>
+
+<li><a
+href="https://www.sciencedirect.com/science/article/pii/S0010465519303066">Reconstructing
+rational functions with FireFly</a> - Jonas Klappert</li>
+
+<li><a
+href="https://www.ams.org/journals/mcom/2017-86-304/S0025-5718-2016-03103-8/home.html">No
+two non-real conjugates of a Pisot number have the same imaginary part</a> -
+Arturas Dubickas, Kevin G. Hare and Jonas Jankauskas</li>
+
+<li><a
+href="https://www.sciencedirect.com/science/article/pii/S0747717112001277">Generating
+subfields</a> - Mark van Hoeij, Juergen Klueners, Andrew Novocin</li>
+
+<li><a
+href="https://www.csd.uwo.ca/~mmorenom/Publications/ICMS-2014-CUMODP.pdf">Dense
+Arithmetic over Finite Fields with the CUMODP Library</a> - Sardar Anisul
+Haquen, Xin Li, Farnam Mansouri, Marc Moreno Maza, Wei Pan and Ning Xie</li>
+
+<li><a href="https://www.scitepress.org/papers/2017/62067/">Privacy Preserving
+Data Classification using Inner-product Functional Encryption</a> - Damien
+Ligier, Sergiu Carpov, Caroline Fontaine, Renaud Sirdey</li>
+
+<li><a href="https://www.hindawi.com/journals/scn/2018/6561418/">Improved
+Construction for Inner Product Functional Encryption</a> - Qingsong Zhao,
+Qingkai Zeng and Ximeng Liu</li>
+
+<li><a
+href="https://www2.mathematik.tu-darmstadt.de/~bwilliams/rademacher2.pdf">Short
+proof of Rademacher's formula for partitions</a> - Wladimir De Azevedo
+Pribitkin and Brandon Williams</li>
+
+<li><a href="https://arxiv.org/pdf/1604.08472.pdf">Beyond the black box</a> -
+Jeroen Demeyer, William Stein and Ursula Whitcher</li>
+
+<li><a
+href="https://dl.gi.de/bitstream/handle/20.500.12116/3077/car56-2.pdf">ANTIC:
+Algebraic Number Theory in C</a> - William Hart</li>
+
 <li><a href="http://cs.potsdam.edu/faculty/laddbc/Teaching/SeniorProjects/2009BartramCCSCNEPoster.pdf">
 Poster about parallel factorisation</a> - Ammon Bartram 
 </li>
@@ -194,6 +291,9 @@ The zn_poly library</a> - D. Harvey
 <li><a href="http://www.mathematik.uni-kl.de/~motsak/dox/html/factory_page.html">
 Factory library</a> - M. Lee, O. Motsak
 </li>
+
+<li><a href="https://arc.vt.edu/userguide/flint/">Virginia Tech's Advanced
+Research Computing</a></li>
 
 </ul>
 

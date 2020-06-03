@@ -13,7 +13,7 @@
 
 <h3>Mailing list</h3>
 
-<p>...and come and join the growing community of volunteers at our Google development group:</p> 
+<p>...and discuss development ideas with us at our Google development group:</p> 
 <a href="http://groups.google.com/group/flint-devel">flint-devel Google Group</a>
 
 <h3>Development ideas</h3>
@@ -27,20 +27,11 @@ make good student projects (or in some cases, research projects).
 </p>
 
 <ul>
-<li>Improve factorisation in Z[x]. Code is available in FLINT 1.x, but needs porting (along with some cleanup) to FLINT 2.x. </li>
-<li>Factorisation of large integers using the quadratic sieve. Code is available in FLINT 1.x, but needs porting to FLINT 2.x.</li>
-<li>Implement the ECM algorithm to factor large integers.</li>
-<li>Implement APR-CL primality proving.</li>
 <li>Improve FLINT's linear algebra performance by wrapping BLAS for matrix multiplication.</li>
-<li>Implement (and carefully profile) multithreaded versions of some core algorithms such as matrix multiplication and FFT polynomial multiplication.</li>
 <li>Implement a small primes FFT that takes advantage of vectorisation, to speed up integer and polynomial arithmetic.</li>
-<li>Implement subquadratic algorithms for rational number reconstruction, rational function reconstruction, and continued fraction expansion.</li>
-<li>Develop the linear algebra over Z, Q and Z[x] and implement linear algebra over Z/nZ for multiprecision n.</li>
 <li>Write a tuning framework to automatically select algorithm thresholds on different architectures.</li>
 <li>Work on assembly optimisations for specific architectures.</li>
-<li>Multivariate polynomials</li>
-<li>Sparse linear algebra</li>
-<li>Generics in C using function pointers</li>
+<li>Sparse linear algebra (currently in progress)</li>
 </ul>
 
 <p>

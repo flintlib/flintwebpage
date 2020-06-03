@@ -8,17 +8,13 @@ and provides methods such as <tt>fmpz_poly_add</tt>, <tt>fmpz_poly_gcd</tt>, etc
 
 <h3>FLINT modules</h3>
 
-<p>The following is a list of modules available in FLINT version 2.4,
+<p>The following is a list of modules available in FLINT version 2.6,
 and a summary of the features and algorithms in each module.
 Besides the features listed explicitly, each module
 implementing a specific type also provides methods for
 arithmetic operations (add, sub, mul and so on), conversions
 between types, random generation, and printing.
 Some utility modules are omitted from the list.</p>
-
-<p>Starting with FLINT 2.4, more specialised or experimental
-modules are also available in the form of extension libraries (see
-below).</p>
 
 <h4>flintxx - C++ wrapper</h4>
 <ul>
@@ -75,6 +71,8 @@ below).</p>
 <li>Factors 32/64-bit integers quickly via ulong_extras</li>
 <li>Trial division</li>
 <li>Williams' p + 1 method</li>
+<li>ECM</li>
+<li>Self initialising, large prime variant quadratic sieve</li>
 </ul>
 
 <h4>fmpz_mat - dense matrices over the integers</h4>
@@ -106,6 +104,11 @@ below).</p>
 <ul>
 <li>Berlekamp, Cantor-Zassenhaus, Kaltofen-Shoup algorithms</li>
 <li>Squarefree, distinct-degree and equal-degree factorisation</li>
+</ul>
+
+<h4>fmpz_mod_mat - matrices over Z/nZ for multiprecision n</h4>
+<ul>
+<li>Basic arithmetic</li>
 </ul>
 
 <h4>fmpz_poly - dense univariate polynomials over the integers</h4>
@@ -140,6 +143,11 @@ below).</p>
 <li>Efficient arithmetic based on the fmpz_poly module</li>
 </ul>
 
+<h4>fmpz_mpoly - multivariate polynomials over Z</h4>
+<ul>
+<li>Efficient arithmetic for polynomials in sparse distributed form</li>
+</ul>
+
 <h4>fmpq - multiprecision rational numbers</h4>
 <ul>
 <li>Based on the fmpz type -- efficient representation of small rational numbers, and similar performance to the mpq type for large numbers</li>
@@ -160,6 +168,11 @@ below).</p>
 <li>Fast multiplication, division, composition, powering, GCD, XGCD, LCM done via the integers</li>
 <li>Fast power series composition and reversion</li>
 <li>Functions of power series (inverse, sqrt, exp, log, sin, asin, ...)</li>
+</ul>
+
+<h4>fmpq_mpoly - multivariate polynomials over Q</h4>
+<ul>
+<li>Efficient arithmetic for polynomials in sparse distributed form</li>
 </ul>
 
 <h4>nmod_mat - matrices over Z/nZ for word-size n</h4>
@@ -196,6 +209,11 @@ below).</p>
 <li>Multiplication (classical, Kronecker substitution, interpolation)</li>
 <li>Determinants (fraction-free, interpolation)</li>
 <li>Reduced row echelon form, nullspace, inverse (fraction-free)</li>
+</ul>
+
+<h4>nmod_mpoly - multivariate polynomials over Z/nZ</h4>
+<ul>
+<li>Efficient arithmetic for polynomials in sparse distributed form</li>
 </ul>
 
 <h4>padic - p-adic numbers</h4>
@@ -254,6 +272,11 @@ below).</p>
 <li>Irreducibility testing</li>
 </ul>
 
+<h4>fq_nmod_mpoly - multivariate polynomials over finite fields</h4>
+<ul>
+<li>Efficient arithmetic for polynomials in sparse distributed form</li>
+</ul>
+
 <h4>arith - miscellaneous arithmetic functions</h4>
 <ul>
 <li>Bernoulli, Euler, Bell, Stirling numbers</li>
@@ -264,23 +287,10 @@ below).</p>
 <li>Dedekind sums</li>
 </ul>
 
-<h3>FLINT 1.x only</h3>
-
-<p>The following features are currently only available in the FLINT 1.x series,
-and will be ported to the FLINT 2.x series in the future
-(help with this is welcome).</p>
-
-<ul>
-<li>Lattice reduction (optimised LLL, especially for knapsack lattices); faster factorisation in Z[x]</li>
-<li>Large quadratic sieve for factorisation of integers >128 bits</li>
-</ul>
-
-<h3>Antic extension library</h3>
+<h3>Antic library</h3>
 
 <p>The <a href="http://github.com/wbhart/antic">Antic</a> library
 adds support for algebraic number theory.
-Antic can be installed by passing <tt>--extensions=/path/to/antic</tt>
-to the configure script when building FLINT.
 Antic includes the following modules.</p>
 
 <h4>qfb - binary quadratic forms</h4>
@@ -295,14 +305,12 @@ Antic includes the following modules.</p>
 <li>Fast number field arithmetic based on the FLINT fmpq_poly type</li>
 </ul>
 
-<h3>Arb extension library</h3>
+<h3>Arb library</h3>
 
 <p>The <a href="http://fredrikj.net/arb">Arb</a> library
 adds support for fast arbitrary-precision real and complex numbers with
 rigorous error control (using ball interval arithmetic).
 It supports polynomials, power series, matrices, and evaluation of special functions.
-Arb can be installed by passing <tt>--extensions=/path/to/arb</tt>
-to the configure script when building FLINT.
 Arb includes the following modules.</p>
 
 <h4>fmpr - binary floating-point numbers</h4>
@@ -388,21 +396,4 @@ Arb includes the following modules.</p>
 <ul>
 <li>Numerical integration (Taylor algorithm with rigorous error bounds)</li>
 </ul>
-
-<h3>Other extension libraries</h3>
-
-<p>
-The following extension libraries for FLINT are experimental.
-They can be installed by passing
-<tt>--extensions=/path/to/extension1:/path/to/extension2:...</tt> to the
-configure script when building FLINT.</p>
-
-<dl>
-
-<dt><a href="https://github.com/fredrik-johansson/bland">bland - recursive generics</a></dt>
-<dd>Supports working with recursively constructed rings over several ground types.
-In particular, it allows working with recursive dense multivariate polynomials
-and matrices over generic rings.</dd>
-
-</dl>
 

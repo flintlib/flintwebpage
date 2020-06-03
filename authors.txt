@@ -203,7 +203,7 @@ Horn, lzmths, Volker Braun, Pascal Molin, Ralf Stehpan, Apoorv Mishra, Tobias
 Hansen, sourcekris, yuri@FreeBSD, vinklein, Michele Orru, Frederik Chapoton,
 Peter Frentrep, Eric Bray, Julian Ruth, Edgar Costa, Raphael Fourquet, John
 Palmieri, Pascal Mollin, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
-Pasechnik, Ben Lorenz, Mahrud Sayrafi and others.</li>
+Pasechnik, Ben Lorenz, Mahrud Sayrafi, Lars Kastner, Gregory Vanuxem  and others.</li>
 
 <li>In addition Michael Abshoff, William Stein and Robert Bradshaw have
 contributed to the build system of FLINT.</li>
