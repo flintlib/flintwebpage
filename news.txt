@@ -1,6 +1,12 @@
 <h2>News</h2>
 
-<p>2016-04-28: The license for FLINT (repository and subsequent releases) is changed to LGPL v2.1+ after consultation with our contributors this month. Thanks to everyone involved in the license change.</p>
+<p>2020-06-05: Flint 2.6.0 is released!</p>
+
+<h3>Past news and events</h3>
+
+<p>2016-04-28: The license for FLINT (repository and subsequent releases) is
+changed to LGPL v2.1+ after consultation with our contributors this month.
+Thanks to everyone involved in the license change.</p>
 
 <p>2015-08-12: FLINT 2.5.2 is released!</p>
 
@@ -8,11 +14,10 @@
 
 <p>2015-08-12: FLINT 2.5.1 is released!</p>
 
-<p>This fixes a number of build issues for various platforms, including OSX and Windows MSVC.</p>
+<p>This fixes a number of build issues for various platforms, including OSX
+and Windows MSVC.</p>
 
 <p>2015-08-07: FLINT 2.5 is released!</p>
-
-<h3>Past news and events</h3>
 
 <p>2015-02-17: FLINT 2.4.5 is released. This fixed a severe bug in flint's
 heuristic GCD which would affect polynomial GCD over ZZ and QQ where one of

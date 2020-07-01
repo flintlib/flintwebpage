@@ -1,9 +1,19 @@
 <h2>Downloads</h2>
 
 <p>For a list of changes in each release, see the <a href="http://github.com/wbhart/flint2/blob/trunk/NEWS">NEWS</a> file.</p> 
+
+<p>From version 2.6.0 CMake support is available in the main Flint
+distribution. If you prefer MSVC solution files, these are provided by Brian Gladman:</p>
+
+<p><a href="https://github.com/BrianGladman/flint">Brian Gladman's Flint
+repository</a></p>
  
 <p>FLINT 2.x series:</p>
 <ul> 
+<li>2020-06-05 <b><a href="flint-2.6.0.tar.gz">flint-2.6.0.tar.gz</a></b>,
+<b><a href="flint-2.6.0.zip">flint-2.6.0.zip</a></b>, documentation: <b><a
+href="http://flintlib.org/doc/">Online documentation</a></b> (FLINT
+2.6.0)</li>
 <li>2015-08-07 <b><a href="flint-2.5.2.tar.gz">flint-2.5.2.tar.gz</a></b>, <b><a href="flint-2.5.2.zip">flint-2.5.2.zip</a></b>, documentation: <b><a href="flint-2.5.pdf">flint-2.5.pdf</a></b> (FLINT 2.5.2)</li>
 <li>2015-02-17 <b><a href="flint-2.4.5.tar.gz">flint-2.4.5.tar.gz</a></b>, documentation: <b><a href="flint-2.4.5.pdf">flint-2.4.5.pdf</a></b></li>
 <li>2012-11-09 <b><a href="flint-2.3.tar.gz">flint-2.3.tar.gz</a></b>, documentation: <b><a href="flint-2.3.pdf">flint-2.3.pdf</a></b> </li>

@@ -201,6 +201,11 @@ href="https://www2.mathematik.tu-darmstadt.de/~bwilliams/rademacher2.pdf">Short
 proof of Rademacher's formula for partitions</a> - Wladimir De Azevedo
 Pribitkin and Brandon Williams</li>
 
+<li><a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0021869320300594">Exterior
+powers of the adjoint representation and the Weyl ring of E8</a> - Andrea
+Brini</li>
+
 <li><a href="https://arxiv.org/pdf/1604.08472.pdf">Beyond the black box</a> -
 Jeroen Demeyer, William Stein and Ursula Whitcher</li>
 
