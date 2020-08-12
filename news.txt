@@ -1,5 +1,9 @@
 <h2>News</h2>
 
+<p>2020-08-12: Flint 2.6.3 is released!</p>
+
+<p>2020-07-31: Flint 2.6.2 is released!</p>
+
 <p>2020-07-23: Flint 2.6.1 is released!</p>
 
 <p>2020-06-05: Flint 2.6.0 is released!</p>
