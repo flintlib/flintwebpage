@@ -16,7 +16,7 @@
 
 <p>Support is also currently being developed for algebraic number fields (via the <a href="https://github.com/wbhart/antic/">Antic</a> extension library).</p>
 
-<p>Operations that can be performed include conversions, arithmetic, computing GCDs, factoring, solving linear systems, and evaluating special functions. In addition, FLINT provides various low-level routines for fast arithmetic. FLINT is extensively documented and tested.</p>
+<p>Operations that can be performed include conversions, arithmetic, computing GCDs, factoring, solving linear systems, and evaluating special functions. In addition, FLINT provides various low-level routines for fast arithmetic. FLINT is extensively documented and tested, and its documentation can be viewed <a href="https://flintlib.org/doc/">here</a>.</i>.</p>
 
 <div align="center"><img src="bench_padic_log.png"/><br/><i><b>Benchmark</b>: Time to compute a p-adic logarithm to precision 17<sup>n</sup> with FLINT, versus <a href="http://magma.maths.usyd.edu.au/magma/">Magma</a>.</i></div>
 
