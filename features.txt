@@ -1,7 +1,7 @@
 <h2>Features</h2>
 
 <p>FLINT is a collection of modules, with an interface
-similar to that of the <a href="http://gmplib.org/">GMP</a> library.
+similar to that of the <a href="https://gmplib.org/">GMP</a> library.
 For example, the FLINT <tt>fmpz_poly</tt> module defines
 the <tt>fmpz_poly_t</tt> type (representing a polynomial with multiprecision integer coefficients)
 and provides methods such as <tt>fmpz_poly_add</tt>, <tt>fmpz_poly_gcd</tt>, etc.</p>
@@ -289,7 +289,7 @@ Some utility modules are omitted from the list.</p>
 
 <h3>Antic library</h3>
 
-<p>The <a href="http://github.com/wbhart/antic">Antic</a> library
+<p>The <a href="https://github.com/flintlib/antic">Antic</a> library
 adds support for algebraic number theory.
 Antic includes the following modules.</p>
 
@@ -307,7 +307,7 @@ Antic includes the following modules.</p>
 
 <h3>Arb library</h3>
 
-<p>The <a href="http://fredrikj.net/arb">Arb</a> library
+<p>The <a href="https://fredrikj.net/arb/">Arb</a> library
 adds support for fast arbitrary-precision real and complex numbers with
 rigorous error control (using ball interval arithmetic).
 It supports polynomials, power series, matrices, and evaluation of special functions.

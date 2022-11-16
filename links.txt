@@ -5,18 +5,18 @@
 <h3>Software using FLINT</h3>
 
 <ul>
-<li><a href="http://sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
-<li>Work is currently in progress to use FLINT in <a href="http://www.singular.uni-kl.de">Singular</a>, <a href="http://www.math.uiuc.edu/Macaulay2/">Macaulay2</a> and <a href="http://www.gap-system.org">GAP</a>.</li>
+<li><a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
+<li>Work is currently in progress to use FLINT in <a href="https://www.singular.uni-kl.de">Singular</a>, <a href="https://faculty.math.illinois.edu/Macaulay2/</a> and <a href="https://www.gap-system.org">GAP</a>.</li>
 <li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
-<li><a href="http://nemocas.org">Nemo</a> - a computer algebra package for the
+<li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - a computer algebra package for the
 Julia programming language</li>
 <li><a href="https://github.com/martinra/hflint">HFlint</a> - a FLINT wrapper
 for Haskell</li>
-<li><a href="http://arblib.org/">Arb</a> - Real and complex ball arithmetic
+<li><a href="https://arblib.org/">Arb</a> - Real and complex ball arithmetic
 (Fredrik Johansson)</li>
-<li><a href="http://fredrikj.net/calcium/">Calcium</a> - Exact computation
+<li><a href="https://fredrikj.net/calcium/">Calcium</a> - Exact computation
 with real and complex numbers (Fredrik Johansson)</li>
-<li><a href="http://nemocas.github.io/Nemo.jl/latest/">Nemo</a> - Julia
+<li><a href="https://nemocas.github.io/Nemo.jl/stable/">Nemo</a> - Julia
 wrapper for Flint, Arb and Antic (W. Hart, C. Fieker, T. Hofmann, F. Johansson, et
 al.</li>
 <li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
@@ -35,15 +35,15 @@ Practical divide-and-conquer algorithms for polynomial arithmetic
 </a> - W. Hart and A. Novocin
 </li>
 
-<li><a href="http://arxiv.org/abs/1205.5991">
+<li><a href="https://arxiv.org/abs/1205.5991">
 Efficient implementation of the Hardy-Ramanujan-Rademacher formula</a> - F. Johansson
 </li>
 
-<li><a href="http://arxiv.org/abs/1108.4772">
+<li><a href="https://arxiv.org/abs/1108.4772">
 A fast algorithm for reversion of power series</a> - F. Johansson
 </li>
 
-<li><a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-15581-9">
+<li><a href="https://www.springer.com/computer/theoretical+computer+science/book/978-3-642-15581-9">
 An introduction to FLINT (pp. 88-91)</a> - W. Hart
 </li>
 
@@ -51,28 +51,28 @@ An introduction to FLINT (pp. 88-91)</a> - W. Hart
 Arbitrary-Precision Midpoint-Radius Interval Arithmetic</a> - F. Johansson
 </li>
 
-<li><a href="http://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
+<li><a href="https://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
 FLINT 2 benchmarking</a> - F. Johansson
 </li>
 
-<li><a href="http://www.risc.jku.at/conferences/RISCDESY12/files/Johansson.pdf">
+<li><a href="https://www.risc.jku.at/conferences/RISCDESY12/files/Johansson.pdf">
 Fast special function computations with FLINT</a> - F. Johansson (Talk)
 </li>
 
-<li><a href="http://www.math.fsu.edu/~hoeij/papers/issac10/A.pdf">
+<li><a href="https://www.math.fsu.edu/~hoeij/papers/issac10/A.pdf">
 Practical polynomial factoring in polynomial time</a> - W. Hart, M. van Hoeij, A. Novocin
 </li>
 
 <li><a href="http://www.issac-symposium.org/2015/Slides/Schost.pdf">Algorithms for finite field arithmetic (ISSAC 2015)</a> - E. Schost
 </li>
 
-<li><a href="http://arxiv.org/abs/1506.04215">Parallel sparse interpolation using small primes (PASCO 2015)</a> - M. Khoctali, D. Roche, X, Tian
+<li><a href="https://arxiv.org/abs/1506.04215">Parallel sparse interpolation using small primes (PASCO 2015)</a> - M. Khoctali, D. Roche, X, Tian
 </li>
 
-<li><a href="http://arxiv.org/ftp/arxiv/papers/1407/1407.3383.pdf">Modular SIMD arithmetic in Mathemagix</a> - J. van der Hoeven, G. Lecerf
+<li><a href="https://arxiv.org/abs/1407.3383">Modular SIMD arithmetic in Mathemagix</a> - J. van der Hoeven, G. Lecerf
 </li>
 
-<li><a href="http://arxiv.org/abs/1410.1600">
+<li><a href="https://arxiv.org/abs/1410.1600">
 There are no two non-real conjugates of a Pisot number with the same imaginary part</a> - 
 A. Dubickas, K. Hare, J. Jankauskas
 </li>
@@ -81,20 +81,20 @@ A. Dubickas, K. Hare, J. Jankauskas
 Fast arithmetic for matrices and polynomials in Mathemagix</a> - G. Lecerf
 </li>
 
-<li><a href="http://www.cs.berkeley.edu/~fateman/papers/polysbyGMP.pdf">
+<li><a href="https://www.cs.berkeley.edu/~fateman/papers/polysbyGMP.pdf">
 Can you save time in multiplying polynomials by encoding them as
 integers?</a> - R. Fateman
 </li>
 
-<li><a href="http://www.usna.edu/Users/cs/roche/research/phd/ch2-impl.pdf">
+<li><a href="https://www.usna.edu/Users/cs/roche/research/phd/ch2-impl.pdf">
 Algorithm implementations in a software library</a> - D. Roche (Chapter PhD. Thesis)
 </li>
 
-<li><a href="http://eprint.iacr.org/2009/203.pdf">
+<li><a href="https://eprint.iacr.org/2009/203.pdf">
 Practical Cryptanalysis of ISO/IEC 9796-2 and EMV Signatures</a> - J-S Coron, D. Naccache, M. Tibouchi, R-P Weinmann
 </li>
 
-<li><a href="http://dx.doi.org/10.1016/j.tcs.2009.03.014">
+<li><a href="https://doi.org/10.1016/j.tcs.2009.03.014">
 A cache-friendly truncated FFT</a> - David Harvey
 </li>
 
@@ -107,17 +107,17 @@ Applications</a> - R. Brumnik, V. Kovtun, A. Okhrimenko, S. Kavun
 Relaxed algorithms for p-adic numbers</a> - Jeremy Berthomieu, Joris van der Hoeven, Gregoire Lecerf
 </li>
 
-<li><a href="http://erocal.org/burcin/papers/ISSAC_2010-poster_abstract-Nullspace_computation_over_rational_function_fields_for_symbolic_summation.pdf">
+<li><a href="https://erocal.org/burcin/papers/ISSAC_2010-poster_abstract-Nullspace_computation_over_rational_function_fields_for_symbolic_summation.pdf">
 Nullspace computation over rational function fields for symbolic summation</a> - 
 B. Erocal, A. Storjohann (ISSAC poster)
 </li>
 
-<li><a href="http://arxiv.org/pdf/1207.3480v2.pdf">
+<li><a href="https://arxiv.org/abs/1207.3480">
 Experimental evidence for Maeda's conjecture on modular
 forms</a> - A. Ghitza, A. McAndrew
 </li>
 
-<li><a href="http://arxiv.org/pdf/1307.5655.pdf">
+<li><a href="https://arxiv.org/abs/1307.5655">
 Fast polynomial evaluation and composition</a> - Guillaume Moroz
 </li>
 
@@ -206,7 +206,7 @@ href="https://www.sciencedirect.com/science/article/abs/pii/S0021869320300594">E
 powers of the adjoint representation and the Weyl ring of E8</a> - Andrea
 Brini</li>
 
-<li><a href="https://arxiv.org/pdf/1604.08472.pdf">Beyond the black box</a> -
+<li><a href="https://arxiv.org/abs/1604.08472">Beyond the black box</a> -
 Jeroen Demeyer, William Stein and Ursula Whitcher</li>
 
 <li><a
@@ -225,15 +225,15 @@ Talk : Sage for Mathematical and Cryptographic Research</a> - Martin Albrecht an
 Talk : Sage for Number Theorists</a> - William Stein
 </li> 
 
-<li><a href="http://www.bpaslib.org/slide.pdf">
+<li><a href="https://www.bpaslib.org/slide.pdf">
 Basic Polynomial Algebra Subprograms</a> - C. Chen, S. Covanov, F. Mansouri, M. Maza, N. Xie, Y. Xie
 </li>
 
-<li><a href="http://orms.mfo.de/extended_search?license=1">
+<li><a href="https://orms.mfo.de/extended_search?license=1">
 Oberwolfach References on Mathematical Software.</a>
 </li> 
  
-<li><a href="http://wstein.org/talks/200906-horizon/June_11__What_is_on_the_Horizon.pdf">
+<li><a href="https://wstein.org/talks/200906-horizon/June_11__What_is_on_the_Horizon.pdf">
 Talk: Sage : What is on the Horizon - William Stein
 </a></li>
 
@@ -253,7 +253,7 @@ Number Theory Web - Number theory ftp sites/calculator programs/archives</a> - K
 Talk : Fast Integer Multiplication with Schoenhage-Strassen's Algorithm</a> - Alexander Kruppa
 </li>
  
-<li><a href="http://en.wikipedia.org/wiki/Fast_Library_for_Number_Theory">
+<li><a href="https://en.wikipedia.org/wiki/Fast_Library_for_Number_Theory">
 Wikipedia Article : Fast Library for Number Theory.</a>
 </li>
  
@@ -261,7 +261,7 @@ Wikipedia Article : Fast Library for Number Theory.</a>
 Poster about Efficiently computing Bernoulli numbers using FLINT</a> - David Howden
 </li>
  
-<li><a href="http://www.williamstein.org/grants/frg07.pdf">
+<li><a href="https://www.williamstein.org/grants/frg07.pdf">
 Grant Proposal</a> - William Stein
 </li> 
  

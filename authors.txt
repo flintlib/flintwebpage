@@ -245,7 +245,7 @@ for example using the following format:</p>
 
 <ul>
 <li>W. Hart, F. Johansson and S. Pancratz. FLINT: Fast Library for
-    Number Theory, 2013. version 2.4.0, <tt>http://flintlib.org</tt>.
+    Number Theory, 2013. version 2.4.0, <tt>https://flintlib.org</tt>.
 </li>
 </ul>
 
@@ -254,17 +254,17 @@ for example using the following format:</p>
     author = {W. Hart and F. Johansson and S. Pancratz},
     title = {{FLINT}: {F}ast {L}ibrary for {N}umber {T}heory},
     year = {2013},
-    note = {Version 2.4.0, \url{http://flintlib.org}}
+    note = {Version 2.4.0, \url{https://flintlib.org}}
 }
 </pre>
 
 <p>You may also choose to cite
-<a href="http://link.springer.com/chapter/10.1007%2F978-3-642-15582-6_18">this peer-reviewed article</a>:</p>
+<a href="https://doi.org/10.1007/978-3-642-15582-6_18">this peer-reviewed article</a>:</p>
 
 <ul>
 <li>W. B. Hart. Fast Library for Number Theory: An Introduction. In <i>Proceedings of the Third
   International Congress on Mathematical software</i>, ICMS'10, pages 88-91, Berlin, Heidelberg,
-  2010. Springer-Verlag. <tt>http://flintlib.org</tt>.
+  2010. Springer-Verlag. <tt>https://flintlib.org</tt>.
 </li>
 </ul>
 
@@ -281,7 +281,7 @@ for example using the following format:</p>
     numpages = {4},
     publisher = {Springer-Verlag},
     address = {Berlin, Heidelberg},
-    note = {\url{http://flintlib.org}}
+    note = {\url{https://flintlib.org}}
 }
 </pre>
 
