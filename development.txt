@@ -4,21 +4,21 @@
 
 <p>You can get a clone of the git development repo with:</p> 
 
-<pre>git clone git://github.com/wbhart/flint2.git flint2</pre> 
+<pre>git clone https://github.com/flintlib/flint2</pre> 
  
 <p>If you want to browse the repository online, or fork it on GitHub, it can be accessed here:</p> 
-<a href="https://github.com/wbhart/flint2">https://github.com/wbhart/flint2</a> 
+<a href="https://github.com/flintlib/flint2">https://github.com/flintlib/flint2</a> 
  
 <p>The current development branch within the repository is "trunk".</p> 
 
 <h3>Mailing list</h3>
 
 <p>...and discuss development ideas with us at our Google development group:</p> 
-<a href="http://groups.google.com/group/flint-devel">flint-devel Google Group</a>
+<a href="https://groups.google.com/g/flint-devel">flint-devel Google Group</a>
 
 <h3>Development ideas</h3>
 
-<p>Our GitHub issue tracker: <a href="https://github.com/wbhart/flint2/issues">https://github.com/wbhart/flint2/issues</a></p>
+<p>Our GitHub issue tracker: <a href="https://github.com/flintlib/flint2/issues">https://github.com/flintlib/flint2/issues</a></p>
 
 <p>Here is a list of ideas for development projects
 that would be highly valuable to a large number of users.
@@ -36,7 +36,7 @@ make good student projects (or in some cases, research projects).
 
 <p>
 A longer list of (mostly minor) issues to work on can be found in the
-<a href="https://github.com/wbhart/flint2/blob/trunk/todo.txt">todo.txt</a> file.
+<a href="https://github.com/flintlib/flint2/blob/trunk/todo.txt">todo.txt</a> file.
 If you are interested in contributing to FLINT in any way,
 or even just want to request a feature,
 don't hesitate to leave a message on the mailing list!</p>

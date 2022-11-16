@@ -44,7 +44,7 @@ PAGE_BOTTOM = r"""
 <div style="line-height:1em">
 <p><i>TIMESTAMP</i></p>
 
-<p><i>Contact: <a href="mailto:goodwillhart {at_thingy} googlemail dot com">William Hart</a>, <a href="http://groups.google.com/group/flint-devel?hl=en">flint-devel mailing list</a>.</i></p>
+<p><i>Contact: <a href="mailto:goodwillhart {at_thingy} googlemail dot com">William Hart</a>, <a href="https://groups.google.com/g/flint-devel">flint-devel mailing list</a>.</i></p>
 
 </div>
 
