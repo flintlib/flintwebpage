@@ -3,13 +3,19 @@ import glob
 PAGE_TOP = r"""<html>
 <head>
 <title>FLINT: Fast Library for Number TheoryTITLE</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style type="text/css" media="screen">
-body, table { font-family: arial, sans-serif; font-size: 16px; line-height:1.4em; }
+body, table { font-family: arial, sans-serif; font-size: 16px; line-height:1.4em; background-color:#fff; color: #111; }
 h1, h2, h3 { font-weight: normal; }
-h1 { font-weight: bold; }
-h2 { background-color: #eee; color: #444; padding: 0.3em; }
+h1 { font-weight: bold; font-size:40px; line-height:40px; font-family: arial, sans-serif; margin-bottom: 0.5em; }
+h2 { background-color: #f8f8f8; color: #444; border-radius:0.2em; padding: 0.2em 0.2em 0.2em 0.5em; }
 h3 { font-weight: bold; border-bottom: 2px dotted #aaa; }
 h4 { color: #777; }
+a { color: #004fa0; text-decoration: none; }
+a:hover { color: #206fc0; text-decoration: none; background-color: #fafafa; }
 pre { padding-left: 2em; }
 #main { padding: 1em; max-width:900px; margin: 0 auto; }
 #content { }
@@ -26,7 +32,28 @@ pre { padding-left: 2em; }
 <body>
 <div id="main">
 
-<h1 style="text-align:center">FLINT: Fast Library for Number Theory</h1>
+<h1 style="text-align:center">FLINT : <span style="color:#cc3333">Fast Library for Number Theory</span></h1>
+
+<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor200.svg"></div> -->
+<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor.svg"></div> -->
+
+
+<div style="text-align:center; margin-bottom:1.5em">
+
+<script>
+var formulas = [
+  "delta.svg",
+  "factor.svg",
+  "factorpoly.svg",
+  "bernoulli.svg",
+];
+
+var size = formulas.length;
+var x = Math.floor(size*Math.random());
+var imgStr = '<img src="' + formulas[x] + '" style="scale:90%" />';
+document.write(imgStr); document.close();
+</script>
+</div>
 
 MENU
 
@@ -44,39 +71,29 @@ PAGE_BOTTOM = r"""
 <div style="line-height:1em">
 <p><i>TIMESTAMP</i></p>
 
-<p><i>Contact: <a href="mailto:goodwillhart {at_thingy} googlemail dot com">William Hart</a>, <a href="https://groups.google.com/g/flint-devel">flint-devel mailing list</a>.</i></p>
+<p><i>Contact: <a href="mailto:fredrik.johansson@gmail.com">Fredrik Johansson</a>, <a href="https://groups.google.com/g/flint-devel">flint-devel mailing list</a></i></p>
 
 </div>
 
 </div>
 </div>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33043533-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
 </html>
 """
 
-pages = ["index", "news", "features", "benchmarks", "downloads", "development", "authors", "links"]
+pages = ["index", "news", "documentation", "downloads", "development", "authors", "links"]
 
 page_titles = []
 page_texts = []
 
 for page in pages:
-    text = open(page + ".txt", "r").read()
-    title = text[text.find("<h2>")+4 : text.find("</h2>")]
+    if 0 and page == "documentation":
+        text = ""
+        title = "Documentation"
+    else:
+        text = open(page + ".txt", "r").read()
+        title = text[text.find("<h2>")+4 : text.find("</h2>")]
     page_texts.append(text)
     page_titles.append(title)
 
@@ -113,7 +130,7 @@ for i in range(len(pages)):
             else:
                 menu += """<a href="%s.html">%s</a> """ % (pages[j], page_titles[j])
             if j < len(pages) - 1:
-                menu += " | "
+                menu += """ &nbsp;<span style="color:#888">&middot;</span>&nbsp; """
         menu += """</div>"""
 
     title = page_titles[i]

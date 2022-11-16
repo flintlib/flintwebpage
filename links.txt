@@ -6,7 +6,7 @@
 
 <ul>
 <li><a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
-<li>Work is currently in progress to use FLINT in <a href="https://www.singular.uni-kl.de">Singular</a>, <a href="https://faculty.math.illinois.edu/Macaulay2/</a> and <a href="https://www.gap-system.org">GAP</a>.</li>
+<li>Work is currently in progress to use FLINT in <a href="https://www.singular.uni-kl.de">Singular</a>, <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a> and <a href="https://www.gap-system.org">GAP</a>.</li>
 <li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
 <li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - a computer algebra package for the
 Julia programming language</li>
@@ -16,7 +16,7 @@ for Haskell</li>
 (Fredrik Johansson)</li>
 <li><a href="https://fredrikj.net/calcium/">Calcium</a> - Exact computation
 with real and complex numbers (Fredrik Johansson)</li>
-<li><a href="https://nemocas.github.io/Nemo.jl/stable/">Nemo</a> - Julia
+<li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - Julia
 wrapper for Flint, Arb and Antic (W. Hart, C. Fieker, T. Hofmann, F. Johansson, et
 al.</li>
 <li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
@@ -51,7 +51,7 @@ An introduction to FLINT (pp. 88-91)</a> - W. Hart
 Arbitrary-Precision Midpoint-Radius Interval Arithmetic</a> - F. Johansson
 </li>
 
-<li><a href="https://fredrik-j.blogspot.com/2010/09/fast-combinatorial-and-number-theoretic.html">
+<li><a href="https://fredrikj.net/blog/2010/09/fast-combinatorial-and-number-theoretic-functions-with-flint-2/">
 FLINT 2 benchmarking</a> - F. Johansson
 </li>
 

@@ -1,0 +1,8 @@
+<h2>Documentation</h2>
+
+<ul>
+<li>
+Go to the <b><a href="doc/">FLINT online documentation</a></b>
+</li>
+</ul>
+

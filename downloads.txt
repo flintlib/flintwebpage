@@ -6,13 +6,21 @@
 distribution. If you prefer MSVC solution files, these are provided by Brian Gladman:</p>
 
 <p><a href="https://github.com/BrianGladman/flint">Brian Gladman's Flint
-repository</a></p> - 2.6.3
- 
+repository</a></p>
+
+<p>MSYS2 binaries are available <a href="https://packages.msys2.org/base/mingw-w64-flint">mingw-w64-flint</a></p>
+
 <p>FLINT 2.x series:</p>
 <ul>
+<li>2022-06-24 <b><a href="flint-2.9.0.tar.gz">flint-2.9.0.tar.gz</a></b>,
+<b><a href="flint-2.9.0.zip">flint-2.9.0.zip</a></b>, documentation: <b><a
+<a href="https://flintlib.org/doc/">Online documentation</a></b> (FLINT 2.9)</li>
+<li>2022-04-25 <b><a href="flint-2.8.5.tar.gz">flint-2.8.5.tar.gz</a></b>,
+<b><a href="flint-2.8.5.zip">flint-2.8.5.zip</a></b></li>
+<li>2021-01-18 <b><a href="flint-2.7.1.tar.gz">flint-2.7.1.tar.gz</a></b>,
+<b><a href="flint-2.7.1.zip">flint-2.7.1.zip</a></b></li>
 <li>2020-08-12 <b><a href="flint-2.6.3.tar.gz">flint-2.6.3.tar.gz</a></b>,
-<b><a href="flint-2.6.3.zip">flint-2.6.3.zip</a></b>, documentation: <b><a
-href="https://flintlib.org/doc/">Online documentation</a></b> (FLINT 2.6.3)</li>
+<b><a href="flint-2.6.3.zip">flint-2.6.3.zip</a></b></li>
 <li>2015-08-07 <b><a href="flint-2.5.2.tar.gz">flint-2.5.2.tar.gz</a></b>, <b><a href="flint-2.5.2.zip">flint-2.5.2.zip</a></b>, documentation: <b><a href="flint-2.5.pdf">flint-2.5.pdf</a></b> (FLINT 2.5.2)</li>
 <li>2015-02-17 <b><a href="flint-2.4.5.tar.gz">flint-2.4.5.tar.gz</a></b>, documentation: <b><a href="flint-2.4.5.pdf">flint-2.4.5.pdf</a></b></li>
 <li>2012-11-09 <b><a href="flint-2.3.tar.gz">flint-2.3.tar.gz</a></b>, documentation: <b><a href="flint-2.3.pdf">flint-2.3.pdf</a></b> </li>

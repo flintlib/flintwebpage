@@ -1,26 +1,38 @@
 <h2>Overview</h2>
 
-<p>FLINT is a C library for doing number theory, maintained by <a href="mailto:hart_wb {at_thingy} yahoo dot com">William Hart</a>.
+<p>FLINT is a C library for doing number theory, freely available
+under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">GNU LGPL</a>.
+Its features include:
 </p>
 
-<p>FLINT was licensed <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2+</a> up to and including version 2.5. Our current development version (and subsequent releases) are licensed <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">LGPL v2.1+</a> after the contributors agreed to change the license in April 2016.</p>
-
-<p>FLINT supports arithmetic with numbers, polynomials, power series and matrices over many base rings, including:</p>
 <ul>
-<li>Multiprecision integers and rationals</li>
-<li>Integers modulo <i>n</i></li>
-<li>p-adic numbers</li>
-<li>Finite fields (prime and non-prime order)</li>
-<li>Real and complex numbers (via the <a href="https://fredrikj.net/arb/">Arb</a> extension library)</li>
+<li>Integers, rationals, integers mod <i>n</i>, finite fields, <i>p</i>-adic numbers</li>
+<li>Polynomials (univariate and multivariate), power series, matrices and linear algebra</li>
+<li>Integer and polynomial factorisation and primality testing</li>
+<li>Number-theoretic special functions</li>
+<li>Algebraic number fields via the add-on <a href="https://github.com/flintlib/antic/">Antic</a> library</li>
+<li>Algebraic, real and complex numbers via the add-on <a href="https://arblib.org/">Arb</a> and <a href="https://fredrikj.net/calcium/">Calcium</a> libraries</li>
+<li>Optimised for all operand sizes (single-word to multi-gigabyte)</li>
+<li>Multithreaded</li>
+<li>Extensively documented and tested</li>
+<li>Runs on many platforms (including Linux, macOS and Windows on common hardware configurations), though currently mostly optimised for x86 and x86-64 CPUs. FLINT depends on <a href="https://gmplib.org">GMP</a> and
+<a href="https://mpfr.org">MPFR</a>.</li>
 </ul>
 
-<p>Support is also currently being developed for algebraic number fields (via the <a href="https://github.com/flintlib/antic/">Antic</a> extension library).</p>
+<p>
+FLINT has been used for large scale research computations (for example: <a href="https://www.aimath.org/news/congruentnumbers/">A Trillion Triangles</a>)
+and is used as a back-end library by a number of computer algebra systems including
+<a href="https://sagemath.org">SageMath</a>,
+<a href="https://oscar.computeralgebra.de/">Oscar</a>,
+<a href="https://nemocas.github.io/Nemo.jl/latest/">Nemo</a>,
+<a href="https://www.singular.uni-kl.de/">Singular</a>,
+<a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a>,
+<a href="https://www.maplesoft.com/products/Maple/">Maple</a>
+and <a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica</a>.
+Bindings are available for several programming languages.
+</p>
 
-<p>Operations that can be performed include conversions, arithmetic, computing GCDs, factoring, solving linear systems, and evaluating special functions. In addition, FLINT provides various low-level routines for fast arithmetic. FLINT is extensively <a href="https://flintlib.org/doc/">documented</a> and tested.</p>
-
-<div align="center"><img src="bench_padic_log.png"/><br/><i><b>Benchmark</b>: Time to compute a p-adic logarithm to precision 17<sup>n</sup> with FLINT, versus <a href="https://magma.maths.usyd.edu.au/magma/">Magma</a>.</i></div>
-
-<p>FLINT is written in ANSI C and runs on many platforms (including Linux, Mac OS X and Windows on common hardware configurations), but is currently mostly optimised for x86 and x86-64 CPUs. It is designed to be threadsafe. FLINT depends on the <a href="https://mpir.org">MPIR</a>/<a href="https://gmplib.org/">GMP</a> and <a href="https://www.mpfr.org">MPFR</a> libraries.</p>
-
-<p>FLINT has been used for large scale computations in number theory research (for example: <a href="https://www.aimath.org/news/congruentnumbers/">A Trillion Triangles</a>), and is also suited as a general-purpose backend for computer algebra systems. <a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/<i>n</i>Z for small <i>n</i>, and work is currently underway to use FLINT in <a href="https://www.singular.uni-kl.de/">Singular</a> and <a href="https://faculty.math.illinois.edu/Macaulay2/">Macaulay2</a>.</p>
+<p>
+FLINT has been developed since 2007 by a large number of <a href="authors.html">contributors</a> and comprises over 600,000 lines of code.
+The project is maintained by <a href="mailto:fredrik.johansson@gmail.com">Fredrik Johansson</a>.</p>
 

@@ -4,15 +4,18 @@
 
 <p>FLINT has been developed since 2007 by a large number of people. Initially
 the library was started by David Harvey and William Hart. Later maintenance
-of the library was taken over solely by William Hart.</p>
+of the library was taken over solely by William Hart until 2022.
+Since 2022, FLINT is maintained by Fredrik Johansson.
+</p>
 
 <p>The authors of FLINT to date:</p>
 
 <ul>
 
 <li>William Hart -- integer and polynomial arithmetic, factorisation and
-primality testing, general infrastructure (supported by EPSRC Grant
-EP/G004870/1, DFG Priority programme SPP1489 and TRR 195 FSB)</li>
+primality testing, SSA style FFT, square root, general infrastructure
+(supported by EPSRC Grant EP/G004870/1, DFG Priority programme SPP1489,
+H2020 OpenDreamKit and TRR 195 FSB)</li>
 
 <li>Sebastian Pancratz -- polynomial arithmetic over Z, Z/nZ and
 Q, p-adic and q-adic arithmetic, including polynomials and matrices
@@ -33,8 +36,10 @@ polynomials/matrices over F_q, Finite fields with Zech logarithm
 representation, Fast factorisation of polynomials over F_q (supported by
 Macaulay2 developers NSF Grant 1002171)</li>
 
-<li>Daniel Schultz -- Multivariate polynomials, threadpool, many speedups and
-additional functions (supported by OpenDreamKit and the DFG TRR 195 FSB)</li>
+<li>Daniel Schultz -- Multivariate polynomials, threadpool, matrix FFT, 
+LLL improvements, CRT improvements, matrix-vector products, small prime FFT,
+many speedups and additional functions (supported by OpenDreamKit and the
+DFG TRR 195 FSB)</li>
 
 <li>Luca De Feo, Edouard Rousseau -- Finite field embeddings</li>
 
@@ -83,6 +88,8 @@ Summer of Code 2014 and subsequent contributions) </li>
 
 <li>Isuru Fernando -- testing, build system maintenance, other minor
 fixes.</li>
+
+<li>Ben Orchard -- MSYS2 binary packages</li>
 
 <li>Thomas DuBuisson -- logical ops for fmpz module, patches to the build
 system</li>
@@ -144,7 +151,7 @@ Chebyshev approximation code, he also contributed ECM and Pollard's Rho
 and quadratic sieve factoring algorithm implementations as part of a Google
 Summer of Code.
 
-<li>Andreas Enge -- help with a port to MIPS64.
+<li>Andreas Enge -- help with a port to MIPS64 and various other build issues.
 
 <li>Tommy Hofmann -- implemented Howell and strong echelon form and supplied
 some inline functions and other improvements and bug fixes.</li>
@@ -186,6 +193,9 @@ improvements and bug fixes</li>
 <li>Srivin Srivastava -- Fibonacci polynomials, use of Taylor shift in linear
 composition, other minor contributions.</li>
 
+<li>Albin Ahlback -- xgcd improvements, improve fmpz functions for small
+inputs, CI improvements, documentation and many bugfixes/improvements.</li>
+
 <li>David Einstein -- Documentation proofreading</li>
 
 <li>Jerry James -- Fixed many memory leaks and overruns</li>
@@ -203,7 +213,10 @@ Horn, lzmths, Volker Braun, Pascal Molin, Ralf Stehpan, Apoorv Mishra, Tobias
 Hansen, sourcekris, yuri@FreeBSD, vinklein, Michele Orru, Frederik Chapoton,
 Peter Frentrep, Eric Bray, Julian Ruth, Edgar Costa, Raphael Fourquet, John
 Palmieri, Pascal Mollin, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
-Pasechnik, Ben Lorenz, Mahrud Sayrafi, Lars Kastner, Gregory Vanuxem and others.</li>
+Pasechnik, Ben Lorenz, Mahrud Sayrafi, Lars Kastner, Gregory Vanuxem, Ivan
+Tsybulin, Debian User, Matthias Koeppe, Pavel Holoborodko, Victor Shoup,
+Michael Orlitzky, Tethys Svensson, Jan Jancar, Erico Noguerira Rolim, math-gout
+and others.</li>
 
 <li>In addition Michael Abshoff, William Stein and Robert Bradshaw have
 contributed to the build system of FLINT.</li>
