@@ -6,7 +6,8 @@
 
 <ul>
 <li><a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
-<li>Work is currently in progress to use FLINT in <a href="https://www.singular.uni-kl.de">Singular</a>, <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a> and <a href="https://www.gap-system.org">GAP</a>.</li>
+<li>Work is currently in progress to use FLINT in <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a>.</li>
+<lo><a href="https://www.singular.uni-kl.de">Singular</a> - computer algebra system for polynomial computations.</li>
 <li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
 <li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - a computer algebra package for the
 Julia programming language</li>
@@ -18,7 +19,7 @@ for Haskell</li>
 with real and complex numbers (Fredrik Johansson)</li>
 <li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - Julia
 wrapper for Flint, Arb and Antic (W. Hart, C. Fieker, T. Hofmann, F. Johansson, et
-al.</li>
+al).</li>
 <li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
 <li><a href="https://pypi.org/project/flint-py/0.3.4/">Python-flint</a> - Python
 bindings for Flint (Fredrik Johansson)</li>
