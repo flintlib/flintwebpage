@@ -53,7 +53,7 @@ a:hover { color: #206fc0; text-decoration: none; background-color: #fafafa; }
 <!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor.svg"></div> -->
 
 
-<div style="text-align:center; margin-bottom:1.5em">
+<div style="text-align:center; margin-bottom:1.5em; overflow:scroll">
 
 <script>
 var formulas = [
