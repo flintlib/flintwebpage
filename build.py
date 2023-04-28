@@ -1,24 +1,40 @@
 import glob
 
-PAGE_TOP = r"""<html>
+PAGE_TOP = r"""
+<!DOCTYPE html>
+<html>
 <head>
 <title>FLINT: Fast Library for Number TheoryTITLE</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
 <style type="text/css" media="screen">
-body, table { font-family: arial, sans-serif; font-size: 16px; line-height:1.4em; background-color:#fff; color: #111; }
-h1, h2, h3 { font-weight: normal; }
-h1 { font-weight: bold; font-size:40px; line-height:40px; font-family: arial, sans-serif; margin-bottom: 0.5em; }
-h2 { background-color: #f8f8f8; color: #444; border-radius:0.2em; padding: 0.2em 0.2em 0.2em 0.5em; }
-h3 { font-weight: bold; border-bottom: 2px dotted #aaa; }
+body { font-family: 'nunito', arial, sans-serif; font-size: 16px; line-height: 1.5em; margin: 2em; background-color:#fcfcfc; color: #111; }
+
+h1, h2, h3 { line-height: 1.5em; }
+h1 { font-weight: bold; font-size:36px; margin-bottom: 0.5em; text-align:center; }
+h2 { background-color: #f6f6f6; padding: 0.3em; border: 1px solid #fafafa; }
 h4 { color: #777; }
-a { color: #004fa0; text-decoration: none; }
+
+table { border-collapse:collapse; }
+table, th, td { border: 1px solid #aaa; }
+th, td { padding:0.3em; }
+tt { font-family: 'source code pro', monospace; font-size:0.8em;
+ background-color: #f8f8f8;
+ padding: 0.2em;
+ border: 1px solid #f0f0f0;
+}
+a { color: #004fa0; font-weight: bold; text-decoration: none; }
 a:hover { color: #206fc0; text-decoration: none; background-color: #fafafa; }
-pre { padding-left: 2em; }
-#main { padding: 1em; max-width:900px; margin: 0 auto; }
-#content { }
+
+#content { margin-left: auto; margin-right: auto; margin-top: 1em; max-width: 1000px; background-color:#fff; padding-left: 2em; padding-right: 1em; border:1px solid #f0f0f0; border-radius:4px; box-shadow: 4px 4px #ddd; padding-bottom: 2em; }
+#postmain { margin-left: auto; margin-right: auto; margin-top: 1em; max-width: 1000px; padding-left: 2em; padding-right: 1em; padding-bottom: 2em; }
 
 .benchmark { border-collapse:collapse; }
 .benchmark td, .benchmark th { border:1px solid #ccc; padding:3px 7px 2px 7px; }
@@ -30,9 +46,8 @@ pre { padding-left: 2em; }
 </head>
 
 <body>
-<div id="main">
 
-<h1 style="text-align:center">FLINT : <span style="color:#cc3333">Fast Library for Number Theory</span></h1>
+<h1>FLINT : <span style="color:#cc3333">Fast Library for Number Theory</span></h1>
 
 <!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor200.svg"></div> -->
 <!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor.svg"></div> -->
@@ -57,25 +72,21 @@ document.write(imgStr); document.close();
 
 MENU
 
-<br/>
-
-<!-- <hr/> -->
-
 <div id="content">
 """
 
 PAGE_BOTTOM = r"""
 
+</div>
+
+<div id="postmain">
 <hr style="border:0; height:1px; color:#ccc; background-color:#ccc; margin-top:2em;" />
 
 <div style="line-height:1em">
 <p><i>TIMESTAMP</i></p>
-
 <p><i>Contact: <a href="mailto:fredrik.johansson@gmail.com">Fredrik Johansson</a>, <a href="https://groups.google.com/g/flint-devel">flint-devel mailing list</a></i></p>
-
 </div>
 
-</div>
 </div>
 
 </body>
@@ -134,7 +145,7 @@ for i in range(len(pages)):
         menu += """</div>"""
 
     title = page_titles[i]
-    if title == "Overview":
+    if title == "What is FLINT ?":
         title = ""
     else:
         title = " - " + title

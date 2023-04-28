@@ -1,38 +1,107 @@
-<h2>Overview</h2>
+<h2>What is FLINT ?</h2>
 
 <p>FLINT is a C library for doing number theory, freely available
 under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">GNU LGPL</a>.
-Its features include:
+
+<div style="float:right; width:250px; margin-left:1em; margin-right:0; margin-bottom:2em; text-align:center; padding: 0.5em; background-color: #fffadd; border: 1px solid #fff0d4; border-radius:4px;">
+<img src="domains.svg"/>
+<br/><br/>
+<span style="font-style: italic">Some domains handled by FLINT.</span>
+</div>
+
+<p>At its core, FLINT provides arithmetic in standard rings such as
+the integers, rationals, algebraic, real, complex and <i>p</i>-adic numbers,
+finite fields, and number fields.
+It also provides polynomials (univariate and multivariate), power series, and matrices.
 </p>
 
-<ul>
-<li>Integers, rationals, integers mod <i>n</i>, finite fields, <i>p</i>-adic numbers</li>
-<li>Polynomials (univariate and multivariate), power series, matrices and linear algebra</li>
-<li>Integer and polynomial factorisation and primality testing</li>
-<li>Number-theoretic special functions</li>
-<li>Algebraic number fields via the add-on <a href="https://github.com/flintlib/antic/">Antic</a> library</li>
-<li>Algebraic, real and complex numbers via the add-on <a href="https://arblib.org/">Arb</a> and <a href="https://fredrikj.net/calcium/">Calcium</a> libraries</li>
-<li>Optimised for all operand sizes (single-word to multi-gigabyte)</li>
-<li>Multithreaded</li>
-<li>Extensively documented and tested</li>
-<li>Runs on many platforms (including Linux, macOS and Windows on common hardware configurations), though currently mostly optimised for x86 and x86-64 CPUs. FLINT depends on <a href="https://gmplib.org">GMP</a> and
-<a href="https://mpfr.org">MPFR</a>.</li>
-</ul>
+<p>
+FLINT covers a wide range of functionality: primality testing, integer factorisation,
+multivariate polynomial GCD and factorisation, FFTs, multimodular reconstruction,
+special functions, exact and approximate linear algebra,
+LLL, finite field embeddings, and more.</p>
+
+<h3>Mature & widely used</h3>
+
+<p>FLINT is the work of dozens of contributors, spanning 15+ years of development.
+The upcoming FLINT 3.0 release comprises 8,000 documented functions,
+3,500 test programs, and 900,000 lines of code.
+</p>
 
 <p>
-FLINT has been used for large scale research computations (for example: <a href="https://www.aimath.org/news/congruentnumbers/">A Trillion Triangles</a>)
-and is used as a back-end library by a number of computer algebra systems including
+FLINT runs on most common platforms, including Linux, macOS and Windows
+on typical hardware configurations.
+Several computer algebra systems rely on FLINT as a back-end library,
+including
 <a href="https://sagemath.org">SageMath</a>,
 <a href="https://oscar.computeralgebra.de/">Oscar</a>,
-<a href="https://nemocas.github.io/Nemo.jl/latest/">Nemo</a>,
 <a href="https://www.singular.uni-kl.de/">Singular</a>,
 <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a>,
 <a href="https://www.maplesoft.com/products/Maple/">Maple</a>
-and <a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica</a>.
-Bindings are available for several programming languages.
+and <a href="https://www.wolfram.com/mathematica/">Mathematica</a>.
+Wrappers are also available for various programming languages, including <a href="https://github.com/fredrik-johansson/python-flint">Python</a> and <a href="https://nemocas.github.io/Nemo.jl/latest/">Julia</a>.
 </p>
 
+<h3>At the research frontier</h3>
+
 <p>
-FLINT has been developed since 2007 by a large number of <a href="authors.html">contributors</a> and comprises over 600,000 lines of code.
-The project is maintained by <a href="mailto:fredrik.johansson@gmail.com">Fredrik Johansson</a>.</p>
+FLINT has been used for many large scale research computations
+(for example: <a href="https://www.aimath.org/news/congruentnumbers/">A Trillion Triangles</a>)
+and has been cited in hundreds of publications.
+FLINT's authors themselves have published more than 20 papers describing
+new algorithms first implemented within or on top of FLINT.
+</p>
+
+<h3>Efficient</h3>
+
+<p>
+FLINT is designed
+for all operand sizes, from single-word to multi-gigabyte.
+It implements many low-level optimisations and chooses automatically
+between basecase, intermediate,
+asymptotically fast and special-purpose algorithms
+depending on the size and structure of the problem.
+Many algorithms are fully parallel (multithreaded)
+and some key functions use SIMD acceleration.
+FLINT uses <a href="https://gmplib.org">GMP</a> and
+<a href="https://mpfr.org">MPFR</a> under the hood but notably also
+provides its own arbitrary-size integer and floating-point code
+which is often 2-10 times faster.
+</p>
+
+<h3>Handles real numbers</h3>
+
+<div style="text-align:center"><img src="arb-banner.jpg" style="width:75%; margin-bottom:1em" /> <br/>
+<span style="font-style: italic">Some transcendental functions of a complex variable plotted using FLINT's ball arithmetic. Left to right:
+the elliptic <i>j</i>-invariant in two different projections; the gamma function; the Riemann zeta function.</span>
+</div>
+
+<p>
+FLINT has advanced support for real and complex numbers, implemented using ball arithmetic.
+It covers a variety of numerical functionality
+(polynomial arithmetic, transcendental functions, numerical integration, linear algebra, etc.)
+with arbitrary precision and with rigorous error bounds.
+FLINT also provides an exact (symbolic) model of real and complex numbers
+with the ability to decide equalities.
+</p>
+
+<i>Note: this functionality is new in FLINT 3.0 and
+is due to merging the
+spin-off projects Arb, Antic and Calcium which were previously maintained as standalone libraries.</i>
+
+<h3>Developer-friendly</h3>
+
+<p>
+FLINT has a developer-friendly GMP-like C API
+which makes it easy to write performant and type-safe code
+with fine-grained control over in-place mutations,
+memory allocation, precision, conversions between
+representations, and algorithm parameters.
+FLINT also provides well-documented access
+to most of its internals.
+Finally, the FLINT project is developed openly in
+collaboration with the community, and
+welcomes contributions (feature requests, bug reports, patches, testing, documentation, general feedback)
+from anyone.
+</p>
 
