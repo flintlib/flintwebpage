@@ -61,6 +61,7 @@ var formulas = [
   "factor.svg",
   "factorpoly.svg",
   "bernoulli.svg",
+  "zeta.svg",
 ];
 
 var size = formulas.length;
@@ -93,6 +94,103 @@ PAGE_BOTTOM = r"""
 </html>
 """
 
+indent = 11
+
+lines = open("authorlist.txt").read().splitlines()
+
+prefixes = ["  email    ", "  web      ", "  github   ", "  grants   ", "  what     "]
+
+lines2 = []
+for line in lines:
+    if line.startswith("  ") and not any(line.startswith(pre) for pre in prefixes):
+        lines2[-1] += line
+    else:
+        lines2.append(line)
+
+lines = lines2
+
+authors = []
+
+i = 0
+while i < len(lines):
+    line = lines[i]
+    if line and not line.startswith("  "):
+        name = line
+        for a in authors:
+            if a[0] == name:
+                raise ValueError("duplicate author", name)
+        authors.append([name, dict()])
+    elif line.startswith("  email    "):
+        authors[-1][1]["email"] = line[indent:].strip()
+    elif line.startswith("  web      "):
+        authors[-1][1]["web"] = line[indent:].strip()
+    elif line.startswith("  github   "):
+        authors[-1][1]["github"] = line[indent:].strip()
+    elif line.startswith("  what     "):
+        authors[-1][1]["what"] = line[indent:].strip()
+    elif line.startswith("  grants   "):
+        authors[-1][1]["grants"] = line[indent:].strip()
+    elif line.startswith("  "):
+        authors[-1][1]["what"] = line[2:].strip()
+    i += 1
+
+authorlist = ""
+
+authorphoto = {
+    "William Hart" : "bill.jpg",
+    "Fredrik Johansson" : "fredrik.jpg",
+    "Albin Ahlbäck" : "albin.jpg",
+    "Andy Novocin" : "andy.jpg",
+    "Daniel Schultz" : "daniel.jpg",
+    "David Harvey" : "david.jpg",
+    "Mike Hansen" : "mike.jpg",
+    "Pascal Molin" : "pascal.jpg",
+    "Alex Best" : "alex.jpg",
+    "D.H.J. Polymath" : "polymath.jpg",
+}
+
+if 0:
+    authorlist += "<table>"
+    for author in authors:
+        author, data = author
+        s = ""
+        s += """<tr><td style="min-width:200px; text-align:center">"""
+        if data.get("web"):
+            s += """<a href="%s">%s</a>""" % (data.get("web"), author)
+        else:
+            s += """<b>%s</b>""" % author
+        if author in authorphoto:
+            s += """<br/><img src="people/%s" style="max-width:150px; max-height:150px" />""" % authorphoto[author]
+        #if data.get("github"):
+        #    s += """<br/><a href="https://github.com/flintlib/flint2/commits?author=%s">commits</a>""" % data.get("github")
+        s += "</td><td>"
+        s += """<p>%s</p>""" % data.get("what")
+        if data.get("grants"):
+            s += """<p><i>Supported by %s.</i></p>""" % (data.get("grants"))
+        s += "</td></tr>\n"
+        authorlist += s
+    authorlist += "</table>"
+else:
+    authorlist += "<dl>"
+    for author in authors:
+        author, data = author
+        s = ""
+        if author in authorphoto:
+            s += """<div style="float:right; clear:both; text-align:center; border:1px solid #f8f8f8; padding:0.3em; background-color:#fcfcfc; margin-left:0.5em; margin-bottom:0.5em"><img src="people/%s" style="max-width:130px; max-height:130px;" /><br/>%s</div>""" % (authorphoto[author], author)
+        s += "<dt>"
+        if data.get("web"):
+            s += """<a href="%s">%s</a>""" % (data.get("web"), author)
+        else:
+            s += """<b>%s</b>""" % author
+        s += "</dt>"
+        s += "<dd>"
+        s += """%s""" % data.get("what")
+        if data.get("grants"):
+            s += """ <i>Supported by %s.</i>    """ % (data.get("grants"))
+        s += "</dd>"
+        authorlist += s
+    authorlist += "</dl>"
+
 pages = ["index", "news", "documentation", "downloads", "development", "authors", "links"]
 
 page_titles = []
@@ -105,6 +203,7 @@ for page in pages:
     else:
         text = open(page + ".txt", "r").read()
         title = text[text.find("<h2>")+4 : text.find("</h2>")]
+    text = text.replace("%AUTHORLIST", authorlist)
     page_texts.append(text)
     page_titles.append(title)
 

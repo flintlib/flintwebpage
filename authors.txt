@@ -1,206 +1,46 @@
 <h2>Authors and credits</h2>
 
-<h3>Authors</h3>
+<h3>Brief project history</h3>
 
 <p>FLINT has been developed since 2007 by a large number of people. Initially
 the library was started by David Harvey and William Hart. Later maintenance
-of the library was taken over solely by William Hart until 2022.
-Since 2022, FLINT is maintained by Fredrik Johansson.
+of the library was taken over solely by William Hart,
+who remained the project leader until 2022.
 </p>
 
-<p>The authors of FLINT to date:</p>
+<p>FLINT 2.0 was a clean rewrite from scratch
+done around 2010 by William Hart, Sebastian Pancratz and Fredrik Johansson.
+Eventually, the 2.x series greatly expanded the scope of FLINT
+with new features such as finite fields (implemented by Mike Hansen) and
+multivariate polynomials (Daniel Schultz), just to mention two examples.
+</p>
+
+<p>
+FLINT 3.0, due for release in 2023, merges three spin-off projects
+which were previously maintained as separate
+libraries: Arb and Calcium (started by Fredrik Johansson in 2012 and 2020),
+and Antic (started by William Hart in 2013).
+The author list below includes people who contributed to those
+projects.
+</p>
+
+<h3>List of authors</h3>
+
+<p>
+See also the <a href="https://github.com/flintlib/flint2/graphs/contributors">automatically-generated</a> list of committers on GitHub.
+If your contribution to FLINT is not listed here or if any
+information is inaccurate, please
+contact the maintainer.
+</p>
+
+%AUTHORLIST
+
+<h3>Other contributors</h3>
 
 <ul>
 
-<li>William Hart -- integer and polynomial arithmetic, factorisation and
-primality testing, SSA style FFT, square root, general infrastructure
-(supported by EPSRC Grant EP/G004870/1, DFG Priority programme SPP1489,
-H2020 OpenDreamKit and TRR 195 FSB)</li>
-
-<li>Sebastian Pancratz -- polynomial arithmetic over Z, Z/nZ and
-Q, p-adic and q-adic arithmetic, including polynomials and matrices
-(supported by ERC Grant 204083)</li>
-
-<li>Andy Novocin -- LLL, polynomial factorisation over Z, polynomial
-composition</li>
-
-<li>Fredrik Johansson -- matrices, polynomial and power series
-arithmetic, special functions, many speedups (supported by Austrian
-Science Fund FWF Grant Y464-N18)</li>
-
-<li>Tom Bachmann -- C++ expressions template wrapper,
-documentation parser (Google Summer of Code 2013)</li>
-
-<li>Mike Hansen -- Finite fields (small and large F_q),
-polynomials/matrices over F_q, Finite fields with Zech logarithm
-representation, Fast factorisation of polynomials over F_q (supported by
-Macaulay2 developers NSF Grant 1002171)</li>
-
-<li>Daniel Schultz -- Multivariate polynomials, threadpool, matrix FFT, 
-LLL improvements, CRT improvements, matrix-vector products, small prime FFT,
-many speedups and additional functions (supported by OpenDreamKit and the
-DFG TRR 195 FSB)</li>
-
-<li>Luca De Feo, Edouard Rousseau -- Finite field embeddings</li>
-
-<li>Martin Lee -- Fast factorisation of polynomials over Z/nZ,
-faster Brent-Kung modular composition</li>
-
-<li>David Harvey -- Fast Fourier Transform code, zn_poly for
-polynomial arithmetic over Z/nZ, mpz_poly, profiling and
-graphing code and many other parts of the FLINT library</li>
-
-<li>Jan Tuitman -- helped with the p-adic interface</li>
-
-<li>Jason Papadopoulos -- Block Lanczos code for quadratic sieve and
-multiprecision complex root finding code for polynomials.</li>
-
-<li>Gonzalo Tornaria -- Theta function module, Montgomery multiplication
-and significant contributions to the Z[x] modular multiplication code.</li>
-
-<li>Burcin Erocal -- wrote the primary FLINT wrapper in the SAGE system
-(Robert Bradshaw also wrote a preliminary version of this and Martin Albrecht
-and others have also contributed to it.) Burcin also contributed by writing
-grant applications via his Lmonade organisation to Google. (Supported by DFG
-Priority programme SPP1489.)</li>
-
-<li>Tom Boothby -- Improved factoring of unsigned longs, detection of
-perfect powers</li>
-
-<li>Andres Goens -- F_q module and polynomials over F_q (supported
-by DFG Priority program SPP1489)</li>
-
-<li>Lina Kulakova -- factorisation for polynomials over F_p for large
-p (Google Summer of Code 2012)</li>
-
-<li>Abhinav Baid -- LLL implementation, Ogita, Rump, Oishi dot product,
-Villard algorithm for LLL certification, Schwarz-Rutishauser algorithms for 
-GSO and QR-decomposition (Google Summer of Code 2014)</li>
-
-<li>Curtis Bright -- Mentoring/planning of LLL implementation, numerous 
-patches including 32 bit support</li>
-
-<li>Alex Best -- Hermite Normal Form implementation including the
-Pernet-Stein algorithm and Smith Normal Form implementation including the
-Iliopoulos and Kannen-Bachem algorithms. Numerous improvements to nullspace,
-rref and rank computations and integer factoring and other improvements (Google
-Summer of Code 2014 and subsequent contributions) </li>
-
-<li>Isuru Fernando -- testing, build system maintenance, other minor
-fixes.</li>
-
-<li>Ben Orchard -- MSYS2 binary packages</li>
-
-<li>Thomas DuBuisson -- logical ops for fmpz module, patches to the build
-system</li>
-
-<li>Jean-Pierre Flori -- many build system patches and Sage integration</li>
-
-<li>Frithjof Schulze -- some fmpz functions and various patches</li>
-
-<li>Daniel Woodhouse -- Contributed an implementation of multivariate
-multiplication over Z/nZ and used this to implement a fast ``saturation''
-algorithm for Laurent polynomials. (Funded by Alessio Corti and Tom Coates
-at Imperial College)</li>
-
-<li>Tomasz Lechowski -- Contributed some NTL and Pari polynomial
-profiling code and researched algorithms for polynomials over finite fields.
-(Funded by the Nuffield Foundation)</li>
-
-<li>Daniel Scott -- Researched lazy and relaxed algorithms of Joris van
-der Hoeven. (Funded by Warwick University's Undergraduate Research Scholars
-Scheme)</li>
-
-<li>David Howden -- Wrote code for computing Bernoulli numbers mod many
-primes, including fast polynomial multiplication over Z/pZ specifically for
-the task. (Funded by Warwick University's Undergraduate Research Scholars
-Scheme)</li>
-
-<li>Daniel Ellam -- Helped design a module for p-adic arithmetic for
-FLINT. (Funded by Warwick University's Undergraduate Research Scholars Scheme)</li>
-
-<li>Richard Howell-Peak -- Wrote polynomial factorisation and
-irreducibility testing code for polynomials over Z/pZ. (Funded by Warwick
-University's Undergraduate Research Scholars Scheme)</li>
-
-<li>Peter Shrimpton -- Wrote code for a basic prime sieve,
-Pocklington-Lehmer, Lucas, Fibonacci, BSPW and n-1 primality tests and a
-Weiferich prime search. (Funded by the Nuffield Foundation)</li>
-
-<li>Brian Gladman -- MSVC support</li>
-
-<li>Dana Jacobsen -- test BPSW primality code up to 2^64 against
-Feitma's tables and sped up and corrected n_is_prime and
-\code{n_is_probabprime}. Improvements to n_nextprime and
-\code{n_isprime}</li>
-
-<li>Anubhav Srivastava -- Contributed horizontal and vertical concatenation
-of matrices over ZZ and an implementation of the Bodrato matrix
-squaring algorithm</li>
-
-<li>Dharak Kharod and Prabhdeep Singh Walia -- independently
-contributed matrix content</li>
-
-<li>Alena Sergeicheva -- contributed a patch to the build system for
-individual file testing and also contributed numerous matrix concatenation
-functions</li>
-
-<li>Kushagra Singh -- contributed fast cube root and nth root code for word
-sized integers, including magic number, Newton iteration, Kahan iteration and
-Chebyshev approximation code, he also contributed ECM and Pollard's Rho
-and quadratic sieve factoring algorithm implementations as part of a Google
-Summer of Code.
-
-<li>Andreas Enge -- help with a port to MIPS64 and various other build issues.
-
-<li>Tommy Hofmann -- implemented Howell and strong echelon form and supplied
-some inline functions and other improvements and bug fixes.</li>
-
-<li>Ashish Kedia -- contributed an implementation of the Paterson-Stockmeyer
-algorithm.</li>
-
-<li>Nitin Kumar -- contributed under a Google Summer of Code project to the
-quadratic sieve.</li>
-
-<li>Vladimir Glazachev -- contributed an implementation of the APRCL
-primality testing algorithm and Shoup multiplication as part of a Google Summer
-of Code.</li>
-
-<li>Dan Roche -- contributed randprime and nextprime functions for the fmpz
-module and some minpoly code.</li>
-
-<li>Shivin Shrivastava -- contributed Fibonacci polynomials and some Taylor
-shift improvements.</li>
-
-<li>Alex Griffing -- contributed integer factor refinement and numerous small
-patches.</li>
-
-<li>Vincent Delecroix -- contributed power sums, various polynomial improvements,
-speedups, root counting and some patches.</li>
-
-<li>Aaditya Thakkar -- contributed Strassen multiplication over Z.</li>
-
-<li>Ralf Stephan -- contributed Hermite polynomials, Laguerre polynomials,
-shifted Legendre polynomials, Gegenbauer polynomials.</li>
-
-<li>Martin Raum -- contributed Kronecker product.</li>
-
-<li>xoviat -- contributed CMake support</li>
-
-<li>Claus Fieker -- flint_abort, qadics without Conway polynomials, minor
-improvements and bug fixes</li>
-
-<li>Srivin Srivastava -- Fibonacci polynomials, use of Taylor shift in linear
-composition, other minor contributions.</li>
-
-<li>Albin Ahlback -- xgcd improvements, improve fmpz functions for small
-inputs, CI improvements, documentation and many bugfixes/improvements.</li>
-
-<li>David Einstein -- Documentation proofreading</li>
-
-<li>Jerry James -- Fixed many memory leaks and overruns</li>
-
-<li>Patches and bug reports have been made by Michael Abshoff,
+<li>Patches, bug reports and documentation improvements
+have also been made by Michael Abshoff,
 Didier Deshommes, Craig Citro, Timothy Abbot, Carl Witty, Gonzalo Tornaria,
 Jaap Spies, Kiran Kedlaya, William Stein, Kate Minola, Didier Deshommes, Robert
 Bradshaw, Serge Torres, Dan Grayson, Martin Lee, Bob Smith, Antony Vennard,
@@ -215,8 +55,10 @@ Peter Frentrep, Eric Bray, Julian Ruth, Edgar Costa, Raphael Fourquet, John
 Palmieri, Pascal Mollin, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
 Pasechnik, Ben Lorenz, Mahrud Sayrafi, Lars Kastner, Gregory Vanuxem, Ivan
 Tsybulin, Debian User, Matthias Koeppe, Pavel Holoborodko, Victor Shoup,
-Michael Orlitzky, Tethys Svensson, Jan Jancar, Erico Noguerira Rolim, math-gout
-and others.</li>
+Michael Orlitzky, Tethys Svensson, Jan Jancar, Erico Noguerira Rolim, math-gout,
+Ondřej Čertík, Andrew Booker, Alexander Kobel, Andreas Enge,
+Hrvoje Abraham, Francesco Biscani, Marcello Seri, Yuri Matiyasevich,
+Gianfranco Costamagna, David Einstein, Jerry James, and others.</li>
 
 <li>In addition Michael Abshoff, William Stein and Robert Bradshaw have
 contributed to the build system of FLINT.</li>
@@ -232,72 +74,45 @@ project.</li>
 <li>Numerous people have contributed to wrapping FLINT in Sage and
 debugging, including Mike Hansen, Jean-Pierre Flori, Burcin Erocal, Robert
 Bradshaw, Martin Albrecht, Sebastian Pancratz, Fredrik Johansson, Jeroen
-Demeyer and Leif Lionhardy, amongst others.</li>
+Demeyer, Clemens Heuberger and Leif Lionhardy, amongst others.</li>
 
 <li>Some code (notably longlong.h and clz_tab.c) has been used from
-the GMP library, whose main author is Torbjorn Granlund.</li>
+the GMP library, whose main author is Torbjorn Granlund.
+FLINT also includes code from the MPFR library
+developed by Guillaume Hanrot, Vincent Lefèvre, Patrick Pélissier, Philippe Théveny, Paul Zimmermann and others.
+</li>
 
 </ul>
 
-FLINT 2 was a complete rewrite from scratch which began in about 2010.
-
-<h3>Supporting organisations</h3>
-
-<ul>
-<li><a href="http://www.lmona.de/">Lmonade</a></li>
-</ul>
 
 <h3>Citing FLINT</h3>
 
-<p>If your research depends on computations done with FLINT,
-please consider giving a formal citation.</p>
+<p>A general citation of the following form is recommended:</p>
 
-<p>You may cite the software itself
-(optionally a specific version of FLINT),
-for example using the following format:</p>
-
-<ul>
-<li>W. Hart, F. Johansson and S. Pancratz. FLINT: Fast Library for
-    Number Theory, 2013. version 2.4.0, <tt>https://flintlib.org</tt>.
-</li>
-</ul>
+<blockquote>The FLINT team. FLINT: Fast Library for Number Theory, 2023. Version 2.9.0, https://flintlib.org.</blockquote>
 
 <pre>
-@misc{flint,
-    author = {W. Hart and F. Johansson and S. Pancratz},
+@manual{flint,
+    key = {FLINT},
+    author = {The {FLINT} team},
     title = {{FLINT}: {F}ast {L}ibrary for {N}umber {T}heory},
-    year = {2013},
-    note = {Version 2.4.0, \url{https://flintlib.org}}
+    year = {2023},
+    note = {Version 2.9.0, \url{https://flintlib.org}}
 }
 </pre>
 
-<p>You may also choose to cite
-<a href="https://doi.org/10.1007/978-3-642-15582-6_18">this peer-reviewed article</a>:</p>
+<p>
+Please consider also looking up whether there is a paper discussing
+the specific feature(s) in FLINT which you are using. In many cases, there is such a paper!
+For example, research using the ball arithmetic component of FLINT (Arb) may cite:</p>
 
-<ul>
-<li>W. B. Hart. Fast Library for Number Theory: An Introduction. In <i>Proceedings of the Third
-  International Congress on Mathematical software</i>, ICMS'10, pages 88-91, Berlin, Heidelberg,
-  2010. Springer-Verlag. <tt>https://flintlib.org</tt>.
-</li>
-</ul>
+<blockquote>
+F. Johansson. "Arb: efficient arbitrary-precision midpoint-radius interval arithmetic", IEEE Transactions on Computers, 66(8):1281-1292, 2017. DOI: <a href="https://doi.org/10.1109/TC.2017.2690633">10.1109/TC.2017.2690633</a>
+</blockquote>
 
-<pre>
-@inproceedings{Hart2010,
-    author = {W. B. Hart},
-    title = {{Fast Library for Number Theory: An Introduction},
-    booktitle = {Proceedings of the Third International Congress
-        on Mathematical Software},
-    series = {ICMS'10},
-    year = {2010},
-    location = {Kobe, Japan},
-    pages = {88--91},
-    numpages = {4},
-    publisher = {Springer-Verlag},
-    address = {Berlin, Heidelberg},
-    note = {\url{https://flintlib.org}}
-}
-</pre>
+<p>Research using FLINT's number fields may cite:</p>
 
-<p>If you depend on a specific algorithm, please also consider
-citing the paper where that algorithm is described (if available).</p>
+    <blockquote>William B. Hart. "ANTIC: Algebraic number theory in C", Computeralgebra-Rundbrief: Vol. 56, 2015</blockquote>
+
+<p>Many other references can be found <a href="https://www.flintlib.org/doc/references.html">in the bibliography of the FLINT documentation</a>.</p>
 
