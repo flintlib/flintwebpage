@@ -42,7 +42,7 @@ contact the maintainer.
 <li>Patches, bug reports and documentation improvements
 have also been made by Michael Abshoff,
 Didier Deshommes, Craig Citro, Timothy Abbot, Carl Witty, Gonzalo Tornaria,
-Jaap Spies, Kiran Kedlaya, William Stein, Kate Minola, Didier Deshommes, Robert
+Jaap Spies, Kiran Kedlaya, William Stein, Kate Minola, Robert
 Bradshaw, Serge Torres, Dan Grayson, Martin Lee, Bob Smith, Antony Vennard,
 Frederic Chyzak, Julien Puydt, Dana Jacobsen, Michael Jacobson Jr.,
 Mike Stillman, Jan Englehardt, Jean-Pierre Flori, Jeroen Demeyer, Shi Bai,

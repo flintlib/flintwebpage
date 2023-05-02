@@ -20,18 +20,16 @@
 
 <p>Our GitHub issue tracker: <a href="https://github.com/flintlib/flint2/issues">https://github.com/flintlib/flint2/issues</a></p>
 
-<p>Here is a list of ideas for development projects
-that would be highly valuable to a large number of users.
-Some of these could
-make good student projects (or in some cases, research projects).
-</p>
+<p>Here are some of ideas for development projects
+that would be highly valuable to a large number of users.</p>
 
 <ul>
-<li>Improve FLINT's linear algebra performance by wrapping BLAS for matrix multiplication.</li>
-<li>Implement a small primes FFT that takes advantage of vectorisation, to speed up integer and polynomial arithmetic.</li>
+<li>Improve FLINT's linear algebra performance using vectorization.</li>
 <li>Write a tuning framework to automatically select algorithm thresholds on different architectures.</li>
 <li>Work on assembly optimisations for specific architectures.</li>
-<li>Sparse linear algebra (currently in progress)</li>
+<li>Sparse linear algebra.</li>
+<li>Improve algorithms for dealing with exact algebraic and transcendental numbers.</li>
+<li>Low-precision interval arithmetic.</li>
 </ul>
 
 <p>
@@ -40,4 +38,13 @@ A longer list of (mostly minor) issues to work on can be found in the
 If you are interested in contributing to FLINT in any way,
 or even just want to request a feature,
 don't hesitate to leave a message on the mailing list!</p>
+
+<h3>Job and internship opportunities</h3>
+
+<p>
+There may be openings for postdocs, PhD theses, master's theses, or research internships
+relating to FLINT development.
+Contact <a href="mailto:fredrik.johansson@gmail.com">Fredrik Johansson</a>
+for more information.
+</p>
 

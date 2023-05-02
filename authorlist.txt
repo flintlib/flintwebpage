@@ -137,6 +137,7 @@ Isuru Fernando
   Testing, build system maintenance, help merging the projects,
   other minor fixes. Support for CMake and MSVC builds.
 
+  web      https://github.com/isuruf
   github   isuruf
 
 Luca De Feo
@@ -183,6 +184,8 @@ Gonzalo Tornaria
   Theta function module, Montgomery multiplication
   and significant contributions to the Z[x] modular
   multiplication code.
+
+  web      http://www.cmat.edu.uy/~tornaria/
 
 Burcin Erocal
 
@@ -328,6 +331,8 @@ Vincent Delecroix
 
   Power sums, various polynomial improvements, speedups,
   root counting and some patches. Work on Sage interface.
+
+  web      https://www.labri.fr/perso/vdelecro/
 
 Aaditya Thakkar
 
