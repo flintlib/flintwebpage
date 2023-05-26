@@ -54,7 +54,7 @@ however, FLINT can compute far more general mathematical objects.
 
 <p>As of May 2023, the largest number that has been certified
 prime using a primality test for numbers of general form
-(as opposed to the Lucas-Lehmer test for Mersenne number, etc.)
+(as opposed to special tests such as Lucas-Lehmer for Mersenne primes)
 is the 86453-digit repunit 11111...11111.
 This was <a href="https://www.multiprecision.org/cm/ecpp.html">achieved</a> by Andreas Enge
 using the elliptic curve primality proving algorithm (ECPP)
@@ -163,13 +163,33 @@ using the exact real numbers in FLINT/Calcium to represent roots of polynomials.
 
 <p>The ball arithmetic in FLINT (formerly the separate Arb library)
 is used in diverse applications (physics, biology, engineering, number theory, etc.) requiring
-extremely precise and reliable numerical computation.</p>
+extremely precise and reliable numerical computation.
+</p>
+
+<h4>High-precision ODE solving</h4>
+
+<p>
+Arb arithmetic is used in the
+rigorous arbitrary-precision ODE solver developed by <a href="http://marc.mezzarobba.net/">Marc Mezzarobba</a>
+as part of the <a href="https://github.com/mkauers/ore_algebra/">ore_algebra</a> SageMath package.
+Mezzarobba's toolkit has been used in numerous settings,
+including:</p>
+
+<ul>
+<li>the construction of a large <a href="https://mathexp.eu/lairez/quarticdb">database of quartic surfaces</a>,</li>
+<li><a href="https://arxiv.org/abs/2209.10962">simplification of differential operators for Feynman integrals</a>, and</li>
+<li>state-of-the-art algorithms for <a href="https://arxiv.org/abs/1904.11705">computing the volumes of semi-algebraic sets</a> (see illustration).</li>
+</ul>
+
+<div style="text-align:center">
+<img src="torus.jpg" style="width:250px" />
+</div>
 
 <h4>Accurate Gaunt factors for quadrupole radiation</h4>
 
 <p>
 Josef Pradler and Lukas Semmelrock
-write in the <i>The Astrophysical Journal</i> (2021) about
+write in <i>The Astrophysical Journal</i> (2021) about
 computing <a href="https://doi.org/10.3847/1538-4357/ac0898">accurate Gaunt factors for nonrelativistic quadrupole bremsstrahlung</a>:
 
 <blockquote>The calculation of hypergeometric functions of large imaginary arguments is a difficult task [...].
