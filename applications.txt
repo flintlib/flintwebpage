@@ -59,7 +59,7 @@ is the 86453-digit repunit 11111...11111.
 This was <a href="https://www.multiprecision.org/cm/ecpp.html">achieved</a> by Andreas Enge
 using the elliptic curve primality proving algorithm (ECPP)
 implemented in his CM software.
-CM uses FLINT to for certain operations such as
+CM uses FLINT for certain operations such as
 exponentiation in the ring $(\mathbf{Z}/n \mathbf{Z})[x] / f$
 (done using FLINT's <tt>fmpz_mod_poly</tt> type)
 as part of the Cantor-Zassenhaus step.
