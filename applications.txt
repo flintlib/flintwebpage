@@ -50,6 +50,26 @@ program <a href="http://www.numberworld.org/y-cruncher/">y-cruncher</a>
 however, FLINT can compute far more general mathematical objects.
 </p>
 
+<h4>Elliptic curve primality proving</h4>
+
+<p>As of May 2023, the largest number that has been certified
+prime using a primality test for numbers of general form
+(as opposed to the Lucas-Lehmer test for Mersenne number, etc.)
+is the 86453-digit repunit 11111...11111.
+This was <a href="https://www.multiprecision.org/cm/ecpp.html">achieved</a> by Andreas Enge
+using the elliptic curve primality proving algorithm (ECPP)
+implemented in his CM software.
+CM uses FLINT to for certain operations such as
+exponentiation in the ring $(\mathbf{Z}/n \mathbf{Z})[x] / f$
+(done using FLINT's <tt>fmpz_mod_poly</tt> type)
+as part of the Cantor-Zassenhaus step.
+</p>
+
+<p>FLINT itself currently includes provable primality tests such as APRCL
+suitable for smaller numbers (up to a few thousand digits)
+as well as probable prime tests such as Miller-Rabin and BPSW
+useful for numbers of any size.</p>
+
 <h3>Exact linear algebra</h3>
 
 <h4>Integer matrix multiplication</h4>
