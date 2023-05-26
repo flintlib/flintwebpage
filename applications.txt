@@ -3,33 +3,28 @@
 <h2>Applications & benchmarks</h2>
 
 <p>
-Here we illustrate FLINT's capabilities on various benchmark problems and
+Here we illustrate FLINT's performance on various benchmarks and
 give examples of research problems that were
 solved with FLINT's help.
 </p>
 
 <h3>Arithmetic with huge numbers</h3>
 
+<h4>Digits of pi</h4>
+
 <p>
 FLINT uses <a href="https://gmplib.org">GMP</a> and
 <a href="https://mpfr.org">MPFR</a> under the hood but notably also
 provides its own arbitrary-size integer and floating-point code
 which can be 2-10 times faster in many typical applications.
-</p>
-
-<h4>Digits of pi</h4>
-
-<p>
-A basic benchmark problem is to compute $\pi$ to 100 million digits
-using the builtin pi function
-(for GMP we use the GMP-chudnovsky program provided on the GMP website):</p>
+A basic benchmark problem is to compute $\pi$ to 100 million digits.</p>
 
 <table style="margin-left: auto; margin-right: auto;">
 <tr><th>Implementation</th> <th>Time</th></tr>
-<tr><td>GMP-chudnovsky</td> <td>62.1 s</td></tr>
-<tr><td>MPFR</td> <td>172.9 s</td></tr>
-<tr><td>FLINT</td> <td>31.6 s</td></tr>
-<tr><td>FLINT (8 threads)</td> <td>9.34 s</td></tr>
+<tr><td>GMP (<a href="https://gmplib.org/pi-with-gmp">GMP-chudnovsky</a>)</td> <td>62.1 s</td></tr>
+<tr><td>MPFR (builtin function <tt>mpfr_const_pi</tt>)</td> <td>172.9 s</td></tr>
+<tr><td>FLINT (builtin function <tt>arb_const_pi</tt>)</td> <td>31.6 s</td></tr>
+<tr><td>FLINT (builtin function <tt>arb_const_pi</tt>) (8 threads)</td> <td>9.34 s</td></tr>
 </table>
 
 <div style="text-align:center">
@@ -59,6 +54,11 @@ however, FLINT can compute far more general mathematical objects.
 
 <h4>Integer matrix multiplication</h4>
 
+<p>
+Matrix multiplication is a common kernel for other operations.
+Here we compare timings to multiply two 100 &times; 100 matrices with <i>b</i>-bit integer entries.
+</p>
+
 <table style="margin-left: auto; margin-right: auto;">
 <tr><th>Language, integer type  </th><th> Algorithm                 </th><th> $b = 10$</th><th> $b = 100$</th><th> $b = 1000$</th></tr>
 <tr><td>Julia, <tt>BigInt</tt> </td><td>  Naive (built-in <tt>*</tt> for <tt>Array</tt>)     </td><td> 0.224</td><td> 0.356</td><td> 0.542</td></tr>
@@ -81,25 +81,19 @@ Benchmark machine: 8-core AMD Ryzen 7 PRO 5850U CPU (Zen 3).
 Note: for this benchmark, we configured FLINT to use the BLAS backend for modular matrix multiplications.</i></p>
 </div>
 
-
-<p>
-Matrix multiplication is a common kernel for other operations.
-Here we compare timings to multiply two 100 &times; 100 matrices with <i>b</i>-bit integer entries.
-</p>
-
 <p>
 The main takeway is that an optimized integer matrix multiplication algorithm
 such as that provided by FLINT's <tt>fmpz_mat_mul</tt>
 is much faster (sometimes by more than a factor 1000) than a naive loop doing $n^3$ big-integer multiplications and additions.
 For the matrices in this benchmark, FLINT's <tt>fmpz_mat_mul</tt> is using a multimodular algorithm.
-(Pari/GP also uses a similar algorithm, but it is somewhat slower than FLINT.)
+Pari/GP also uses a similar algorithm, but it is somewhat slower than FLINT.
 </p>
 
 <p>
 If one implements the naive algorithm, FLINT's <tt>fmpz_t</tt> is about 3&times; faster than GMP's
 <tt>mpz_t</tt> with small entries
 (and at worst 20% slower for medium-size entries)
-due to using an inline representation for word-size integers.
+due to using an inline representation for values that fit in a single machine word.
 </p>
 
 <h3>Multivariate polynomial arithmetic</h3>
