@@ -63,10 +63,6 @@ asymptotically fast and special-purpose algorithms
 depending on the size and structure of the problem.
 Many algorithms are fully parallel (multithreaded)
 and some key functions use SIMD acceleration.
-FLINT uses <a href="https://gmplib.org">GMP</a> and
-<a href="https://mpfr.org">MPFR</a> under the hood but notably also
-provides its own arbitrary-size integer and floating-point code
-which is often 2-10 times faster.
 </p>
 
 <h3>Handles real numbers</h3>

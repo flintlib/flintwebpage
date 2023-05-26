@@ -20,7 +20,9 @@ body { font-family: 'nunito', arial, sans-serif; font-size: 16px; line-height: 1
 h1, h2, h3 { line-height: 1.5em; }
 h1 { font-weight: bold; font-size:36px; margin-bottom: 0.5em; text-align:center; }
 h2 { background-color: #f6f6f6; padding: 0.3em; border: 1px solid #fafafa; }
-h4 { color: #777; }
+
+h3 { border-bottom: 1px solid #888; }
+h4 { background-color: #f8f8f8; }
 
 table { border-collapse:collapse; }
 table, th, td { border: 1px solid #aaa; }
@@ -41,8 +43,12 @@ a:hover { color: #206fc0; text-decoration: none; background-color: #fafafa; }
 .benchmark th { text-align:left; padding-top:5px; padding-bottom:4px; background-color:#eee; color:#000; }
 .benchmark tr.alt td { color:#000; background-color:#f8f8f8; }
 
+blockquote { font-style: italic; }
 
 </style>
+
+%KATEX%
+
 </head>
 
 <body>
@@ -92,6 +98,23 @@ PAGE_BOTTOM = r"""
 
 </body>
 </html>
+"""
+
+PAGE_KATEX = r"""
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false}
+          ]
+      });
+  });
+</script>
 """
 
 indent = 11
@@ -191,10 +214,11 @@ else:
         authorlist += s
     authorlist += "</dl>"
 
-pages = ["index", "news", "documentation", "downloads", "development", "authors", "links"]
+pages = ["index", "applications", "news", "documentation", "downloads", "development", "authors", "links"]
 
 page_titles = []
 page_texts = []
+page_want_katex = []
 
 for page in pages:
     if 0 and page == "documentation":
@@ -203,7 +227,9 @@ for page in pages:
     else:
         text = open(page + ".txt", "r").read()
         title = text[text.find("<h2>")+4 : text.find("</h2>")]
+    page_want_katex.append("%WANT_KATEX" in text)
     text = text.replace("%AUTHORLIST", authorlist)
+    text = text.replace("%WANT_KATEX", "")
     page_texts.append(text)
     page_titles.append(title)
 
@@ -250,7 +276,7 @@ for i in range(len(pages)):
         title = " - " + title
 
     fp = open(pages[i] + ".html", "w")
-    fp.write(PAGE_TOP.replace("TITLE", title).replace("MENU", menu))
+    fp.write(PAGE_TOP.replace("TITLE", title).replace("MENU", menu).replace("%KATEX%", PAGE_KATEX if page_want_katex[i] else ""))
     fp.write(page_texts[i])
     fp.write(PAGE_BOTTOM.replace("TIMESTAMP", timestamp))
     fp.close()

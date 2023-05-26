@@ -1,0 +1,240 @@
+%WANT_KATEX
+
+<h2>Applications & benchmarks</h2>
+
+<p>
+Here we illustrate FLINT's capabilities on various benchmark problems and
+give examples of research problems that were
+solved with FLINT's help.
+</p>
+
+<h3>Arithmetic with huge numbers</h3>
+
+<p>
+FLINT uses <a href="https://gmplib.org">GMP</a> and
+<a href="https://mpfr.org">MPFR</a> under the hood but notably also
+provides its own arbitrary-size integer and floating-point code
+which can be 2-10 times faster in many typical applications.
+</p>
+
+<h4>Digits of pi</h4>
+
+<p>
+A basic benchmark problem is to compute $\pi$ to 100 million digits
+using the builtin pi function
+(for GMP we use the GMP-chudnovsky program provided on the GMP website):</p>
+
+<table style="margin-left: auto; margin-right: auto;">
+<tr><th>Implementation</th> <th>Time</th></tr>
+<tr><td>GMP-chudnovsky</td> <td>62.1 s</td></tr>
+<tr><td>MPFR</td> <td>172.9 s</td></tr>
+<tr><td>FLINT</td> <td>31.6 s</td></tr>
+<tr><td>FLINT (8 threads)</td> <td>9.34 s</td></tr>
+</table>
+
+<div style="text-align:center">
+<p><i>Benchmark machine: 8-core AMD Ryzen 7 PRO 5850U CPU (Zen 3).</i></p>
+</div>
+
+<p>
+FLINT is about twice as fast as GMP and five times faster than MPFR on this benchmark.
+When allowed to use multiple threads, FLINT is 6.6x faster than GMP (which is
+single-threaded only)
+and 18x faster
+than MPFR.
+Note that due to the nature of the algorithm
+used to compute $\pi$, this benchmark heavily exercises numbers of all sizes,
+not just 100-million-digit numbers.
+</p>
+
+<p>
+We mention that FLINT is about half as fast as
+the special-purpose, closed-source pi computing
+program <a href="http://www.numberworld.org/y-cruncher/">y-cruncher</a>
+(which does this in 18.3 s on a single core and in 4.45 s on 8 cores);
+however, FLINT can compute far more general mathematical objects.
+</p>
+
+<h3>Exact linear algebra</h3>
+
+<h4>Integer matrix multiplication</h4>
+
+<table style="margin-left: auto; margin-right: auto;">
+<tr><th>Language, integer type  </th><th> Algorithm                 </th><th> $b = 10$</th><th> $b = 100$</th><th> $b = 1000$</th></tr>
+<tr><td>Julia, <tt>BigInt</tt> </td><td>  Naive (built-in <tt>*</tt> for <tt>Array</tt>)     </td><td> 0.224</td><td> 0.356</td><td> 0.542</td></tr>
+<tr><td>Python, <tt>int</tt>   </td><td>  Naive (<tt>@</tt> for <tt>numpy.array</tt>)     </td><td> 0.0375 </td><td> 0.0731</td><td> 0.890</td></tr>
+<tr><td>Python, <tt>gmpy2.mpz</tt>  </td><td>  Naive (<tt>@</tt> for <tt>numpy.array</tt>) </td><td> 0.0479 </td><td> 0.0537</td><td> 0.192</td></tr>
+<tr><td>Pari/GP, <tt>t_INT</tt></td><td> Naive ($n^3 \times$ (<tt>c += a * b</tt>))   </td><td>  0.211</td><td> 0.219</td><td> 0.369</td></tr>
+<tr><td>Pari/GP, <tt>t_INT</tt></td><td> Optimized (built-in <tt>*</tt> for <tt>t_MAT</tt>)   </td><td> 0.00147 </td><td> 0.00920</td><td> 0.102</td></tr>
+<tr><td>GMP (C++ wrapper), <tt>mpz_class</tt></td><td> Naive ($n^3 \times$ (<tt>c += a * b</tt>))    </td><td> 0.0287 </td><td> 0.0294</td><td> 0.169</td></tr>
+<tr><td>GMP, <tt>mpz_t</tt></td><td> Naive ($n^3 \times$ (<tt>mpz_addmul</tt>))        </td><td> 0.0122 </td><td> 0.0172</td><td> 0.159</td></tr>
+<tr><td>FLINT, <tt>fmpz_t</tt></td><td> Naive ($n^3 \times$ (<tt>fmpz_addmul</tt>))       </td><td> 0.00395 </td><td> 0.0213</td><td> 0.163</td></tr>
+<tr><td>FLINT, <tt>fmpz_t</tt></td><td> Optimized (<tt>fmpz_mat_mul</tt>),    </td><td> 0.0000678</td><td> 0.00235</td><td> 0.0456</td></tr>
+<tr><td>FLINT, <tt>fmpz_t</tt></td><td> Optimized (<tt>fmpz_mat_mul</tt>), 8 threads    </td><td> 0.0000675</td><td> 0.000800</td><td> 0.0142</td></tr>
+</table>
+
+<div style="text-align:center">
+<p>
+<i>
+Timing results are given in seconds.
+Benchmark machine: 8-core AMD Ryzen 7 PRO 5850U CPU (Zen 3).
+Note: for this benchmark, we configured FLINT to use the BLAS backend for modular matrix multiplications.</i></p>
+</div>
+
+
+<p>
+Matrix multiplication is a common kernel for other operations.
+Here we compare timings to multiply two 100 &times; 100 matrices with <i>b</i>-bit integer entries.
+</p>
+
+<p>
+The main takeway is that an optimized integer matrix multiplication algorithm
+such as that provided by FLINT's <tt>fmpz_mat_mul</tt>
+is much faster (sometimes by more than a factor 1000) than a naive loop doing $n^3$ big-integer multiplications and additions.
+For the matrices in this benchmark, FLINT's <tt>fmpz_mat_mul</tt> is using a multimodular algorithm.
+(Pari/GP also uses a similar algorithm, but it is somewhat slower than FLINT.)
+</p>
+
+<p>
+If one implements the naive algorithm, FLINT's <tt>fmpz_t</tt> is about 3&times; faster than GMP's
+<tt>mpz_t</tt> with small entries
+(and at worst 20% slower for medium-size entries)
+due to using an inline representation for word-size integers.
+</p>
+
+<h3>Multivariate polynomial arithmetic</h3>
+
+<p>
+FLINT includes fast, multithreaded code for multivariate polynomials
+over $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{Z}/n\mathbb{Z}$ and
+other coefficient rings.
+Some older (2019) benchmarks results are available (<a href="http://wbhart.blogspot.com/2019/08/parallel-multivariate-arithmetic-final.html">part 1</a>, 
+<a href="http://wbhart.blogspot.com/2019/08/update-on-trip-timings-for-multivariate.html">part 2</a>)
+demonstrating favorable performance compared to Maple, Trip and Giac
+on both sparse and dense problems.
+</p>
+
+<h3>Handling algebraic and exact numbers</h3>
+
+<h4>Equality of two large expressions</h4>
+
+<p>
+Computer algebra systems often struggle
+to manipulate exact numbers like $\sqrt{2 + \sqrt{3}}$
+when the expressions become large.
+FLINT can sometimes handle such problems more easily.
+In 2020 a SageMath user
+<a href="https://ask.sagemath.org/question/52653/equality-of-algebraic-numbers-given-by-huge-symbolic-expressions/">reported</a>
+that SageMath did not finish in six hours when asked to check
+the equality $A = B$ of two algebraic numbers
+which arose in a matrix computation.
+The expressions for the numbers involve nested square roots and have about
+7000 terms.
+The current version of FLINT proves this equality in four seconds.</p>
+
+<h4>Cutting squares into similar rectangles</h4>
+
+<div style="text-align:center">
+<img src="squarecutting.png" style="width:600px; max-width:80%" />
+</div>
+
+<p>
+Ian Henderson has a <a href="http://ianhenderson.org/similar-rectangles/">nice writeup</a>
+about enumerating all ways to cut a square into $n$ similar rectangles. 
+This problem was solved up to $n = 8$ with an exhaustive computer search
+using the exact real numbers in FLINT/Calcium to represent roots of polynomials.
+</p>
+
+<h3>Numerical computation</h3>
+
+<p>The ball arithmetic in FLINT (formerly the separate Arb library)
+is used in diverse applications (physics, biology, engineering, number theory, etc.) requiring
+extremely precise and reliable numerical computation.</p>
+
+<h4>Accurate Gaunt factors for quadrupole radiation</h4>
+
+<p>
+Josef Pradler and Lukas Semmelrock
+write in the <i>The Astrophysical Journal</i> (2021) about
+computing <a href="https://doi.org/10.3847/1538-4357/ac0898">accurate Gaunt factors for nonrelativistic quadrupole bremsstrahlung</a>:
+
+<blockquote>The calculation of hypergeometric functions of large imaginary arguments is a difficult task [...].
+A particular strength of [Arb] is the rigorous computation of hypergeometric functions [...]; common software frameworks such as <i>Mathematica</i> appear not able to yield results
+for $|\nu_i| \gtrsim 100$ for all required function values in a reasonable amount of time</blockquote>
+
+<blockquote>
+We use Arb to calculate the hypergeometric functions, Sommerfeld factors, and all
+coefficients; in short, the entire expression
+This is required, because, first, products such as $S_i S_f \times |{}_2F_1(i \nu_f, i \nu_i; 1; z)|^2$ can be
+of the form $huge \times tiny$, and second, because of the occurrence
+of cancellations in the final linear combination of these terms.
+Because of factors $\exp(\pm \nu_{i,f})$ contained in $S_{i,f}$, it turns out that
+the required precision is approximately $|\nu_{i,f}|$. In our tabulation
+we therefore evaluate the ingredients with up to $10^4$ digits of
+precision.
+</blockquote>
+
+<h4>The ternary Goldbach conjecture</h4>
+
+<p>FLINT/Arb has been used for certain computations in Harald Helfgott's
+<a href="https://webusers.imj-prg.fr/~harald.helfgott/anglais/book.html">solution of the ternary Goldbach problem</a>,
+for instance to
+establish
+precise bounds for integrals involving the Riemann zeta function
+in the complex plane.
+The computations are described in more detail in Helfgott's book
+and on his website.</p>
+
+<div style="text-align:center">
+<img src="zplot2.svg" style="width:60%" /><br/>
+<i>Figure: a short subsegment of one of Helfgott's integrals: $\int_{-\tfrac{1}{4}+8i}^{-\tfrac{1}{4}+40000i} \left|\frac{F_{19}(s+\tfrac{1}{2}) F_{19}(s+1)}{s^2}\right| |ds|$, where $F_N(s) = \zeta(s) \prod_{p\leq N} (1 - p^{-s})$.</i>
+</div>
+
+<h4>The Riemann hypothesis</h4>
+
+<p>
+The highest verification of the Riemann hypothesis to date
+was done 
+<a href="https://arxiv.org/abs/2004.09765">in 2020 by Dave Platt and Trim Trudgian</a>,
+reaching height $3 \cdot 10^{12}$.
+Parts of their computations used FLINT/Arb ball arithmetic
+<blockquote>[...] in place of full interval arithmetic whence there is a space saving of roughly 50%, which
+make applications more cache friendly.</blockquote>
+</p>
+
+<h4>The de Bruijn-Newman constant</h4>
+
+<p>
+FLINT/Arb was used in a large distributed computation
+as part of the "polymath" project to <a href="https://terrytao.wordpress.com/2018/01/24/polymath-proposal-upper-bounding-the-de-bruijn-newman-constant/">bound the de Bruijn-Newman constant</a>.
+A contributor to that effort wrote:</p>
+
+<blockquote>
+Very impressed by the robustness of your software as well as by the tremendous speed gains that it has brought us (up till a factor 20-30 faster than Pari/GP). So far we haven't encountered a single bug in the software. Well done!
+</blockquote>
+
+<h4>Traveling wave solutions of PDEs</h4>
+
+<div style="text-align:center">
+<img src="BH-u.svg" style="width:300px" /><br/>
+</div>
+
+<p>
+Joel Dahne and Javier Gómez-Serrano
+have <a href="<a href="https://arxiv.org/abs/2205.00802">proved the existence</a> of a periodic highest, cusped, traveling wave solution for the
+Burgers-Hilbert equation,
+and more recently also for the fractional KdV equation.
+The interval computations in the proofs took 10,000 CPU hours to run on a 384-core cluster,
+employing power series arithmetic and special functions
+provided by FLINT/Arb. The authors write:
+</p>
+
+<blockquote>These bounds are highly non-trivial, in
+particular $\delta_{0}$ is given by the supremum of a function on
+the interval $[0, \pi]$ which attains its maximum around
+$10^{-5000}$. [...] Note that
+these numbers are extremely small, too small to be represented even
+in standard quadruple precision <tt>binary128</tt>, though Arb has
+no problem handling them.
+</blockquote>
+
