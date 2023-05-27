@@ -166,19 +166,21 @@ is used in diverse applications (physics, biology, engineering, number theory, e
 extremely precise and reliable numerical computation.
 </p>
 
-<h4>High-precision ODE solving</h4>
+<h4>Certified ODE solving and analytic continuation</h4>
 
 <p>
-Arb arithmetic is used in the
-rigorous arbitrary-precision ODE solver developed by <a href="http://marc.mezzarobba.net/">Marc Mezzarobba</a>
-as part of the <a href="https://github.com/mkauers/ore_algebra/">ore_algebra</a> SageMath package.
-Mezzarobba's toolkit has been used in numerous settings,
-including:</p>
+The <a href="https://github.com/mkauers/ore_algebra/">ore_algebra</a> package
+for SageMath includes tools developed by
+<a href="http://marc.mezzarobba.net/">Marc Mezzarobba</a> for computing rigorous arbitrary-precision solutions of holonomic ODEs
+and analytically continuing such solutions through the complex plane.
+The underlying complex arithmetic uses FLINT/Arb.
+Applications include:</p>
 
 <ul>
 <li>the construction of a large <a href="https://mathexp.eu/lairez/quarticdb">database of quartic surfaces</a>,</li>
-<li><a href="https://arxiv.org/abs/2209.10962">simplification of differential operators for Feynman integrals</a>, and</li>
-<li>state-of-the-art algorithms for <a href="https://arxiv.org/abs/1904.11705">computing the volumes of semi-algebraic sets</a> (see illustration).</li>
+<li><a href="https://arxiv.org/abs/2209.10962">simplification of differential operators for Feynman integrals</a>,</li>
+<li><a href="https://arxiv.org/abs/1904.11705">computing the volumes of semi-algebraic sets</a> in $n$ dimensions (see illustration), and</li>
+<li>proving uniqueness of the <a href="https://arxiv.org/abs/2011.08155">Canham model for biomembranes</a>.</li>
 </ul>
 
 <div style="text-align:center">
