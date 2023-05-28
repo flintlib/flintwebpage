@@ -60,7 +60,7 @@ This was <a href="https://www.multiprecision.org/cm/ecpp.html">achieved</a> by A
 using the elliptic curve primality proving algorithm (ECPP)
 implemented in his CM software.
 CM uses FLINT for certain operations such as
-exponentiation in the ring $(\mathbf{Z}/n \mathbf{Z})[x] / f$
+exponentiation in the ring $(\mathbb{Z}/n \mathbb{Z})[x] / f$
 (done using FLINT's <tt>fmpz_mod_poly</tt> type)
 as part of the Cantor-Zassenhaus step.
 </p>
@@ -114,6 +114,22 @@ If one implements the naive algorithm, FLINT's <tt>fmpz_t</tt> is about 3&times;
 <tt>mpz_t</tt> with small entries
 (and at worst 20% slower for medium-size entries)
 due to using an inline representation for values that fit in a single machine word.
+</p>
+
+<h3>Univariate polynomial arithmetic</h3>
+
+<h4>Tabulating Weil polynomials</h4>
+
+<p><a href="https://kskedlaya.org/">Kiran S. Kedlaya</a> reports:</p>
+
+<blockquote>My code in the Sage library for tabulating Weil polynomials makes extensive use of FLINT univariate polynomials over $\mathbb{Z}$, particularly to count real roots using Sturm-Habicht sequences. A concrete application apperas in my three recent papers on the relative class number one problem for function fields [<a href="https://doi.org/10.1007/s40993-022-00369-y">I</a>, <a href="https://arxiv.org/abs/2206.02084">II</a>, <a href="https://arxiv.org/abs/2208.11277">III</a>], where I end up running this code at scale to tabulate millions of Weil polynomials.</blockquote>
+
+<h4>A trillion triangles</h4>
+
+<p>In 2009, FLINT was used together
+with <a href="https://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/">zn_poly</a>
+for a large power series computation to determine the <a href="https://www.aimath.org/news/congruentnumbers/">congruent numbers up to $10^{12}$</a>,
+a result which was widely reported in the press ("A Trillion Triangles").
 </p>
 
 <h3>Multivariate polynomial arithmetic</h3>
