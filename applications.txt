@@ -60,7 +60,7 @@ This was <a href="https://www.multiprecision.org/cm/ecpp.html">achieved</a> by A
 using the elliptic curve primality proving algorithm (ECPP)
 implemented in his CM software.
 CM uses FLINT for certain operations such as
-exponentiation in the ring $(\mathbb{Z}/n \mathbb{Z})[x] / f$
+exponentiation in the ring $(\mathbf{Z}/n \mathbf{Z})[x] / f$
 (done using FLINT's <tt>fmpz_mod_poly</tt> type)
 as part of the Cantor-Zassenhaus step.
 </p>
@@ -122,9 +122,9 @@ due to using an inline representation for values that fit in a single machine wo
 
 <p><a href="https://kskedlaya.org/">Kiran S. Kedlaya</a> reports:</p>
 
-<blockquote>My code in the Sage library for tabulating Weil polynomials makes extensive use of FLINT univariate polynomials over $\mathbb{Z}$, particularly to count real roots using Sturm-Habicht sequences. A concrete application apperas in my three recent papers on the relative class number one problem for function fields [<a href="https://doi.org/10.1007/s40993-022-00369-y">I</a>, <a href="https://arxiv.org/abs/2206.02084">II</a>, <a href="https://arxiv.org/abs/2208.11277">III</a>], where I end up running this code at scale to tabulate millions of Weil polynomials.</blockquote>
+<blockquote>My code in the Sage library for tabulating Weil polynomials makes extensive use of FLINT univariate polynomials over $\mathbf{Z}$, particularly to count real roots using Sturm-Habicht sequences. A concrete application apperas in my three recent papers on the relative class number one problem for function fields [<a href="https://doi.org/10.1007/s40993-022-00369-y">I</a>, <a href="https://arxiv.org/abs/2206.02084">II</a>, <a href="https://arxiv.org/abs/2208.11277">III</a>], where I end up running this code at scale to tabulate millions of Weil polynomials.</blockquote>
 
-<h4>A trillion triangles</h4>
+<h4>Congruent numbers below one trillion</h4>
 
 <p>In 2009, FLINT was used together
 with <a href="https://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/">zn_poly</a>
@@ -136,7 +136,7 @@ a result which was widely reported in the press ("A Trillion Triangles").
 
 <p>
 FLINT includes fast, multithreaded code for multivariate polynomials
-over $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{Z}/n\mathbb{Z}$ and
+over $\mathbf{Z}$, $\mathbf{Q}$ and $\mathbf{Z}/n\mathbf{Z}$ and
 other coefficient rings.
 Some older (2019) benchmarks results are available (<a href="http://wbhart.blogspot.com/2019/08/parallel-multivariate-arithmetic-final.html">part 1</a>, 
 <a href="http://wbhart.blogspot.com/2019/08/update-on-trip-timings-for-multivariate.html">part 2</a>)
@@ -189,7 +189,8 @@ The <a href="https://github.com/mkauers/ore_algebra/">ore_algebra</a> package
 for SageMath includes tools developed by
 <a href="http://marc.mezzarobba.net/">Marc Mezzarobba</a> for computing rigorous arbitrary-precision solutions of holonomic ODEs
 and analytically continuing such solutions through the complex plane.
-The underlying complex arithmetic uses FLINT/Arb.
+FLINT/Arb is used for the underlying arithmetic with complex numbers
+and matrices, polynomials and power series.
 Applications include:</p>
 
 <ul>
