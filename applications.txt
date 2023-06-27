@@ -122,7 +122,7 @@ due to using an inline representation for values that fit in a single machine wo
 
 <p><a href="https://kskedlaya.org/">Kiran S. Kedlaya</a> reports:</p>
 
-<blockquote>My code in the Sage library for tabulating Weil polynomials makes extensive use of FLINT univariate polynomials over $\mathbf{Z}$, particularly to count real roots using Sturm-Habicht sequences. A concrete application apperas in my three recent papers on the relative class number one problem for function fields [<a href="https://doi.org/10.1007/s40993-022-00369-y">I</a>, <a href="https://arxiv.org/abs/2206.02084">II</a>, <a href="https://arxiv.org/abs/2208.11277">III</a>], where I end up running this code at scale to tabulate millions of Weil polynomials.</blockquote>
+<blockquote>My code in the Sage library for tabulating Weil polynomials makes extensive use of FLINT univariate polynomials over $\mathbf{Z}$, particularly to count real roots using Sturm-Habicht sequences. A concrete application appears in my three recent papers on the relative class number one problem for function fields [<a href="https://doi.org/10.1007/s40993-022-00369-y">I</a>, <a href="https://arxiv.org/abs/2206.02084">II</a>, <a href="https://arxiv.org/abs/2208.11277">III</a>], where I end up running this code at scale to tabulate millions of Weil polynomials.</blockquote>
 
 <h4>Congruent numbers below one trillion</h4>
 
@@ -131,6 +131,22 @@ with <a href="https://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/">zn_poly<
 for a large power series computation to determine the <a href="https://www.aimath.org/news/congruentnumbers/">congruent numbers up to $10^{12}$</a>,
 a result which was widely reported in the press ("A Trillion Triangles").
 </p>
+
+<h4>Solving polynomial systems</h4>
+
+<p>FLINT integer arithmetic and univariate polynomial arithmetic is used
+in the <a href="https://msolve.lip6.fr/">msolve</a> library
+for solving multivariate systems. For example, the authors write:
+</p>
+
+<blockquote>to tackle large degrees, we revisit asymptotically fast
+algorithms for Taylor shift (...) and implement them carefully using the
+FFT-based multiplication of FLINT for univariate
+polynomials with integer coefficients. This is a major difference
+with other implementations because of the (wrong) belief that asymptotically
+fast algorithms are useless in this context. This allows us to obtain a
+univariate solver which outperforms
+the state of the art on examples coming from our computations</blockquote>
 
 <h3>Multivariate polynomial arithmetic</h3>
 
