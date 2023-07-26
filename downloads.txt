@@ -1,20 +1,19 @@
 <h2>Downloads</h2>
 
-<p>For a list of changes in each release, see the <a href="https://github.com/flintlib/flint2/blob/trunk/NEWS">NEWS</a> file.</p> 
+<p>For a list of changes in each release, see the <a href="https://www.flintlib.org/doc/history.html">history</a> section of the documentation.</p> 
 
-<p>From version 2.6.0 CMake support is available in the main Flint
-distribution. If you prefer MSVC solution files, these are provided by Brian Gladman:</p>
+<h3>FLINT 3.x series:</h3>
 
-<p><a href="https://github.com/BrianGladman/flint">Brian Gladman's Flint
-repository</a></p>
+<ul>
+<li>2023-06-27 <b><a href="flint-3.0.0-alpha1.tar.gz">flint-3.0.0-alpha1.tar.gz</a></b>,
+               <b><a href="flint-3.0.0-alpha1.zip">flint-3.0.0-alpha1.zip</a></b>,
+                documentation: <b><a <a href="https://flintlib.org/doc/">Online documentation</a></b>
+</ul>
 
-<p>MSYS2 binaries are available <a href="https://packages.msys2.org/base/mingw-w64-flint">mingw-w64-flint</a></p>
-
-<p>FLINT 2.x series:</p>
+<h3>FLINT 2.x series:</h3>
 <ul>
 <li>2022-06-24 <b><a href="flint-2.9.0.tar.gz">flint-2.9.0.tar.gz</a></b>,
-<b><a href="flint-2.9.0.zip">flint-2.9.0.zip</a></b>, documentation: <b><a
-<a href="https://flintlib.org/doc/">Online documentation</a></b> (FLINT 2.9)</li>
+<b><a href="flint-2.9.0.zip">flint-2.9.0.zip</a></b></li>
 <li>2022-04-25 <b><a href="flint-2.8.5.tar.gz">flint-2.8.5.tar.gz</a></b>,
 <b><a href="flint-2.8.5.zip">flint-2.8.5.zip</a></b></li>
 <li>2021-01-18 <b><a href="flint-2.7.1.tar.gz">flint-2.7.1.tar.gz</a></b>,
@@ -29,7 +28,7 @@ repository</a></p>
 <li>2011-01-16 <a href="flint-2.0.tgz">flint-2.0.tgz</a>, documentation: <a href="flint-2.0.pdf">flint-2.0.pdf</a></li>
 </ul> 
 
-<p>FLINT 1.x series:</p>
+<h3>FLINT 1.x series:</h3>
 <ul> 
 <li>2010-12-24 <a href="flint-1.6.tgz">flint-1.6.tgz</a>, documentation: <a href="flint-1.6.pdf">flint-1.6.pdf</a></li> 
 <li>2010-04-08 <a href="flint-1.5.2.tar.gz">flint-1.5.2.tar.gz</a>, documentation: <a href="flint-1.5.2.pdf">flint-1.5.2.pdf</a></li> 
@@ -39,3 +38,8 @@ repository</a></p>
 <li>2008-03-09 <a href="flint-1.1.3.tar.gz">flint-1.1.3.tar.gz</a>, documentation: <a href="flint-1.1.3.pdf">flint-1.1.3.pdf</a></li> 
 <li>2008-12-25 <a href="flint-1.0.21.tar.gz">flint-1.0.21.tar.gz</a>, documentation: <a href="flint-1.0.21.pdf">flint-1.0.21.pdf</a></li> 
 </ul> 
+
+<h3>Other packages</h3>
+
+<p>MSYS2 binaries are available <a href="https://packages.msys2.org/base/mingw-w64-flint">mingw-w64-flint</a></p>
+
