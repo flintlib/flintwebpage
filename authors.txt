@@ -27,7 +27,7 @@ projects.
 <h3>List of authors</h3>
 
 <p>
-See also the <a href="https://github.com/flintlib/flint2/graphs/contributors">automatically-generated</a> list of committers on GitHub.
+See also the <a href="https://github.com/flintlib/flint/graphs/contributors">automatically-generated</a> list of committers on GitHub.
 If your contribution to FLINT is not listed here or if any
 information is inaccurate, please
 contact the maintainer.

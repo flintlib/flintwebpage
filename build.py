@@ -185,7 +185,7 @@ if 0:
         if author in authorphoto:
             s += """<br/><img src="people/%s" style="max-width:150px; max-height:150px" />""" % authorphoto[author]
         #if data.get("github"):
-        #    s += """<br/><a href="https://github.com/flintlib/flint2/commits?author=%s">commits</a>""" % data.get("github")
+        #    s += """<br/><a href="https://github.com/flintlib/flint/commits?author=%s">commits</a>""" % data.get("github")
         s += "</td><td>"
         s += """<p>%s</p>""" % data.get("what")
         if data.get("grants"):
