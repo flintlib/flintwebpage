@@ -1,30 +1,22 @@
 <h2>Links</h2>
 
 
-
 <h3>Software using FLINT</h3>
 
 <ul>
-<li><a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n.</li>
-<li>Work is currently in progress to use FLINT in <a href="https://www.singular.uni-kl.de">Singular</a>, <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a> and <a href="https://www.gap-system.org">GAP</a>.</li>
+<li><a href="https://www.sagemath.org">Sage</a> uses FLINT as the default package for polynomial arithmetic over Z, Q and Z/nZ for small n</li>
+<li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - Julia wrapper for FLINT</li>
+<li><a href="https://pypi.org/project/python-flint/">Python-flint</a> - Python-FLINT, a Python wrapper</li>
+<li><a href="https://hackage.haskell.org/package/Flint2">Flint2</a> - Haskell wrapper for FLINT</li>
+<li><a href="https://github.com/martinra/hflint">HFlint</a> - an older FLINT wrapper for Haskell</li>
+<li><a href="https://www.singular.uni-kl.de">Singular</a> uses FLINT internally</a></li>
+<li><a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a> uses FLINT internally</a></li>
 <li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
-<li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - a computer algebra package for the
-Julia programming language</li>
-<li><a href="https://github.com/martinra/hflint">HFlint</a> - a FLINT wrapper
-for Haskell</li>
-<li><a href="https://arblib.org/">Arb</a> - Real and complex ball arithmetic
-(Fredrik Johansson)</li>
-<li><a href="https://fredrikj.net/calcium/">Calcium</a> - Exact computation
-with real and complex numbers (Fredrik Johansson)</li>
-<li><a href="https://github.com/Nemocas/Nemo.jl">Nemo</a> - Julia
-wrapper for Flint, Arb and Antic (W. Hart, C. Fieker, T. Hofmann, F. Johansson, et
-al.</li>
 <li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
-<li><a href="https://pypi.org/project/flint-py/0.3.4/">Python-flint</a> - Python
-bindings for Flint (Fredrik Johansson)</li>
 <li><a
-href="https://research.coe.drexel.edu/ece/aspitrg/chmlib-readme.txt">chmlib</a>
-- Projection of polyhedral cones</li>
+href="https://research.coe.drexel.edu/ece/aspitrg/chmlib-readme.txt">chmlib</a> - Projection of polyhedral cones</li>
+<li><a href="https://arblib.org/">Arb</a> - Real and complex ball arithmetic (merged with FLINT 3.0)</li>
+<li><a href="https://fredrikj.net/calcium/">Calcium</a> - Exact computation with real and complex numbers (merged with FLINT 3.0)</li>
 </ul>
 
 <h3>References to FLINT in the literature and online</h3>
