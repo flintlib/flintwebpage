@@ -1,7 +1,8 @@
 <h2>News</h2>
 
-<p>The <a href="https://flintlib.github.io/workshop2023.html">2023 FLINT development workshop</a> will
-take place October 9 - 13 in Kaiserslautern</p>
+<p>2023-10-13: Flint 3.0.0-rc1 is available</p>
+
+<p>The <a href="https://flintlib.github.io/workshop2023.html">2023 FLINT development workshop</a> took place October 9 - 13 in Kaiserslautern</p>
 
 <p>2023-06-27: Flint 3.0.0-alpha1 is available</p>
 

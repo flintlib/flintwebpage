@@ -31,7 +31,12 @@ The upcoming FLINT 3.0 release comprises 8,000 documented functions,
 <p>
 FLINT runs on most common platforms, including Linux, macOS and Windows
 on typical hardware configurations.
-Several computer algebra systems rely on FLINT as a back-end library,
+</p>
+
+<p>
+Although FLINT itself is written in C, bindings are available for various general-purpose programming languages, including <a href="https://pypi.org/project/python-flint/">Python</a>, <a href="https://nemocas.github.io/Nemo.jl/latest/">Julia</a>,
+<a href="https://hackage.haskell.org/package/Flint2">Haskell</a> and <a href="https://github.com/flintlib/flintxx">C++</a>.
+Several computer algebra systems also rely on FLINT as a back-end library,
 including
 <a href="https://sagemath.org">SageMath</a>,
 <a href="https://oscar.computeralgebra.de/">Oscar</a>,
@@ -39,7 +44,6 @@ including
 <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a>,
 <a href="https://www.maplesoft.com/products/Maple/">Maple</a>
 and <a href="https://www.wolfram.com/mathematica/">Mathematica</a>.
-Wrappers are also available for various programming languages, including <a href="https://github.com/fredrik-johansson/python-flint">Python</a> and <a href="https://nemocas.github.io/Nemo.jl/latest/">Julia</a>.
 </p>
 
 <h3>At the research frontier</h3>

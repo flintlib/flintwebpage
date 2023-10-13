@@ -5,9 +5,12 @@
 <h3>FLINT 3.x series:</h3>
 
 <ul>
+<li>2023-10-13 <b><a href="flint-3.0.0-rc1.tar.gz">flint-3.0.0-rc1.tar.gz</a></b>,
+               <b><a href="flint-3.0.0-rc1.zip">flint-3.0.0-rc1.zip</a></b>,
+                documentation: <b><a <a href="https://flintlib.org/doc/">Online documentation</a></b></li>
+
 <li>2023-06-27 <b><a href="flint-3.0.0-alpha1.tar.gz">flint-3.0.0-alpha1.tar.gz</a></b>,
-               <b><a href="flint-3.0.0-alpha1.zip">flint-3.0.0-alpha1.zip</a></b>,
-                documentation: <b><a <a href="https://flintlib.org/doc/">Online documentation</a></b>
+               <b><a href="flint-3.0.0-alpha1.zip">flint-3.0.0-alpha1.zip</a></b></b></li>
 </ul>
 
 <h3>FLINT 2.x series:</h3>
