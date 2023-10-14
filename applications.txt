@@ -290,7 +290,7 @@ Very impressed by the robustness of your software as well as by the tremendous s
 
 <p>
 Joel Dahne and Javier Gómez-Serrano
-have <a href="<a href="https://arxiv.org/abs/2205.00802">proved the existence</a> of a periodic highest, cusped, traveling wave solution for the
+have <a href="https://arxiv.org/abs/2205.00802">proved the existence</a> of a periodic highest, cusped, traveling wave solution for the
 Burgers-Hilbert equation,
 and more recently also for the fractional KdV equation.
 The interval computations in the proofs took 10,000 CPU hours to run on a 384-core cluster,
