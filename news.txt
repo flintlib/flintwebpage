@@ -1,36 +1,38 @@
 <h2>News</h2>
 
-<p>2023-10-13: Flint 3.0.0-rc1 is available</p>
+<p>2023-10-20: FLINT 3.0.0 is <a href="https://github.com/flintlib/flint/releases/tag/v3.0.0">released</a>!</p>
+
+<p>2023-10-13: FLINT 3.0.0-rc1 is available</p>
 
 <p>The <a href="https://flintlib.github.io/workshop2023.html">2023 FLINT development workshop</a> took place October 9 - 13 in Kaiserslautern</p>
 
-<p>2023-06-27: Flint 3.0.0-alpha1 is available</p>
+<p>2023-06-27: FLINT 3.0.0-alpha1 is available</p>
 
 <h3>Past news and events</h3>
 
-<p>2022-06-24: Flint 2.9.0 is released!</p>
+<p>2022-06-24: FLINT 2.9.0 is released!</p>
 
-<p>2021-11-17: Flint 2.8.4 is released!</p>
+<p>2021-11-17: FLINT 2.8.4 is released!</p>
 
-<p>2021-11-03: Flint 2.8.3 is released!</p>
+<p>2021-11-03: FLINT 2.8.3 is released!</p>
 
-<p>2021-10-15: Flint 2.8.2 is released!</p>
+<p>2021-10-15: FLINT 2.8.2 is released!</p>
 
-<p>2021-10-01: Flint 2.8.1 is released!</p>
+<p>2021-10-01: FLINT 2.8.1 is released!</p>
 
-<p>2021-07-22: Flint 2.8.0 is released!</p>
+<p>2021-07-22: FLINT 2.8.0 is released!</p>
 
-<p>2021-01-18: Flint 2.7.1 is released!</p>
+<p>2021-01-18: FLINT 2.7.1 is released!</p>
 
-<p>2020-12-18: Flint 2.7.0 is released!</p>
+<p>2020-12-18: FLINT 2.7.0 is released!</p>
 
-<p>2020-08-12: Flint 2.6.3 is released!</p>
+<p>2020-08-12: FLINT 2.6.3 is released!</p>
 
-<p>2020-07-31: Flint 2.6.2 is released!</p>
+<p>2020-07-31: FLINT 2.6.2 is released!</p>
 
-<p>2020-07-23: Flint 2.6.1 is released!</p>
+<p>2020-07-23: FLINT 2.6.1 is released!</p>
 
-<p>2020-06-05: Flint 2.6.0 is released!</p>
+<p>2020-06-05: FLINT 2.6.0 is released!</p>
 
 <p>2016-04-28: The license for FLINT (repository and subsequent releases) is
 changed to LGPL v2.1+ after consultation with our contributors this month.
@@ -73,5 +75,5 @@ recommend updating as all versions of flint since 1.1 are affected.</p>
 
 <p>September 2012: <a href="https://lina-kulakova.blogspot.com">Lina Kulakova</a> completes her Google Summer of Code project on polynomial factorisation in FLINT</p>
 
-<p>17-22 December 2011: <a href="https://wiki.sagemath.org/SageFlintDays">Sage Days (Algorithms in Number Theory and FLINT)</a>, Warwick University</p>
+<p>17-22 December 2011: <a href="https://wiki.sagemath.org/SageFLINTDays">Sage Days (Algorithms in Number Theory and FLINT)</a>, Warwick University</p>
 

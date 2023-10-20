@@ -24,7 +24,7 @@ LLL, finite field embeddings, and more.</p>
 <h3>Mature & widely used</h3>
 
 <p>FLINT is the work of dozens of contributors, spanning 15+ years of development.
-The upcoming FLINT 3.0 release comprises 8,000 documented functions,
+The FLINT 3.0 release comprises 8,000 documented functions,
 3,500 test programs, and 900,000 lines of code.
 </p>
 
