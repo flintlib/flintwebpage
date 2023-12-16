@@ -82,6 +82,12 @@ FLINT also includes code from the MPFR library
 developed by Guillaume Hanrot, Vincent Lefèvre, Patrick Pélissier, Philippe Théveny, Paul Zimmermann and others.
 </li>
 
+<li>
+The <a href="https://portal.cfarm.net/">cfarm compile farm</a> project has generously
+provided FLINT developers access to machines for
+architecture-specific testing.
+</li>
+
 </ul>
 
 
