@@ -117,6 +117,15 @@ Pascal Molin
   web      https://webusers.imj-prg.fr/~pascal.molin/
   github   pascalmolin
 
+Jean Kieffer
+
+  Riemann theta functions in any dimension.
+  Various utility functions.
+
+  web      https://scholar.harvard.edu/kieffer/home
+  github   j-kieffer
+  grants   Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation
+
 Curtis Bright
 
   Mentoring/planning of LLL implementation, numerous 
@@ -124,10 +133,10 @@ Curtis Bright
 
 Albin Ahlbäck
 
-  Autotools-based build system, improvements to xgcd, improved fmpz
-  functions for small inputs, uniformly distributed random numbers,
-  CI improvements, documentation,
-  header file cleanup, maintenance, many bugfixes/improvements.
+  Autotools-based build system, optimised assembly for integer multiplication,
+  improvements to xgcd, improved fmpz functions for small inputs, uniformly
+  distributed random numbers, CI improvements, documentation,
+  header file cleanup, maintenance, many general bugfixes and improvements.
 
   web      https://albinahlback.gitlab.io/
   github   albinahlback
@@ -390,7 +399,12 @@ D.H.J. Polymath
 
 Joel Dahne
 
-  Feedback and improvements for Legendre functions, nth derivatives for Arb polynomials.
+  Feedback and improvements for Legendre functions, nth derivatives for Arb polynomials,
+  minmax function.
+
+Vincent Neiger
+
+  Many utility functions for nmod_mat and associated modules.
 
 Julian Rüth
 
@@ -398,6 +412,7 @@ Julian Rüth
 
 David Berghaus
 
+  Modular splitting evaluation of polynomials.
   Aliased window matrix multiplication.
 
 Matthias Gessinger
@@ -406,5 +421,12 @@ Matthias Gessinger
 
 Erik Postma
 
-  Improved handling of infinities.
+  Improved handling of infinities and wide intervals in Arb functions.
+
+Mathieu Gouttenoire
+
+  Primality testing for Gaussian integers.
+
+  github math-gout
+
 

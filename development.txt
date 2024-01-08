@@ -9,7 +9,7 @@
 <p>If you want to browse the repository online, or fork it on GitHub, it can be accessed here:</p> 
 <a href="https://github.com/flintlib/flint">https://github.com/flintlib/flint</a> 
  
-<p>The current development branch within the repository is "trunk".</p> 
+<p>The current development branch within the repository is "main".</p> 
 
 <h3>Mailing list</h3>
 

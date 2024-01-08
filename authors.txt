@@ -41,7 +41,7 @@ contact the maintainer.
 
 <li>Patches, bug reports and documentation improvements
 have also been made by Michael Abshoff,
-Didier Deshommes, Craig Citro, Timothy Abbot, Carl Witty, Gonzalo Tornaria,
+Didier Deshommes, Craig Citro, Timothy Abbot, Carl Witty, Gonzalo Tornaría,
 Jaap Spies, Kiran Kedlaya, William Stein, Kate Minola, Robert
 Bradshaw, Serge Torres, Dan Grayson, Martin Lee, Bob Smith, Antony Vennard,
 Frederic Chyzak, Julien Puydt, Dana Jacobsen, Michael Jacobson Jr.,
@@ -52,13 +52,16 @@ Roche, Denis Kryskov, Daniel Fabian, Julien Ospald, mgkurtz, Max Goldfar, Max
 Horn, lzmths, Volker Braun, Pascal Molin, Ralf Stehpan, Apoorv Mishra, Tobias
 Hansen, sourcekris, yuri@FreeBSD, vinklein, Michele Orru, Frederik Chapoton,
 Peter Frentrep, Eric Bray, Julian Ruth, Edgar Costa, Raphael Fourquet, John
-Palmieri, Pascal Mollin, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
+Palmieri, Srajan Garg, Peter Luschny, Dejan Latinovic, Dima
 Pasechnik, Ben Lorenz, Mahrud Sayrafi, Lars Kastner, Gregory Vanuxem, Ivan
 Tsybulin, Debian User, Matthias Koeppe, Pavel Holoborodko, Victor Shoup,
 Michael Orlitzky, Tethys Svensson, Jan Jancar, Erico Noguerira Rolim, math-gout,
 Ondřej Čertík, Andrew Booker, Alexander Kobel, Andreas Enge,
 Hrvoje Abraham, Francesco Biscani, Marcello Seri, Yuri Matiyasevich,
-Gianfranco Costamagna, David Einstein, Jerry James, and others.</li>
+Gianfranco Costamagna, David Einstein, Jerry James, Oscar Benjamin,
+Michiel de Wilde, Ricardo Buring, Håvard Damm-Johnsen,
+Tomás Oliveira e Silva, Fabian Gundlach, Josh Rickmar, Alexander Smirnov,
+and others.</li>
 
 <li>In addition Michael Abshoff, William Stein and Robert Bradshaw have
 contributed to the build system of FLINT.</li>
