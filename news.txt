@@ -1,5 +1,7 @@
 <h2>News</h2>
 
+<p>The <a href="https://flintlib.github.io/workshop2024.html">2024 FLINT development workshop</a> will take place March 18 - 22 in Bordeaux</p>
+
 <p>2023-10-20: FLINT 3.0.0 is <a href="https://github.com/flintlib/flint/releases/tag/v3.0.0">released</a>!</p>
 
 <p>2023-10-13: FLINT 3.0.0-rc1 is available</p>

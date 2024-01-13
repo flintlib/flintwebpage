@@ -119,7 +119,11 @@ PAGE_KATEX = r"""
 
 indent = 11
 
-lines = open("authorlist.txt").read().splitlines()
+authors_data = open("../flint/AUTHORS").read().splitlines()
+
+lines = authors_data[authors_data.index("Major contributors")+2 : authors_data.index("Other contributors")]
+lines_contributors = authors_data[authors_data.index("Other contributors")+5 : authors_data.index("Other credits")]
+
 
 prefixes = ["  email    ", "  web      ", "  github   ", "  grants   ", "  what     "]
 
@@ -158,6 +162,14 @@ while i < len(lines):
     i += 1
 
 authorlist = ""
+contributorlist = ""
+
+contributorlist += """<ul style="columns: 3;">"""
+for line in lines_contributors:
+    if line.strip():
+        contributorlist += "<li>%s</li>\n" % line
+
+contributorlist += "</ul>"
 
 authorphoto = {
     "William Hart" : "bill.jpg",
@@ -229,6 +241,7 @@ for page in pages:
         title = text[text.find("<h2>")+4 : text.find("</h2>")]
     page_want_katex.append("%WANT_KATEX" in text)
     text = text.replace("%AUTHORLIST", authorlist)
+    text = text.replace("%CONTRIBUTORLIST", contributorlist)
     text = text.replace("%WANT_KATEX", "")
     page_texts.append(text)
     page_titles.append(title)
