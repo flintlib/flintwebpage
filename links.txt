@@ -12,7 +12,7 @@
 <li><a href="https://www.singular.uni-kl.de">Singular</a> uses FLINT internally</a></li>
 <li><a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a> uses FLINT internally</a></li>
 <li><a href="http://www.hcrypt.com/scarab-library/">Scarab library</a> - an implementation of fully homomorphic encryption using FLINT.</li>
-<li><a href="https://oscar.computeralgebra.de/">OSCAR</a> - Computer Algebra System (TRR-195)</li>
+<li><a href="https://www.oscar-system.org/">OSCAR</a> - Computer Algebra System</li>
 <li><a
 href="https://research.coe.drexel.edu/ece/aspitrg/chmlib-readme.txt">chmlib</a> - Projection of polyhedral cones</li>
 <li><a href="https://arblib.org/">Arb</a> - Real and complex ball arithmetic (merged with FLINT 3.0)</li>
