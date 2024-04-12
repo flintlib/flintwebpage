@@ -42,8 +42,8 @@ Although FLINT itself is written in C, bindings are available for various genera
 <a href="https://hackage.haskell.org/package/Flint2">Haskell</a> and <a href="https://github.com/flintlib/flintxx">C++</a>.
 Several computer algebra systems also rely on FLINT as a back-end library,
 including
-<a href="https://sagemath.org">SageMath</a>,
-<a href="https://oscar.computeralgebra.de/">Oscar</a>,
+<a href="https://www.sagemath.org">SageMath</a>,
+<a href="https://www.oscar-system.org/">OSCAR</a>,
 <a href="https://www.singular.uni-kl.de/">Singular</a>,
 <a href="http://www2.macaulay2.com/Macaulay2/">Macaulay2</a>,
 <a href="https://www.maplesoft.com/products/Maple/">Maple</a>
