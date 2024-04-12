@@ -1,9 +1,5 @@
 <h2>What is FLINT ?</h2>
 
-<div style="background-color:#fea; width:90%; padding-bottom:0.5em; padding-top:0.5em; text-align:center; margin:1em;">
-News: the <a href="https://flintlib.github.io/workshop2024.html">2024 FLINT development workshop</a> will take place March 18 - 22 in Bordeaux
-</div>
-
 <p>FLINT is a C library for doing number theory, freely available
 under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">GNU LGPL</a>.
 
