@@ -11,14 +11,17 @@
  
 <p>The current development branch within the repository is "main".</p> 
 
-<h3>Mailing list</h3>
+<h3>Community</h3>
 
-<p>...and discuss development ideas with us at our Google development group:</p> 
-<a href="https://groups.google.com/g/flint-devel">flint-devel Google Group</a>
+<p>You are welcome to discuss FLINT on either of the following channels:</p>
+
+<p>The <a href="https://groups.google.com/g/flint-devel">flint-devel mailing list</a>.</p>
+
+<p>The <a href="https://sagemath.zulipchat.com/#narrow/stream/408539-flint">FLINT Zulip chat</a>.</p>
+
+<p>Our GitHub issue tracker (for specific feature requests and bug reports): <a href="https://github.com/flintlib/flint/issues">https://github.com/flintlib/flint/issues</a>.</p>
 
 <h3>Development ideas</h3>
-
-<p>Our GitHub issue tracker: <a href="https://github.com/flintlib/flint/issues">https://github.com/flintlib/flint/issues</a></p>
 
 <p>Here are some of ideas for development projects
 that would be highly valuable to a large number of users.</p>

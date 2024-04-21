@@ -1,7 +1,7 @@
 <h2>What is FLINT ?</h2>
 
 <p>FLINT is a C library for doing number theory, freely available
-under the <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">GNU LGPL</a>.
+under the <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">GNU LGPL</a>.
 
 <div style="float:right; width:250px; margin-left:1em; margin-right:0; margin-bottom:2em; text-align:center; padding: 0.5em; background-color: #fffadd; border: 1px solid #fff0d4; border-radius:4px;">
 <img src="domains.svg"/>
