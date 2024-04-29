@@ -37,7 +37,7 @@ that would be highly valuable to a large number of users.</p>
 
 <p>
 A longer list of (mostly minor) issues to work on can be found in the
-<a href="https://github.com/flintlib/flint/blob/trunk/todo.txt">todo.txt</a> file.
+<a href="https://github.com/flintlib/flint/blob/main/TODO.md">todo.md</a> file.
 If you are interested in contributing to FLINT in any way,
 or even just want to request a feature,
 don't hesitate to leave a message on the mailing list!</p>
