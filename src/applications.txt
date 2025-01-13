@@ -170,7 +170,7 @@ An example benchmark problem is the "three-loop banana diagram", about which the
 </p>
 
 <div style="text-align:center">
-<img src="banana.svg" style="width:250px; max-width:25%" />
+<img src="img/banana.svg" style="width:250px; max-width:25%" />
 </div>
 
 <blockquote>
@@ -230,7 +230,7 @@ The current version of FLINT proves this equality in four seconds.</p>
 <h4>Cutting squares into similar rectangles</h4>
 
 <div style="text-align:center">
-<img src="squarecutting.png" style="width:600px; max-width:80%" />
+<img src="img/squarecutting.png" style="width:600px; max-width:80%" />
 </div>
 
 <p>
@@ -266,7 +266,7 @@ Applications include:</p>
 </ul>
 
 <div style="text-align:center">
-<img src="torus.jpg" style="width:250px" />
+<img src="img/torus.jpg" style="width:250px" />
 </div>
 
 <h4>Accurate Gaunt factors for quadrupole radiation</h4>
@@ -304,7 +304,7 @@ The computations are described in more detail in Helfgott's book
 and on his website.</p>
 
 <div style="text-align:center">
-<img src="zplot2.svg" style="width:60%" /><br/>
+<img src="img/zplot2.svg" style="width:60%" /><br/>
 <i>Figure: a short subsegment of one of Helfgott's integrals: $\int_{-\tfrac{1}{4}+8i}^{-\tfrac{1}{4}+40000i} \left|\frac{F_{19}(s+\tfrac{1}{2}) F_{19}(s+1)}{s^2}\right| |ds|$, where $F_N(s) = \zeta(s) \prod_{p\leq N} (1 - p^{-s})$.</i>
 </div>
 
@@ -334,7 +334,7 @@ Very impressed by the robustness of your software as well as by the tremendous s
 <h4>Traveling wave solutions of PDEs</h4>
 
 <div style="text-align:center">
-<img src="BH-u.svg" style="width:300px" /><br/>
+<img src="img/BH-u.svg" style="width:300px" /><br/>
 </div>
 
 <p>
