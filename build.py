@@ -224,7 +224,7 @@ else:
         author, data = author
         s = ""
         if author in authorphoto:
-            s += """<div style="float:right; clear:both; text-align:center; border:1px solid #f8f8f8; padding:0.3em; background-color:#fcfcfc; margin-left:0.5em; margin-bottom:0.5em"><img src="people/%s" style="max-width:130px; max-height:130px;" /><br/>%s</div>""" % (authorphoto[author], author)
+            s += """<div style="float:right; clear:both; text-align:center; border:1px solid #f8f8f8; padding:0.3em; background-color:#fcfcfc; margin-left:0.5em; margin-bottom:0.5em"><img src="%s" style="max-width:130px; max-height:130px;" /><br/>%s</div>""" % (authorphoto[author], author)
         s += "<dt>"
         if data.get("web"):
             s += """<a href="%s">%s</a>""" % (data.get("web"), author)
