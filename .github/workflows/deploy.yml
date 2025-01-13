@@ -1,0 +1,25 @@
+# Workflow to deploy to website
+
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Push documentation to website
+    if: github.repository == 'flintlib/flintwebpage'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Setup SSH key"
+        uses: shimataro/ssh-key-action@v2.7.0
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_ed25519
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+      - name: "Deploy"
+        run: |
+          ssh -t wbhart@opal6.opalstack.com 'cd ~/flintwebpage && git checkout master && git pull && python3 downloads.py ~/apps/flintlib_org && python3 build.py ~/apps/flintlib_org && cp -r img/ ~/apps/flintlib_org'

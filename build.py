@@ -1,4 +1,16 @@
+# build.py: generate the HTML files from text files
+
+import sys
 import glob
+import urllib.request
+from time import gmtime, strftime
+import os
+
+if len(sys.argv) != 2:
+	print("Usage:  python3 build.py ARG\n"
+	      "\n"
+	      "For documentation on ARG, see README.md.")
+	exit(1)
 
 PAGE_TOP = r"""
 <!DOCTYPE html>
@@ -12,7 +24,7 @@ PAGE_TOP = r"""
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 <style type="text/css" media="screen">
 body { font-family: 'nunito', arial, sans-serif; font-size: 16px; line-height: 1.5em; margin: 2em; background-color:#fcfcfc; color: #111; }
@@ -55,19 +67,19 @@ blockquote { font-style: italic; }
 
 <h1>FLINT : <span style="color:#cc3333">Fast Library for Number Theory</span></h1>
 
-<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor200.svg"></div> -->
-<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="factor.svg"></div> -->
+<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="img/factor200.svg"></div> -->
+<!-- <div style="text-align:center; margin-bottom:1.5em"><img style="scale:90%" src="img/factor.svg"></div> -->
 
 
 <div style="text-align:center; margin-bottom:1.5em; overflow:scroll">
 
 <script>
 var formulas = [
-  "delta.svg",
-  "factor.svg",
-  "factorpoly.svg",
-  "bernoulli.svg",
-  "zeta.svg",
+  "img/delta.svg",
+  "img/factor.svg",
+  "img/factorpoly.svg",
+  "img/bernoulli.svg",
+  "img/zeta.svg",
 ];
 
 var size = formulas.length;
@@ -101,10 +113,10 @@ PAGE_BOTTOM = r"""
 """
 
 PAGE_KATEX = r"""
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css" integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.js" integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
       renderMathInElement(document.body, {
@@ -119,7 +131,8 @@ PAGE_KATEX = r"""
 
 indent = 11
 
-authors_data = open("../flint/AUTHORS").read().splitlines()
+urllib.request.urlretrieve("https://raw.githubusercontent.com/flintlib/flint/refs/heads/main/AUTHORS", "AUTHORS")
+authors_data = open("AUTHORS").read().splitlines()
 
 lines = authors_data[authors_data.index("Major contributors")+2 : authors_data.index("Other contributors")]
 lines_contributors = authors_data[authors_data.index("Other contributors")+5 : authors_data.index("Other credits")]
@@ -172,16 +185,16 @@ for line in lines_contributors:
 contributorlist += "</ul>"
 
 authorphoto = {
-    "William Hart" : "bill.jpg",
-    "Fredrik Johansson" : "fredrik.jpg",
-    "Albin Ahlbäck" : "albin.jpg",
-    "Andy Novocin" : "andy.jpg",
-    "Daniel Schultz" : "daniel.jpg",
-    "David Harvey" : "david.jpg",
-    "Mike Hansen" : "mike.jpg",
-    "Pascal Molin" : "pascal.jpg",
-    "Alex Best" : "alex.jpg",
-    "D.H.J. Polymath" : "polymath.jpg",
+    "William Hart"      : "img/people/bill.jpg",
+    "Fredrik Johansson" : "img/people/fredrik.jpg",
+    "Albin Ahlbäck"     : "img/people/albin.jpg",
+    "Andy Novocin"      : "img/people/andy.jpg",
+    "Daniel Schultz"    : "img/people/daniel.jpg",
+    "David Harvey"      : "img/people/david.jpg",
+    "Mike Hansen"       : "img/people/mike.jpg",
+    "Pascal Molin"      : "img/people/pascal.jpg",
+    "Alex Best"         : "img/people/alex.jpg",
+    "D.H.J. Polymath"   : "img/people/polymath.jpg",
 }
 
 if 0:
@@ -195,7 +208,7 @@ if 0:
         else:
             s += """<b>%s</b>""" % author
         if author in authorphoto:
-            s += """<br/><img src="people/%s" style="max-width:150px; max-height:150px" />""" % authorphoto[author]
+            s += """<br/><img src="%s" style="max-width:150px; max-height:150px" />""" % authorphoto[author]
         #if data.get("github"):
         #    s += """<br/><a href="https://github.com/flintlib/flint/commits?author=%s">commits</a>""" % data.get("github")
         s += "</td><td>"
@@ -226,7 +239,18 @@ else:
         authorlist += s
     authorlist += "</dl>"
 
-pages = ["index", "applications", "news", "documentation", "downloads", "development", "authors", "links"]
+source_prefix = "src/"
+source_suffix = ".txt"
+pages = [
+	"index",
+	"applications",
+	"news",
+	"documentation",
+	"downloads",
+	"development",
+	"authors",
+	"links"
+]
 
 page_titles = []
 page_texts = []
@@ -237,7 +261,7 @@ for page in pages:
         text = ""
         title = "Documentation"
     else:
-        text = open(page + ".txt", "r").read()
+        text = open(source_prefix + page + source_suffix, "r").read()
         title = text[text.find("<h2>")+4 : text.find("</h2>")]
     page_want_katex.append("%WANT_KATEX" in text)
     text = text.replace("%AUTHORLIST", authorlist)
@@ -249,7 +273,6 @@ for page in pages:
 
 
 
-from time import gmtime, strftime
 timestamp = strftime("Last updated: %Y-%m-%d %H:%M:%S GMT", gmtime())
 
 
@@ -288,7 +311,8 @@ for i in range(len(pages)):
     else:
         title = " - " + title
 
-    fp = open(pages[i] + ".html", "w")
+    path = sys.argv[1]
+    fp = open(path + "/" + pages[i] + ".html", "w")
     fp.write(PAGE_TOP.replace("TITLE", title).replace("MENU", menu).replace("%KATEX%", PAGE_KATEX if page_want_katex[i] else ""))
     fp.write(page_texts[i])
     fp.write(PAGE_BOTTOM.replace("TIMESTAMP", timestamp))
