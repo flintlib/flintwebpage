@@ -5,7 +5,7 @@
 Go to the <b><a href="doc/">FLINT online documentation</a></b>
 </li>
 <li>
-Download <b><a href="doc/Flint.pdf">FLINT documentation as PDF </a></b>
+Download <b><a href="doc/flint.pdf">FLINT documentation as PDF </a></b>
 </li>
 </ul>
 
