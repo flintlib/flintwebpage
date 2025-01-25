@@ -1,5 +1,7 @@
 <h2>News</h2>
 
+<p>The <a href="https://flintlib.github.io/workshop2025.html">2025 FLINT development workshop</a>, January 27 - 31, in Palaiseau, France</p>
+
 <p>The <a href="https://flintlib.github.io/workshop2024.html">2024 FLINT development workshop</a> took place March 18 - 22 in Bordeaux</p>
 
 <p>2024-02-25: FLINT 3.1.0 is <a href="https://github.com/flintlib/flint/releases/tag/v3.1.0">released</a>!</p>
