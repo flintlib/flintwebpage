@@ -132,7 +132,7 @@ PAGE_KATEX = r"""
 indent = 11
 
 urllib.request.urlretrieve("https://raw.githubusercontent.com/flintlib/flint/refs/heads/main/AUTHORS", "AUTHORS")
-authors_data = open("AUTHORS").read().splitlines()
+authors_data = open("AUTHORS", encoding="utf-8").read().splitlines()
 
 lines = authors_data[authors_data.index("Major contributors")+2 : authors_data.index("Other contributors")]
 lines_contributors = authors_data[authors_data.index("Other contributors")+5 : authors_data.index("Other credits")]
@@ -243,6 +243,7 @@ source_prefix = "src/"
 source_suffix = ".txt"
 pages = [
 	"index",
+	"citation",
 	"applications",
 	"news",
 	"documentation",
@@ -261,7 +262,7 @@ for page in pages:
         text = ""
         title = "Documentation"
     else:
-        text = open(source_prefix + page + source_suffix, "r").read()
+        text = open(source_prefix + page + source_suffix, "r", encoding="utf-8").read()
         title = text[text.find("<h2>")+4 : text.find("</h2>")]
     page_want_katex.append("%WANT_KATEX" in text)
     text = text.replace("%AUTHORLIST", authorlist)
@@ -312,7 +313,7 @@ for i in range(len(pages)):
         title = " - " + title
 
     path = sys.argv[1]
-    fp = open(path + "/" + pages[i] + ".html", "w")
+    fp = open(path + "/" + pages[i] + ".html", "w", encoding="utf-8")
     fp.write(PAGE_TOP.replace("TITLE", title).replace("MENU", menu).replace("%KATEX%", PAGE_KATEX if page_want_katex[i] else ""))
     fp.write(page_texts[i])
     fp.write(PAGE_BOTTOM.replace("TIMESTAMP", timestamp))

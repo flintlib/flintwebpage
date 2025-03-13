@@ -1,4 +1,4 @@
-<h2>Authors and credits</h2>
+<h2>Authors</h2>
 
 <h3>Brief project history</h3>
 
@@ -51,41 +51,9 @@ architecture-specific testing.</li>
 
 <li>
 Some code (notably longlong.h and clz_tab.c) has been used from the GMP library,
-whose main author is Torbjorn Granlund. FLINT also includes code from the MPFR
+whose main author is Torbjörn Granlund. FLINT also includes code from the MPFR
 library developed by Guillaume Hanrot, Vincent Lefèvre, Patrick Pélissier,
 Philippe Théveny, Paul Zimmermann and others. 
 </li>
 
 </ul>
-
-<h3>Citing FLINT</h3>
-
-<p>A general citation of the following form is recommended:</p>
-
-<blockquote>The FLINT team. FLINT: Fast Library for Number Theory, 2023. Version 3.0.0, https://flintlib.org.</blockquote>
-
-<pre>
-@manual{flint,
-    key = {FLINT},
-    author = {The {FLINT} team},
-    title = {{FLINT}: {F}ast {L}ibrary for {N}umber {T}heory},
-    year = {2023},
-    note = {Version 3.0.0, \url{https://flintlib.org}}
-}
-</pre>
-
-<p>
-Please consider also looking up whether there is a paper discussing
-the specific feature(s) in FLINT which you are using. In many cases, there is such a paper!
-For example, research using the ball arithmetic component of FLINT (Arb) may cite:</p>
-
-<blockquote>
-F. Johansson. "Arb: efficient arbitrary-precision midpoint-radius interval arithmetic", IEEE Transactions on Computers, 66(8):1281-1292, 2017. DOI: <a href="https://doi.org/10.1109/TC.2017.2690633">10.1109/TC.2017.2690633</a>
-</blockquote>
-
-<p>Research using FLINT's number fields may cite:</p>
-
-    <blockquote>William B. Hart. "ANTIC: Algebraic number theory in C", Computeralgebra-Rundbrief: Vol. 56, 2015</blockquote>
-
-<p>Many other references can be found <a href="https://www.flintlib.org/doc/references.html">in the bibliography of the FLINT documentation</a>.</p>
-

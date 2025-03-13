@@ -8,6 +8,13 @@ $ python3 downloads.py ${PATH_TO_DEST}
 where `${PATH_TO_DEST}/download` is the path to the directory that contains all
 PDF-files and compressed releases (probably `~/apps/flintlib_org/`).
 
+Furthermore, we also generate `src/citation.txt` that is being used to generate
+`${DEST}/citation.html`.  To generate the source file, run
+```
+$ python3 citation.py
+```
+This uses HISTORY, so make sure that HISTORY is ordered and up-to-date.
+
 Following this, generate all HTML pages via
 ```
 $ python3 build.py ${PATH_TO_DEST}
