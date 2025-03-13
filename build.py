@@ -243,6 +243,7 @@ source_prefix = "src/"
 source_suffix = ".txt"
 pages = [
 	"index",
+	"citation",
 	"applications",
 	"news",
 	"documentation",
