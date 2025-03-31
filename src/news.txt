@@ -1,65 +1,18 @@
 <h2>News</h2>
 
-<p>The <a href="https://flintlib.github.io/workshop2025.html">2025 FLINT development workshop</a>, January 27 - 31, in Palaiseau, France</p>
+<p>The <a href="https://flintlib.github.io/workshop2025.html">2025 FLINT
+development workshop</a> took place on January 27 - 31 in Palaiseau, France.</p>
 
-<p>The <a href="https://flintlib.github.io/workshop2024.html">2024 FLINT development workshop</a> took place March 18 - 22 in Bordeaux</p>
+<p>The <a href="https://flintlib.github.io/workshop2024.html">2024 FLINT
+development workshop</a> took place on March 18 - 22 in Bordeaux, France.</p>
 
-<p>2024-02-25: FLINT 3.1.0 is <a href="https://github.com/flintlib/flint/releases/tag/v3.1.0">released</a>!</p>
-
-<p>2023-10-20: FLINT 3.0.0 is <a href="https://github.com/flintlib/flint/releases/tag/v3.0.0">released</a>!</p>
-
-<p>2023-10-13: FLINT 3.0.0-rc1 is available</p>
-
-<p>The <a href="https://flintlib.github.io/workshop2023.html">2023 FLINT development workshop</a> took place October 9 - 13 in Kaiserslautern</p>
-
-<p>2023-06-27: FLINT 3.0.0-alpha1 is available</p>
-
-<h3>Past news and events</h3>
-
-<p>2022-06-24: FLINT 2.9.0 is released!</p>
-
-<p>2021-11-17: FLINT 2.8.4 is released!</p>
-
-<p>2021-11-03: FLINT 2.8.3 is released!</p>
-
-<p>2021-10-15: FLINT 2.8.2 is released!</p>
-
-<p>2021-10-01: FLINT 2.8.1 is released!</p>
-
-<p>2021-07-22: FLINT 2.8.0 is released!</p>
-
-<p>2021-01-18: FLINT 2.7.1 is released!</p>
-
-<p>2020-12-18: FLINT 2.7.0 is released!</p>
-
-<p>2020-08-12: FLINT 2.6.3 is released!</p>
-
-<p>2020-07-31: FLINT 2.6.2 is released!</p>
-
-<p>2020-07-23: FLINT 2.6.1 is released!</p>
-
-<p>2020-06-05: FLINT 2.6.0 is released!</p>
+<p>The <a href="https://flintlib.github.io/workshop2023.html">2023 FLINT
+development workshop</a> took place on October 9 - 13 in Kaiserslautern,
+Germany.</p>
 
 <p>2016-04-28: The license for FLINT (repository and subsequent releases) is
 changed to LGPL v2.1+ after consultation with our contributors this month.
 Thanks to everyone involved in the license change.</p>
-
-<p>2015-08-12: FLINT 2.5.2 is released!</p>
-
-<p>This fixes a number of build issues for various platforms.</p>
-
-<p>2015-08-12: FLINT 2.5.1 is released!</p>
-
-<p>This fixes a number of build issues for various platforms, including OSX
-and Windows MSVC.</p>
-
-<p>2015-08-07: FLINT 2.5 is released!</p>
-
-<p>2015-02-17: FLINT 2.4.5 is released. This fixed a severe bug in flint's
-heuristic GCD which would affect polynomial GCD over ZZ and QQ where one of
-the inputs had a very small linear factor. The bug was only triggered in
-extremely rare situations. We strongly recommend updating.
-</p>
 
 <p>2014-09-06: <a href="https://alexanderjbest.wordpress.com/">Alex Best</a> completes his Google Summer of Code project developing fast Hermite and Smith normal 
 form code, including the Pernet-Stein algorithm.</p>
@@ -67,17 +20,9 @@ form code, including the Pernet-Stein algorithm.</p>
 <p>2014-09-06: <a href="https://fandangoing.blogspot.in/">Abhinav Baid</a> completes his Google Summer of Code project implementing fast LLL, including the 
 LLL, L^2, ULLL and Storjohann algorithms.</p>
 
-<p>2014-06-19: FLINT 2.4.4 is released. This fixed a <u>severe</u> bug in
-flint's primality code (n_is_prime() affecting n_factor()). We strongly
-recommend updating as all versions of flint since 1.1 are affected.</p>
-
-<p>2014-01-02: FLINT 2.4.1 is released</p>
-
 <p>September 2013: <a href="https://nessflint.blogspot.com">Tom Bachmann</a> completes his Google Summer of Code project developing a C++ wrapper for FLINT</p>
 
 <p>4-12 May 2013: <a href="https://www2.warwick.ac.uk/fac/sci/maths/research/events/2012-2013/nonsymp/flint/">FLINT developers' workshop</a>, Warwick University</p>
-
-<p>2012-11-09: FLINT 2.3 is released</p>
 
 <p>September 2012: <a href="https://lina-kulakova.blogspot.com">Lina Kulakova</a> completes her Google Summer of Code project on polynomial factorisation in FLINT</p>
 
