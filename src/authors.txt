@@ -30,6 +30,10 @@ list of committers on GitHub.</p>
 <li><a href="https://albinahlback.gitlab.io/" rel="nofollow">Albin Ahlbäck</a> (<a href="mailto:albin.ahlback@gmail.com">albin.ahlback@gmail.com</a>)</li>
 </ul>
 
+<h3>Supporting organizations</h3>
+
+<p><a href="https://inria.fr"><img src="img/inria.svg" style="width:250px" /></a></p>
+
 <h3>Major contributors</h3>
 
 %AUTHORLIST
