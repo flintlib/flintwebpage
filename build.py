@@ -1,5 +1,7 @@
 # build.py: generate the HTML files from text files
 
+# FIXME LATER: Currently contains link to workshop.
+
 import sys
 import glob
 import urllib.request
@@ -90,6 +92,7 @@ document.write(imgStr); document.close();
 </div>
 
 MENU
+<div style="text-align:center; background-color:#f5e027; border-radius:20px; padding:6px; margin:10px auto; max-width:1000px; margin-left:auto; margin-right:auto;"><a href="https://flintlib.github.io/workshop2025_october.html">27–31 October: FLINT workshop in Palaiseau</a></div>
 
 <div id="content">
 """
