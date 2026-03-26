@@ -90,9 +90,9 @@ document.write(imgStr); document.close();
 </div>
 
 MENU
-<!--
-<div style="text-align:center; background-color:#f5e027; border-radius:20px; padding:6px; margin:10px auto; max-width:1000px; margin-left:auto; margin-right:auto;">ADVERTISEMENT</div>
--->
+
+<div style="text-align:center; background-color:#ffe044; border-radius:20px; padding:15px; margin:20px auto; max-width:1000px; margin-left:auto; margin-right:auto;"><a href="https://flintlib.github.io/workshop2026.html">15–19 June 2026: FLINT workshop in Bordeaux</a></div>
+
 
 <div id="content">
 """
